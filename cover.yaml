@@ -1,0 +1,38 @@
+## Cover spec for A Civilization Worth Inheriting
+## Front panel is rendered by cover/render_front.py (no generated art):
+##   ~/.fal-venv/bin/python cover/render_front.py flag cover/front-flag.png
+##   ~/.fal-venv/bin/python ~/book-suite/plugins/imprint/skills/kdp-cover/build_cover.py . --art cover/front-flag.png
+
+paper: cream
+
+front:
+  overlay_text: false      # type is baked into the rendered panel
+  overlay_opacity: 0.0
+  title_color: "#ffffff"
+
+accent_color: "#ffffff"
+
+spine:
+  bg_color: "#023CA7"      # flag blue, sampled from the EarthPilot mark
+  text_color: "#ffffff"
+  emblem: cover/emblem-white.png
+
+back:
+  bg_color: "#023CA7"
+  text_color: "#ffffff"
+  quote: |
+    What would we build today if we wanted life to be flourishing a thousand years from now?
+  blurb: |
+    A child needs somewhere safe to play. A river needs room to move. A powerful artificial intelligence needs limits that survive changes in its ownership.
+
+    Inspired by Christopher Alexander's A Pattern Language, this book offers 108 patterns for a thriving civilization. Each names a recurring problem, proposes a usable response, weighs its tradeoffs, and connects to the others. Begin with a household, a company, a neighborhood, or a watershed. Follow the connections outward to planetary institutions, artificial minds, settlements beyond Earth, and the possibility of contact with other intelligences.
+
+    Written for founders, citizens, designers, and educators ready to take responsibility for a piece of the world, it offers places to begin at a human scale.
+  about_author: |
+    Anthony David Adams founded the EarthPilot Research Lab, a private lab studying AI character and the social effects of frontier language models. He holds a master's degree in urban planning from the University of Wisconsin, with a focus on technology and society.
+  cta:                     # back-cover QR, bottom-left, clear of KDP's barcode
+    url: "https://civilization.galley.so"
+    headline: "Talk with this book"
+    body: "Scan to ask the coach about any pattern, or bring a real decision and work through it together."
+    qr_size_in: 1.0
+  isbn: ""

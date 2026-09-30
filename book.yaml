@@ -1,0 +1,219 @@
+title: "A Civilization Worth Inheriting"
+subtitle: "A Pattern Language for the Next Thousand Years"
+author: "Anthony David Adams"
+
+trim:
+  width_in: 6.0
+  height_in: 9.0
+margins:
+  inside_in: 0.875
+  outside_in: 0.625
+  top_in: 0.8
+  bottom_in: 0.8
+indent_in: 0.2
+openright: false           # 108 short patterns run continuously; parts still open recto
+justified: true
+hyphenation: true
+layout_priority: balanced
+
+body:
+  font: "EB Garamond"
+  size_pt: 11
+  line_spacing: 1.3
+  paragraph_style: indented
+
+heading_font: "EB Garamond"
+
+chapter_number:
+  show: true
+  format: numeral
+  font: "EB Garamond"
+  size_pt: 40
+chapter_title:
+  font: "EB Garamond"
+  size_pt: 22
+  align: left
+  bold: false
+  italic: true
+
+
+running_head:
+  layout: author_title
+  font: "EB Garamond"
+  size_pt: 9
+
+drop_caps: false
+scene_break: emblem
+emblem: rings            # seven rings of the Earth flag: title pages, part pages, chapter ends
+footnotes:
+  location: page
+  size_multiplier: 1.0
+
+toc: true
+toc_depth: 0               # parts + chapters only; 108 patterns x 3 sections would swamp it
+copyright_year: 2026
+
+## Galley coach: one QR page for the whole book, after pattern 108.
+galley:
+  url: "https://civilization.galley.so"
+  heading: "Talk with this book"
+  body: "This book has a coach: an AI that has read every pattern and can answer questions, find the one you half remember, and help you assemble a working language for your own place. Scan the code or visit the address below. The conversation is free."
+  caption: "Ask the book anything"
+
+front_matter:
+  - manuscript/00-FRONT/01-a-dispatch-from-3026.md
+  - manuscript/00-FRONT/02-the-patterns-at-a-glance.md
+  - manuscript/00-FRONT/03-how-to-use-this-language.md
+
+back_matter:
+  - manuscript/99-BACK/01-a-working-kit.md
+  - manuscript/99-BACK/02-entry-points-by-scale-and-problem.md
+  - manuscript/99-BACK/03-a-living-research-and-interview-practice.md
+  - manuscript/99-BACK/04-evidence-disagreements-and-revision.md
+  - manuscript/99-BACK/05-sources-and-further-reading.md
+
+parts:
+  - title: "Part I — Responsibility across time"
+    epigraph: "Establish what a civilization owes to life now and to those who will inherit its decisions."
+    chapters:
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/001-leave-room-for-the-future.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/002-enough-for-the-living.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/003-a-seat-for-the-absent.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/004-a-floor-beneath-everyone.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/005-many-ways-to-flourish.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/006-proportionate-caution.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/007-the-right-to-reconsider.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/008-decisions-at-the-right-scale.md
+      - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/009-keep-the-capacity-to-repair.md
+  - title: "Part II — Becoming human together"
+    epigraph: "Create the conditions in which people can develop, belong, and care for one another."
+    chapters:
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/010-safe-beginnings.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/011-a-village-around-every-child.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/012-the-skill-of-relationship.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/013-consent-as-a-daily-practice.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/014-a-common-table.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/015-a-place-to-be-alone.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/016-care-across-a-lifetime.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/017-work-with-meaning.md
+      - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/018-a-dignified-death.md
+  - title: "Part III — The living planet"
+    epigraph: "Treat ecological integrity and the lives of individual animals as distinct, connected responsibilities."
+    chapters:
+      - manuscript/PART-03-THE-LIVING-PLANET/019-watersheds-as-commons.md
+      - manuscript/PART-03-THE-LIVING-PLANET/020-room-for-wildness.md
+      - manuscript/PART-03-THE-LIVING-PLANET/021-connected-habitats.md
+      - manuscript/PART-03-THE-LIVING-PLANET/022-animals-with-interests.md
+      - manuscript/PART-03-THE-LIVING-PLANET/023-food-without-cruelty.md
+      - manuscript/PART-03-THE-LIVING-PLANET/024-soil-as-an-inheritance.md
+      - manuscript/PART-03-THE-LIVING-PLANET/025-oceans-with-guardians.md
+      - manuscript/PART-03-THE-LIVING-PLANET/026-end-pollution-at-the-source.md
+      - manuscript/PART-03-THE-LIVING-PLANET/027-guardians-with-duties.md
+  - title: "Part IV — Places and material life"
+    epigraph: "Build settlements that are delightful to inhabit and possible to sustain."
+    chapters:
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/028-settlements-that-belong-to-place.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/029-housing-that-can-change.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/030-clean-energy-in-many-hands.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/031-materials-that-can-return.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/032-pay-for-maintenance-first.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/033-beauty-in-ordinary-places.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/034-public-space-without-a-purchase.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/035-water-where-life-needs-it.md
+      - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/036-enough-local-capacity.md
+  - title: "Part V — An economy that supports life"
+    epigraph: "Make useful production compatible with shared prosperity and ecological limits."
+    chapters:
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/037-an-economy-of-enough.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/038-account-for-the-full-cost.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/039-share-the-gains-of-invention.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/040-common-wealth-dividends.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/041-land-with-lasting-duties.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/042-ownership-with-obligations.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/043-pay-for-care.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/044-finance-that-can-wait.md
+      - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/045-a-fair-transition.md
+  - title: "Part VI — Power that remains answerable"
+    epigraph: "Make collective action possible while preventing temporary authority from becoming permanent domination."
+    chapters:
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/046-power-must-explain-itself.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/047-citizens-who-deliberate.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/048-rights-that-majorities-cannot-remove.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/049-the-right-to-exit-and-belong.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/050-commons-at-every-scale.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/051-treaties-for-shared-hazards.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/052-peace-as-a-maintained-practice.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/053-emergency-powers-that-end.md
+      - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/054-constitutions-that-can-learn.md
+  - title: "Part VII — A civilization that can know"
+    epigraph: "Keep knowledge useful, contestable, accessible, and capable of surviving its creators."
+    chapters:
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/055-shared-reality.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/056-show-the-work.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/057-keep-dissent-safe.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/058-learning-across-a-lifetime.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/059-libraries-that-survive.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/060-local-knowledge-with-consent.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/061-public-interest-science.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/062-memory-of-harm.md
+      - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/063-measure-what-matters.md
+  - title: "Part VIII — Living with artificial minds"
+    epigraph: "Separate questions of capability, authority, ownership, and moral standing."
+    chapters:
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/064-delegated-intelligence.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/065-auditable-power.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/066-capability-with-containment.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/067-freedom-from-machine-persuasion.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/068-human-skills-worth-keeping.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/069-a-commons-of-useful-tools.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/070-uncertain-minds-deserve-care.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/071-personhood-beyond-resemblance.md
+      - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/072-no-irreversible-surrender.md
+  - title: "Part IX — Continuity through disruption"
+    epigraph: "Make catastrophe less likely and recovery possible without normalizing permanent emergency."
+    chapters:
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/073-diverse-systems.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/074-failure-that-stays-local.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/075-public-health-for-all-species.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/076-reserves-before-scarcity.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/077-practice-the-emergency.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/078-recovery-before-disaster.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/079-a-civilization-that-can-reboot.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/080-institutions-with-successors.md
+      - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/081-remember-the-near-misses.md
+  - title: "Part X — Neighbors in the cosmos"
+    epigraph: "Extend responsibility beyond Earth while taking uncertainty and distance seriously."
+    chapters:
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/082-earth-is-not-disposable.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/083-space-as-a-shared-responsibility.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/084-worlds-with-their-own-claims.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/085-settlements-that-can-refuse.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/086-listen-before-sending.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/087-confirm-before-announcing.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/088-no-one-speaks-for-earth.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/089-contact-without-contamination.md
+      - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/090-the-right-to-remain-unknown.md
+  - title: "Part XI — Lives worth living"
+    epigraph: "Make room for joy, beauty, culture, spiritual inquiry, and experiences that need no economic justification."
+    chapters:
+      - manuscript/PART-11-LIVES-WORTH-LIVING/091-time-that-is-your-own.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/092-a-living-culture.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/093-rituals-for-change.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/094-wonder-without-compulsion.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/095-games-worth-playing.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/096-hospitality-across-difference.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/097-freedom-to-be-strange.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/098-grief-with-somewhere-to-go.md
+      - manuscript/PART-11-LIVES-WORTH-LIVING/099-beauty-without-possession.md
+  - title: "Part XII — Putting the language to work"
+    epigraph: "Turn large commitments into local action and let experience improve the book."
+    chapters:
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/100-begin-with-a-place.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/101-map-who-bears-the-cost.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/102-assemble-a-working-language.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/103-small-trials-with-real-boundaries.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/104-independent-eyes.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/105-publish-the-failures.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/106-make-better-practices-easier.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/107-return-and-reconsider.md
+      - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/108-keep-the-language-open.md
