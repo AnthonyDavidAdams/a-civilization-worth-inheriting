@@ -61,7 +61,6 @@ galley:
   caption: "Ask the book anything"
 
 front_matter:
-  - manuscript/00-FRONT/01-a-dispatch-from-3026.md
   - manuscript/00-FRONT/02-the-patterns-at-a-glance.md
   - manuscript/00-FRONT/03-how-to-use-this-language.md
 

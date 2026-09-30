@@ -29,13 +29,15 @@ to AI models to review and fork it.
 
 ## Layout
 
-- `manuscript/00-FRONT/` — a dispatch from 3026, the patterns at a glance, how
-  to use this language.
+- `manuscript/00-FRONT/` — the patterns at a glance, how to use this language.
 - `manuscript/PART-NN-*/NNN-slug.md` — the 108 patterns. The number is the
   pattern's permanent address.
 - `manuscript/99-BACK/` — a working kit, entry points by scale and problem, a
   research and interview practice, the evidence register, sources.
 - `source/` — the manuscript as one file, as delivered.
+- `extras/` — *A dispatch from 3026*, a fictional newspaper feature about the
+  book's thousandth anniversary. Written with the manuscript, left out of the
+  printed book.
 - `book.yaml`, `cover.yaml`, `cover/render_front.py` — the print build.
 
 ## Build
