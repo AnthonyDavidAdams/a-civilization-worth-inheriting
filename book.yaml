@@ -18,7 +18,7 @@ layout_priority: balanced
 
 body:
   font: "EB Garamond"
-  size_pt: 11
+  size_pt: 10               # the size every reviewed proof was actually set in; 11 adds ~20 pages
   line_spacing: 1.3
   paragraph_style: indented
 
@@ -52,6 +52,11 @@ footnotes:
 toc: true
 toc_depth: 0               # parts + chapters only; 108 patterns x 3 sections would swamp it
 copyright_year: 2026
+rights_notice:
+  - "Some rights reserved. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  - "You may copy, share and adapt this book for non-commercial purposes, provided you credit the author, link to the original project, say what you changed, and release your version under the same license. Commercial rights are reserved by the author."
+  - "License: creativecommons.org/licenses/by-nc-sa/4.0"
+  - "Original project: github.com/AnthonyDavidAdams/a-civilization-worth-inheriting"
 
 ## Galley coach: one QR page for the whole book, after pattern 108.
 galley:

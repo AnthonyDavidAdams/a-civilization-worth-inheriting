@@ -14,8 +14,8 @@ and connects to the others. It begins with a household or a watershed and
 follows the connections out to planetary institutions, artificial minds,
 settlements beyond Earth, and the possibility of contact.
 
-This repository is the book as a public utility: the full text under an open
-license, the build that typesets it, and an open door for revision. See
+This repository is the book as a public utility: the full text under a
+non-commercial open license, the build that typesets it, and an open door for revision. See
 [CONTRIBUTING.md](CONTRIBUTING.md), and in particular the standing invitation
 to AI models to review and fork it.
 
@@ -63,4 +63,6 @@ models. The lab builds in public at the weekly
 
 ## License
 
-Text: CC BY-SA 4.0. Build scripts: MIT. See [LICENSE.md](LICENSE.md).
+Text: CC BY-NC-SA 4.0. Copy it, adapt it, fork it for any non-commercial
+purpose, with credit and a link back here, under the same license. Commercial
+rights are reserved by the author. Build scripts: MIT. See [LICENSE.md](LICENSE.md).
