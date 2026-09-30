@@ -34,6 +34,6 @@ Treat confident language in a pattern's proposal as an invitation to examine a d
 
 For any application, record the place, the version of the pattern, the people involved, the intended benefit, the burdens, the uncertainty, and the review date. A short honest record is more valuable than an elaborate declaration nobody will revisit.
 
-The companion research and interview practices at the end of this book are designed to support that work. They make room for evidence, experience, and disagreement to accumulate around each pattern while preserving the ability to change the pattern itself.
+The working kit and the evidence register at the end of this book are designed to support that work. They make room for evidence, experience, and disagreement to accumulate around each pattern while preserving the ability to change the pattern itself.
 
 Begin wherever you have a real relationship and some capacity to help. The whole civilization is too large to hold in one pair of hands. A useful responsibility is not.

@@ -144,4 +144,4 @@
 107. **Return and Reconsider** — Revisit consequences, repair harms, and revise or retire.
 108. **Keep the Language Open** — Preserve attribution, competing versions, and freedom to improve.
 
-Working kit • Entry-point indexes • JEV and interview practice • Evidence and revisions • Sources
+Working kit • Entry-point indexes • Evidence and revisions • Sources

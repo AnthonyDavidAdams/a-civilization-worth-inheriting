@@ -10,7 +10,7 @@ Keep four kinds of claim distinct when reading or extending the book.
 
 **Design hypotheses** propose that a particular arrangement may serve those commitments under identifiable conditions. Most of the patterns belong here. Test them through practice, comparison, independent review, and attention to who experiences the result differently.
 
-**Speculative scenarios** explore possibilities that are not established descriptions of the present or predictions of the future. The newspaper feature from 3026 and the future-contact scenarios belong here. Their purpose is to make questions concrete enough to examine.
+**Speculative scenarios** explore possibilities that are not established descriptions of the present or predictions of the future. The future-contact scenarios belong here. Their purpose is to make questions concrete enough to examine.
 
 The source guide records selected foundations and points of departure. It is not a systematic review of every field addressed by the book. A high-stakes application needs current, situation-specific inquiry and appropriate expertise.
 
@@ -32,7 +32,7 @@ These disagreements are part of the language's working structure. Recording a se
 
 The pattern-language form is indebted to Christopher Alexander, Sara Ishikawa, Murray Silverstein, and their collaborators. The wider concerns of stewardship, care, commons, rights, democratic participation, and intergenerational responsibility have many intellectual and practical lineages. The sources below identify particular works used in this edition; they do not exhaust those histories or imply endorsement by their authors.
 
-For future contributions, record the contributor's preferred attribution, the material offered, permission to use it, affected pattern numbers, and the change made. Preserve substantive dissent alongside an accepted revision. Participation in an interview or review should not be represented as agreement with the whole book.
+For future contributions, record the contributor's preferred attribution, the material offered, permission to use it, affected pattern numbers, and the change made. Preserve substantive dissent alongside an accepted revision. Participation in a review should not be represented as agreement with the whole book.
 
 ## Revision record
 
