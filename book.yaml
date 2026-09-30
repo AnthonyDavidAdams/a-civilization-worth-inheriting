@@ -18,8 +18,8 @@ layout_priority: balanced
 
 body:
   font: "EB Garamond"
-  size_pt: 10               # the size every reviewed proof was actually set in; 11 adds ~20 pages
-  line_spacing: 1.3
+  size_pt: 11               # early proofs were really 10pt (pipeline leak, since fixed)
+  line_spacing: 1.15        # 11/15.6: every pattern fits one spread; 1.3 spills 29 of them onto a third page
   paragraph_style: indented
 
 heading_font: "EB Garamond"
