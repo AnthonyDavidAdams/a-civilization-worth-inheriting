@@ -70,7 +70,23 @@
   .meta{font-size:16px;color:var(--muted)}
   footer{padding:40px 0 60px;font-size:16px;color:var(--muted)}
   footer p{margin:6px 0}
+  .viewer{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:36px;align-items:center;margin:8px 0 28px}
+  .stage{perspective:1600px}
+  .card3d{position:relative;display:block;width:100%;aspect-ratio:824/1424;border:0;padding:0;background:none;cursor:pointer;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1);border-radius:16px}
+  .card3d.flipped{transform:rotateY(180deg)}
+  .card3d .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.18)}
+  .card3d .face img{width:100%;height:100%;object-fit:cover}
+  .card3d .back{transform:rotateY(180deg)}
+  .card3d:focus-visible{outline:3px solid var(--blue);outline-offset:6px}
+  .card-title{font-size:26px;font-style:italic;margin:0 0 4px}
+  .card-hint{color:var(--muted);font-size:16px;margin:0 0 14px}
+  .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+  .btn.small{padding:9px 14px;font-size:16px;cursor:pointer;font-family:inherit}
+  .grid-frame img{cursor:zoom-in}
+  @media (prefers-reduced-motion: reduce){ .card3d{transition:none} }
   @media (max-width:760px){
+    .viewer{grid-template-columns:1fr}
+    .stage{max-width:340px;margin:0 auto}
     .hero-grid,.two,.pair,.coach{grid-template-columns:1fr}
     .three{grid-template-columns:1fr}
     .suits{grid-template-columns:repeat(4,1fr)}
@@ -133,7 +149,25 @@
   <div class="wrap">
     <h2>The Pattern Deck</h2>
     <p class="kicker">All 108 patterns as tarot-size cards: a picture and the pattern's name on the front, the pattern in brief on the back.</p>
-    <figure class="frame"><img src="assets/deck-fronts.jpg" width="1400" height="2353" alt="All 121 card fronts laid out in a grid: a title card, twelve part cards, and 108 pattern pictures in blue and black with one accent colour per part."><figcaption>The whole deck. Every picture is a three-ink linocut: the flag's blue, a near-black, and one accent ink for each part.</figcaption></figure>
+    <div class="viewer" id="viewer">
+      <div class="stage">
+        <button class="card3d" id="card" type="button" aria-label="Flip the card" aria-pressed="false">
+          <span class="face front"><img id="cardFront" src="assets/deck/014-front.jpg" width="600" height="1037" alt=""></span>
+          <span class="face back"><img id="cardBack" src="assets/deck/014-back.jpg" width="600" height="1037" alt=""></span>
+        </button>
+      </div>
+      <div class="controls">
+        <p class="card-title" id="cardTitle">14 A Common Table</p>
+        <p class="card-hint">Click or tap the card to turn it over.</p>
+        <div class="btnrow">
+          <button type="button" class="btn ghost small" id="prevBtn" aria-label="Previous card">&larr; Previous</button>
+          <button type="button" class="btn primary small" id="drawBtn">Draw a card</button>
+          <button type="button" class="btn ghost small" id="nextBtn" aria-label="Next card">Next &rarr;</button>
+        </div>
+        <p class="card-hint">Or pick any card from the deck below.</p>
+      </div>
+    </div>
+    <figure class="frame grid-frame"><img id="grid" src="assets/deck-fronts.jpg" width="1400" height="2353" alt="All 121 card fronts laid out in a grid: a title card, twelve part cards, and 108 pattern pictures in blue and black with one accent colour per part." title="Click a card to open it above"><figcaption>The whole deck. Click any card to open it in the viewer. Every picture is a three-ink linocut: the flag's blue, a near-black, and one accent ink for each part.</figcaption></figure>
     <div class="two" style="margin-top:36px">
       <div>
         <h3>Front and back</h3>
@@ -198,5 +232,42 @@
     <p>The seven-ring emblem is the International Flag of Planet Earth, a design by Oskar Pernefeldt. Copyright © 2026 Anthony David Adams. Some rights reserved.</p>
   </div>
 </footer>
+<script>
+(function(){
+  var deck = [{"id":"T00","title":"A Civilization Worth Inheriting"},{"id":"P01","title":"Part I: Responsibility across time"},{"id":"001","title":"1 Leave Room for the Future"},{"id":"002","title":"2 Enough for the Living"},{"id":"003","title":"3 A Seat for the Absent"},{"id":"004","title":"4 A Floor Beneath Everyone"},{"id":"005","title":"5 Many Ways to Flourish"},{"id":"006","title":"6 Proportionate Caution"},{"id":"007","title":"7 The Right to Reconsider"},{"id":"008","title":"8 Decisions at the Right Scale"},{"id":"009","title":"9 Keep the Capacity to Repair"},{"id":"P02","title":"Part II: Becoming human together"},{"id":"010","title":"10 Safe Beginnings"},{"id":"011","title":"11 A Village Around Every Child"},{"id":"012","title":"12 The Skill of Relationship"},{"id":"013","title":"13 Consent as a Daily Practice"},{"id":"014","title":"14 A Common Table"},{"id":"015","title":"15 A Place to Be Alone"},{"id":"016","title":"16 Care Across a Lifetime"},{"id":"017","title":"17 Work With Meaning"},{"id":"018","title":"18 A Dignified Death"},{"id":"P03","title":"Part III: The living planet"},{"id":"019","title":"19 Watersheds as Commons"},{"id":"020","title":"20 Room for Wildness"},{"id":"021","title":"21 Connected Habitats"},{"id":"022","title":"22 Animals With Interests"},{"id":"023","title":"23 Food Without Cruelty"},{"id":"024","title":"24 Soil as an Inheritance"},{"id":"025","title":"25 Oceans With Guardians"},{"id":"026","title":"26 End Pollution at the Source"},{"id":"027","title":"27 Guardians With Duties"},{"id":"P04","title":"Part IV: Places and material life"},{"id":"028","title":"28 Settlements That Belong to Place"},{"id":"029","title":"29 Housing That Can Change"},{"id":"030","title":"30 Clean Energy in Many Hands"},{"id":"031","title":"31 Materials That Can Return"},{"id":"032","title":"32 Pay for Maintenance First"},{"id":"033","title":"33 Beauty in Ordinary Places"},{"id":"034","title":"34 Public Space Without a Purchase"},{"id":"035","title":"35 Water Where Life Needs It"},{"id":"036","title":"36 Enough Local Capacity"},{"id":"P05","title":"Part V: An economy that supports life"},{"id":"037","title":"37 An Economy of Enough"},{"id":"038","title":"38 Account for the Full Cost"},{"id":"039","title":"39 Share the Gains of Invention"},{"id":"040","title":"40 Common Wealth Dividends"},{"id":"041","title":"41 Land With Lasting Duties"},{"id":"042","title":"42 Ownership With Obligations"},{"id":"043","title":"43 Pay for Care"},{"id":"044","title":"44 Finance That Can Wait"},{"id":"045","title":"45 A Fair Transition"},{"id":"P06","title":"Part VI: Power that remains answerable"},{"id":"046","title":"46 Power Must Explain Itself"},{"id":"047","title":"47 Citizens Who Deliberate"},{"id":"048","title":"48 Rights That Majorities Cannot Remove"},{"id":"049","title":"49 The Right to Exit and Belong"},{"id":"050","title":"50 Commons at Every Scale"},{"id":"051","title":"51 Treaties for Shared Hazards"},{"id":"052","title":"52 Peace as a Maintained Practice"},{"id":"053","title":"53 Emergency Powers That End"},{"id":"054","title":"54 Constitutions That Can Learn"},{"id":"P07","title":"Part VII: A civilization that can know"},{"id":"055","title":"55 Shared Reality"},{"id":"056","title":"56 Show the Work"},{"id":"057","title":"57 Keep Dissent Safe"},{"id":"058","title":"58 Learning Across a Lifetime"},{"id":"059","title":"59 Libraries That Survive"},{"id":"060","title":"60 Local Knowledge With Consent"},{"id":"061","title":"61 Public Interest Science"},{"id":"062","title":"62 Memory of Harm"},{"id":"063","title":"63 Measure What Matters"},{"id":"P08","title":"Part VIII: Living with artificial minds"},{"id":"064","title":"64 Delegated Intelligence"},{"id":"065","title":"65 Auditable Power"},{"id":"066","title":"66 Capability With Containment"},{"id":"067","title":"67 Freedom From Machine Persuasion"},{"id":"068","title":"68 Human Skills Worth Keeping"},{"id":"069","title":"69 A Commons of Useful Tools"},{"id":"070","title":"70 Uncertain Minds Deserve Care"},{"id":"071","title":"71 Personhood Beyond Resemblance"},{"id":"072","title":"72 No Irreversible Surrender"},{"id":"P09","title":"Part IX: Continuity through disruption"},{"id":"073","title":"73 Diverse Systems"},{"id":"074","title":"74 Failure That Stays Local"},{"id":"075","title":"75 Public Health for All Species"},{"id":"076","title":"76 Reserves Before Scarcity"},{"id":"077","title":"77 Practice the Emergency"},{"id":"078","title":"78 Recovery Before Disaster"},{"id":"079","title":"79 A Civilization That Can Reboot"},{"id":"080","title":"80 Institutions With Successors"},{"id":"081","title":"81 Remember the Near Misses"},{"id":"P10","title":"Part X: Neighbors in the cosmos"},{"id":"082","title":"82 Earth Is Not Disposable"},{"id":"083","title":"83 Space as a Shared Responsibility"},{"id":"084","title":"84 Worlds With Their Own Claims"},{"id":"085","title":"85 Settlements That Can Refuse"},{"id":"086","title":"86 Listen Before Sending"},{"id":"087","title":"87 Confirm Before Announcing"},{"id":"088","title":"88 No One Speaks for Earth"},{"id":"089","title":"89 Contact Without Contamination"},{"id":"090","title":"90 The Right to Remain Unknown"},{"id":"P11","title":"Part XI: Lives worth living"},{"id":"091","title":"91 Time That Is Your Own"},{"id":"092","title":"92 A Living Culture"},{"id":"093","title":"93 Rituals for Change"},{"id":"094","title":"94 Wonder Without Compulsion"},{"id":"095","title":"95 Games Worth Playing"},{"id":"096","title":"96 Hospitality Across Difference"},{"id":"097","title":"97 Freedom to Be Strange"},{"id":"098","title":"98 Grief With Somewhere to Go"},{"id":"099","title":"99 Beauty Without Possession"},{"id":"P12","title":"Part XII: Putting the language to work"},{"id":"100","title":"100 Begin With a Place"},{"id":"101","title":"101 Map Who Bears the Cost"},{"id":"102","title":"102 Assemble a Working Language"},{"id":"103","title":"103 Small Trials With Real Boundaries"},{"id":"104","title":"104 Independent Eyes"},{"id":"105","title":"105 Publish the Failures"},{"id":"106","title":"106 Make Better Practices Easier"},{"id":"107","title":"107 Return and Reconsider"},{"id":"108","title":"108 Keep the Language Open"}];
+  var card = document.getElementById('card'), front = document.getElementById('cardFront'), back = document.getElementById('cardBack');
+  var title = document.getElementById('cardTitle'), grid = document.getElementById('grid');
+  var i = deck.findIndex(function(c){ return c.id === '014'; });
+  function show(n, fromGrid){
+    i = (n + deck.length) % deck.length;
+    var c = deck[i];
+    card.classList.remove('flipped'); card.setAttribute('aria-pressed', 'false');
+    front.src = 'assets/deck/' + c.id + '-front.jpg'; back.src = 'assets/deck/' + c.id + '-back.jpg';
+    front.alt = 'Front of card ' + c.title; back.alt = 'Back of card ' + c.title;
+    title.textContent = c.title;
+    [deck[(i+1)%deck.length], deck[(i-1+deck.length)%deck.length]].forEach(function(p){ new Image().src = 'assets/deck/' + p.id + '-front.jpg'; });
+    if (fromGrid) document.getElementById('viewer').scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+  card.addEventListener('click', function(){ var f = card.classList.toggle('flipped'); card.setAttribute('aria-pressed', f ? 'true' : 'false'); });
+  document.getElementById('prevBtn').addEventListener('click', function(){ show(i - 1); });
+  document.getElementById('nextBtn').addEventListener('click', function(){ show(i + 1); });
+  document.getElementById('drawBtn').addEventListener('click', function(){ var n; do { n = Math.floor(Math.random() * deck.length); } while (n === i); show(n); });
+  document.addEventListener('keydown', function(e){
+    if (!document.getElementById('deck').contains(document.activeElement)) return;
+    if (e.key === 'ArrowLeft') show(i - 1); else if (e.key === 'ArrowRight') show(i + 1);
+  });
+  // The grid is one image laid out by make_deck.py: 11 columns, cards 214 x 370 with a 14 px gutter at 2522 px wide.
+  var COLS = 11, CW = 214, CH = 370, PAD = 14, SHEET_W = 2522;
+  grid.addEventListener('click', function(e){
+    var r = grid.getBoundingClientRect(), k = SHEET_W / r.width;
+    var x = (e.clientX - r.left) * k, y = (e.clientY - r.top) * k;
+    var col = Math.floor((x - PAD) / (CW + PAD)), row = Math.floor((y - PAD) / (CH + PAD));
+    var inCell = (x - PAD) - col * (CW + PAD) <= CW && (y - PAD) - row * (CH + PAD) <= CH;
+    var n = row * COLS + col;
+    if (col < 0 || col >= COLS || row < 0 || !inCell || n >= deck.length) return;
+    show(n, true);
+  });
+})();
+</script>
 </body>
 </html>
