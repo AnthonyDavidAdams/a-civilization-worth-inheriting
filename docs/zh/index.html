@@ -55,11 +55,21 @@
   .coach img{width:180px;border-radius:12px;border:1px solid var(--rule)}
   .meta{font-size:15px;color:var(--muted)}
   footer{padding:40px 0 60px;font-size:15px;color:var(--muted)} footer p{margin:6px 0}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;gap:12px}
+  .topbar .brand{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px;text-decoration:none}
+  .topbar .brand img{width:26px;height:26px;border-radius:6px}
+  .langs{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-size:15px}
+  .langs a{padding:7px 16px;text-decoration:none;color:var(--blue)}
+  .langs a[aria-current="page"]{background:var(--blue);color:#F3EEE3}
+  .langs a+a{border-left:1px solid var(--rule)}
   @media (max-width:760px){.hero-grid,.two,.pair,.coach{grid-template-columns:1fr} .hero img{max-width:320px;margin:0 auto} body{font-size:17px}}
 </style>
 </head>
 <body>
-<div class="wrap lang"><a href="../">English edition</a></div>
+<nav class="wrap topbar" aria-label="Language">
+  <a class="brand" href="../"><img src="../favicon.svg" alt="">A Civilization Worth Inheriting</a>
+  <div class="langs"><a href="../" lang="en" hreflang="en">English</a><a href="../zh/" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">中文</a></div>
+</nav>
 <header class="hero">
   <div class="wrap hero-grid">
     <img src="../assets/zh/cover.jpg" width="800" height="1200" alt="中文版封面：深蓝木刻底版上刻出的地球旗七环徽记。">
