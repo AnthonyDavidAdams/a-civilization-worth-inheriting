@@ -24,7 +24,7 @@
 <meta name="twitter:image" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#F3EEE3; --ink:#161C2D; --muted:#5A6070; --blue:#023CA7; --rule:#D9D1C0; --panel:#FBF8F1;
@@ -74,7 +74,8 @@
   footer p{margin:6px 0}
   .viewer{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:36px;align-items:center;margin:8px 0 28px}
   .stage{perspective:1600px}
-  .card3d{position:relative;display:block;width:100%;aspect-ratio:824/1424;border:0;padding:0;background:none;cursor:pointer;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1);border-radius:16px}
+  /* Sized by padding, not aspect-ratio: iOS Safari gives an aspect-ratio button no height and the card vanishes. */
+  .card3d{position:relative;display:block;width:100%;height:0;padding-bottom:172.8%;cursor:pointer;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1);border-radius:16px;-webkit-tap-highlight-color:transparent}
   .card3d.flipped{transform:rotateY(180deg)}
   .card3d .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.18)}
   .card3d .face img{width:100%;height:100%;object-fit:cover}
@@ -89,6 +90,8 @@
   .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;gap:12px}
   .topbar .brand{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px;text-decoration:none}
   .topbar .brand img{width:26px;height:26px;border-radius:6px}
+  .topbar{font-family:"EB Garamond",Georgia,serif}
+  .langs a[lang="zh-Hans"]{font-family:"Noto Serif SC","Songti SC",serif}
   .langs{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-size:15px}
   .langs a{padding:7px 16px;text-decoration:none;color:var(--blue)}
   .langs a[aria-current="page"]{background:var(--blue);color:#F3EEE3}
@@ -164,10 +167,10 @@
     <p class="kicker">All 108 patterns as tarot-size cards: a picture and the pattern's name on the front, the pattern in brief on the back.</p>
     <div class="viewer" id="viewer">
       <div class="stage">
-        <button class="card3d" id="card" type="button" aria-label="Flip the card" aria-pressed="false">
+        <div class="card3d" id="card" role="button" tabindex="0" aria-label="Flip the card" aria-pressed="false">
           <span class="face front"><img id="cardFront" src="assets/deck/014-front.jpg" width="600" height="1037" alt=""></span>
           <span class="face back"><img id="cardBack" src="assets/deck/014-back.jpg" width="600" height="1037" alt=""></span>
-        </button>
+        </div>
       </div>
       <div class="controls">
         <p class="card-title" id="cardTitle">14 A Common Table</p>
@@ -261,7 +264,9 @@
     [deck[(i+1)%deck.length], deck[(i-1+deck.length)%deck.length]].forEach(function(p){ new Image().src = 'assets/deck/' + p.id + '-front.jpg'; });
     if (fromGrid) document.getElementById('viewer').scrollIntoView({behavior: 'smooth', block: 'center'});
   }
-  card.addEventListener('click', function(){ var f = card.classList.toggle('flipped'); card.setAttribute('aria-pressed', f ? 'true' : 'false'); });
+  function flip(){ var f = card.classList.toggle('flipped'); card.setAttribute('aria-pressed', f ? 'true' : 'false'); }
+  card.addEventListener('click', flip);
+  card.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
   document.getElementById('prevBtn').addEventListener('click', function(){ show(i - 1); });
   document.getElementById('nextBtn').addEventListener('click', function(){ show(i + 1); });
   document.getElementById('drawBtn').addEventListener('click', function(){ var n; do { n = Math.floor(Math.random() * deck.length); } while (n === i); show(n); });
