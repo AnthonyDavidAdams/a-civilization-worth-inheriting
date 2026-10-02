@@ -1,29 +1,25 @@
 ## Cover spec for A Civilization Worth Inheriting
 ## Front panel is rendered by cover/render_front.py (no generated art):
-##   ~/.fal-venv/bin/python cover/build_woodcut_wrap.py
-##   ~/.fal-venv/bin/python ~/book-suite/plugins/imprint/skills/kdp-cover/build_cover.py . --art cover/front-flag-woodcut.png
+##   ~/.fal-venv/bin/python cover/render_front.py flag cover/front-flag.png
+##   ~/.fal-venv/bin/python ~/book-suite/plugins/imprint/skills/kdp-cover/build_cover.py . --art cover/front-flag.png
 
 paper: cream
-
-# Woodcut edition: one coarse carved-blue block under the whole wrap
-# (cover/build_woodcut_wrap.py). The flat-colour edition is cover-flag-flat.yaml.
-wrap_bg: cover/wrap-bg.png
 
 front:
   overlay_text: false      # type is baked into the rendered panel
   overlay_opacity: 0.0
-  title_color: "#F3EEE3"
+  title_color: "#ffffff"
 
-accent_color: "#F3EEE3"
+accent_color: "#ffffff"
 
 spine:
   bg_color: "#023CA7"      # flag blue, sampled from the EarthPilot mark
-  text_color: "#F3EEE3"
-  emblem: cover/emblem-cream.png
+  text_color: "#ffffff"
+  emblem: cover/emblem-white.png
 
 back:
   bg_color: "#023CA7"
-  text_color: "#F3EEE3"
+  text_color: "#ffffff"
   quote: |
     What would we build today if we wanted life to be flourishing a thousand years from now?
   blurb: |

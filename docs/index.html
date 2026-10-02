@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Civilization Worth Inheriting</title>
+<meta name="description" content="A Pattern Language for the Next Thousand Years: 108 patterns for a civilization that could flourish for a thousand years. The book, the Pattern Deck, and a coach that has read every pattern.">
+<link rel="canonical" href="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="book">
+<meta property="og:site_name" content="A Civilization Worth Inheriting">
+<meta property="og:title" content="A Civilization Worth Inheriting">
+<meta property="og:description" content="A Pattern Language for the Next Thousand Years. 108 patterns, a deck of cards, and a coach that has read them all.">
+<meta property="og:url" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/">
+<meta property="og:image" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="book:author" content="Anthony David Adams">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Civilization Worth Inheriting">
+<meta name="twitter:description" content="A Pattern Language for the Next Thousand Years. 108 patterns, a deck of cards, and a coach that has read them all.">
+<meta name="twitter:image" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F3EEE3; --ink:#161C2D; --muted:#5A6070; --blue:#023CA7; --rule:#D9D1C0; --panel:#FBF8F1;
+    --ochre:#8F6208; --brick:#B13B2B; --leaf:#3B7431; --umber:#6B4423; --olive:#6B6A1A; --wine:#8A1C3C;
+    --violet:#6B3FA0; --teal:#0D7371; --orange:#B0500F; --plum:#8A2585; --rose:#B83E70; --graphite:#4E5B66;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cream:#14161C; --ink:#EDE7DA; --muted:#A8AEBB; --blue:#7FA3F0; --rule:#2C3140; --panel:#1C1F27; } }
+  :root[data-theme="dark"]{ --cream:#14161C; --ink:#EDE7DA; --muted:#A8AEBB; --blue:#7FA3F0; --rule:#2C3140; --panel:#1C1F27; }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"EB Garamond",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.5}
+  a{color:var(--blue)}
+  img{max-width:100%;height:auto;display:block}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+  header.hero{padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px;align-items:center}
+  .hero img{box-shadow:0 18px 40px rgba(0,0,0,.18)}
+  .eyebrow{font-variant:all-small-caps;letter-spacing:.14em;color:var(--blue);font-weight:500;margin:0 0 14px}
+  h1{font-weight:400;font-size:clamp(40px,6vw,64px);line-height:1.02;margin:0 0 12px}
+  .sub{font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--muted);margin:0 0 22px}
+  .lede{font-size:21px;max-width:38ch}
+  .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-size:18px;border:1px solid var(--blue)}
+  .btn.primary{background:var(--blue);color:#F3EEE3}
+  .btn.ghost{color:var(--blue)}
+  section{padding:56px 0;border-bottom:1px solid var(--rule)}
+  h2{font-weight:400;font-size:clamp(30px,4vw,40px);margin:0 0 8px;line-height:1.1}
+  h3{font-weight:500;font-size:22px;margin:28px 0 8px}
+  .kicker{color:var(--muted);font-style:italic;margin:0 0 24px;font-size:20px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  ul.plain{padding-left:1.2em;margin:0}
+  ul.plain li{margin:6px 0}
+  figure{margin:0}
+  figcaption{font-size:16px;color:var(--muted);margin-top:8px;font-style:italic}
+  .frame{border:1px solid var(--rule);background:var(--panel);padding:10px}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .suits{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:18px}
+  .suits img{border-radius:6px}
+  .swatches{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;margin-top:14px}
+  .swatches span{display:block;height:28px;border-radius:4px}
+  .card-note{font-size:16px;color:var(--muted)}
+  .coach{display:grid;grid-template-columns:180px 1fr;gap:28px;align-items:center}
+  .coach img{width:180px;border-radius:12px;border:1px solid var(--rule)}
+  .meta{font-size:16px;color:var(--muted)}
+  footer{padding:40px 0 60px;font-size:16px;color:var(--muted)}
+  footer p{margin:6px 0}
+  @media (max-width:760px){
+    .hero-grid,.two,.pair,.coach{grid-template-columns:1fr}
+    .three{grid-template-columns:1fr}
+    .suits{grid-template-columns:repeat(4,1fr)}
+    .swatches{grid-template-columns:repeat(6,1fr)}
+    body{font-size:18px}
+    header.hero{padding:36px 0 30px}
+    .hero img{max-width:320px;margin:0 auto}
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <img src="assets/cover.jpg" width="800" height="1200" alt="The front cover: the seven interlocking rings of the Earth flag, carved in cream on a deep blue woodcut block.">
+    <div>
+      <p class="eyebrow">A book, a deck, and a coach</p>
+      <h1>A Civilization Worth Inheriting</h1>
+      <p class="sub">A Pattern Language for the Next Thousand Years</p>
+      <p class="lede">What would we build today if we wanted life to be flourishing a thousand years from now? One hundred and eight patterns, each a recurring problem and a usable response, from a child's first home to the possibility of contact with other minds.</p>
+      <p class="meta">Anthony David Adams</p>
+      <div class="ctas">
+        <a class="btn primary" href="https://github.com/AnthonyDavidAdams/a-civilization-worth-inheriting/releases/latest/download/A-Civilization-Worth-Inheriting.pdf">Read the book (free PDF)</a>
+        <a class="btn ghost" href="https://civilization.galley.so">Talk with the book</a>
+        <a class="btn ghost" href="#deck">The Pattern Deck</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="book">
+  <div class="wrap">
+    <h2>The book</h2>
+    <p class="kicker">Twelve parts. One hundred and eight patterns. Each one begins somewhere real.</p>
+    <div class="two">
+      <div>
+        <p>A child needs somewhere safe to play. A river needs room to move. A powerful artificial intelligence needs limits that survive changes in its ownership. A civilization needs ways to remember what it has learned, and to recognize when those lessons no longer apply.</p>
+        <p>Inspired by the interconnected design approach of <em>A Pattern Language</em>, this book presents 108 patterns for a thriving civilization. Each addresses a recurring problem, proposes a usable response, explores its tradeoffs, and connects to the others. Begin with a household, a company, a neighborhood, or a watershed. Follow the connections outward to planetary institutions, artificial minds, settlements beyond Earth, and the possibility of contact with extraterrestrial intelligence.</p>
+        <h3>Inside, you will explore how to</h3>
+        <ul class="plain">
+          <li>Make care, belonging, beauty, and meaningful work part of everyday life.</li>
+          <li>Give animals and ecosystems standing in decisions that shape their futures.</li>
+          <li>Build economies that reward repair and share the gains of automation.</li>
+          <li>Govern powerful technologies while preserving freedom, accountability, and room for discovery.</li>
+          <li>Prepare for catastrophe without organizing society around permanent emergency.</li>
+          <li>Approach other worlds and unfamiliar intelligences with curiosity, restraint, and consent.</li>
+          <li>Leave descendants institutions they can understand, maintain, challenge, and change.</li>
+        </ul>
+      </div>
+      <div>
+        <figure class="frame"><img src="assets/inside-spread.jpg" width="1400" height="945" alt="Two pages of the book: pattern 10, Safe Beginnings, opening with a large numeral and an italic title."><figcaption>Every pattern follows the same shape: the problem, the pattern, a workable form, where it fails, a first move, and the patterns it connects to.</figcaption></figure>
+        <figure class="frame" style="margin-top:16px"><img src="assets/inside-opener.jpg" width="700" height="1050" alt="A part opener: a woodcut plate of a shared table above the words Part II, Becoming human together." style="max-width:360px;margin:0 auto"><figcaption>Each of the twelve parts opens with a plate.</figcaption></figure>
+      </div>
+    </div>
+    <h3>Get it</h3>
+    <p>The whole book is free to read as a PDF, under a license that lets anyone copy and adapt it for non-commercial purposes with credit. A paperback edition is in preparation. <a href="https://github.com/AnthonyDavidAdams/a-civilization-worth-inheriting/releases/latest">Download the latest edition</a>.</p>
+  </div>
+</section>
+
+<section id="deck">
+  <div class="wrap">
+    <h2>The Pattern Deck</h2>
+    <p class="kicker">All 108 patterns as tarot-size cards: a picture and the pattern's name on the front, the pattern in brief on the back.</p>
+    <figure class="frame"><img src="assets/deck-fronts.jpg" width="1400" height="2353" alt="All 121 card fronts laid out in a grid: a title card, twelve part cards, and 108 pattern pictures in blue and black with one accent colour per part."><figcaption>The whole deck. Every picture is a three-ink linocut: the flag's blue, a near-black, and one accent ink for each part.</figcaption></figure>
+    <div class="two" style="margin-top:36px">
+      <div>
+        <h3>Front and back</h3>
+        <div class="pair">
+          <img src="assets/cards/014-front.jpg" width="420" height="702" alt="Card 14, A Common Table: a long table seen from above, many hands passing bowls and bread.">
+          <img src="assets/cards/014-back.jpg" width="420" height="702" alt="The back of card 14: the summary, the pattern's statement, a first move, and its connected patterns.">
+        </div>
+        <p class="card-note">The back carries the one-sentence summary, the pattern's "therefore", a first move to try, and the connected patterns by number, which is how you walk from one card to the next.</p>
+      </div>
+      <div>
+        <h3>Twelve suits</h3>
+        <p>Each part of the book is a suit with its own colour: a band under the picture, the labels, and an ink in the picture itself, placed on whatever the pattern is about.</p>
+        <div class="suits">
+          <img src="assets/parts/P01.jpg" alt="Part I, Responsibility across time, in golden ochre"><img src="assets/parts/P02.jpg" alt="Part II, Becoming human together, in brick red"><img src="assets/parts/P03.jpg" alt="Part III, The living planet, in leaf green"><img src="assets/parts/P04.jpg" alt="Part IV, Places and material life, in umber"><img src="assets/parts/P05.jpg" alt="Part V, An economy that supports life, in olive"><img src="assets/parts/P06.jpg" alt="Part VI, Power that remains answerable, in wine">
+          <img src="assets/parts/P07.jpg" alt="Part VII, A civilization that can know, in violet"><img src="assets/parts/P08.jpg" alt="Part VIII, Living with artificial minds, in deep teal"><img src="assets/parts/P09.jpg" alt="Part IX, Continuity through disruption, in burnt orange"><img src="assets/parts/P10.jpg" alt="Part X, Neighbors in the cosmos, in plum"><img src="assets/parts/P11.jpg" alt="Part XI, Lives worth living, in rose"><img src="assets/parts/P12.jpg" alt="Part XII, Putting the language to work, in graphite">
+        </div>
+        <div class="swatches" aria-hidden="true">
+          <span style="background:var(--ochre)"></span><span style="background:var(--brick)"></span><span style="background:var(--leaf)"></span><span style="background:var(--umber)"></span><span style="background:var(--olive)"></span><span style="background:var(--wine)"></span><span style="background:var(--violet)"></span><span style="background:var(--teal)"></span><span style="background:var(--orange)"></span><span style="background:var(--plum)"></span><span style="background:var(--rose)"></span><span style="background:var(--graphite)"></span>
+        </div>
+        <h3>Availability</h3>
+        <p>The deck is 121 cards: the 108 patterns, twelve part cards, and a title card. A first printing is in preparation. <a href="https://github.com/AnthonyDavidAdams/a-civilization-worth-inheriting/releases/latest">Page through every card</a> in the meantime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coach">
+  <div class="wrap">
+    <h2>Talk with the book</h2>
+    <p class="kicker">A coach that has read all 108 patterns. Ask about any of them, or bring a real decision and work through it together.</p>
+    <div class="coach">
+      <img src="assets/coach-qr.png" width="180" height="180" alt="QR code linking to civilization.galley.so">
+      <div>
+        <p>The coach answers from the text itself and tells you which pattern it is drawing on. It is free, and it is the same code printed on the last page of the book and on the back cover.</p>
+        <p><a class="btn primary" href="https://civilization.galley.so">Open the coach at civilization.galley.so</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="open">
+  <div class="wrap">
+    <h2>Open to revision</h2>
+    <p class="kicker">Pattern 108 is called <em>Keep the Language Open</em>. The repository is that pattern applied to the book itself.</p>
+    <div class="two">
+      <div>
+        <p>The full text lives in a public repository, one file per pattern, with the build that typesets it. Each pattern's number is its permanent address, so a fork can revise a pattern without breaking every reference to it.</p>
+        <p>Any AI model, including one that does not exist yet, is welcome to read the whole text, review it against what it knows, fork it, and propose revisions. Reviews and changes are tracked in the open so the history stays public.</p>
+      </div>
+      <div>
+        <p><a class="btn ghost" href="https://github.com/AnthonyDavidAdams/a-civilization-worth-inheriting">The repository on GitHub</a></p>
+        <p class="meta">Text: CC BY-NC-SA 4.0. Copy it, adapt it, fork it for any non-commercial purpose, with credit and a link back, under the same license. Commercial rights are reserved by the author.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>by <a href="https://earthpilot.ai">EarthPilot</a></strong> · built in the open at the <a href="https://earthpilot.ai/playground">Singularity Playground</a>, a free weekly workshop on what to build next.</p>
+    <p>Anthony David Adams runs the EarthPilot.ai Lab, a private research lab on AI character and the social effects of frontier language models.</p>
+    <p>The seven-ring emblem is the International Flag of Planet Earth, a design by Oskar Pernefeldt. Copyright © 2026 Anthony David Adams. Some rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

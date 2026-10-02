@@ -11,7 +11,8 @@ margins:
   top_in: 0.8
   bottom_in: 0.8
 indent_in: 0.2
-openright: false           # 108 short patterns run continuously; parts still open recto
+openright: true            # everything starts on a right-hand page: parts, patterns, front and back matter
+plate_layout: above        # picture at the head of the part page, number/title/epigraph beneath
 justified: true
 hyphenation: true
 layout_priority: balanced
@@ -78,6 +79,7 @@ back_matter:
 parts:
   - title: "Part I — Responsibility across time"
     epigraph: "Establish what a civilization owes to life now and to those who will inherit its decisions."
+    image: plates/part-01.jpg
     chapters:
       - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/001-leave-room-for-the-future.md
       - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/002-enough-for-the-living.md
@@ -90,6 +92,7 @@ parts:
       - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/009-keep-the-capacity-to-repair.md
   - title: "Part II — Becoming human together"
     epigraph: "Create the conditions in which people can develop, belong, and care for one another."
+    image: plates/part-02.jpg
     chapters:
       - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/010-safe-beginnings.md
       - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/011-a-village-around-every-child.md
@@ -102,6 +105,7 @@ parts:
       - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/018-a-dignified-death.md
   - title: "Part III — The living planet"
     epigraph: "Treat ecological integrity and the lives of individual animals as distinct, connected responsibilities."
+    image: plates/part-03.jpg
     chapters:
       - manuscript/PART-03-THE-LIVING-PLANET/019-watersheds-as-commons.md
       - manuscript/PART-03-THE-LIVING-PLANET/020-room-for-wildness.md
@@ -114,6 +118,7 @@ parts:
       - manuscript/PART-03-THE-LIVING-PLANET/027-guardians-with-duties.md
   - title: "Part IV — Places and material life"
     epigraph: "Build settlements that are delightful to inhabit and possible to sustain."
+    image: plates/part-04.jpg
     chapters:
       - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/028-settlements-that-belong-to-place.md
       - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/029-housing-that-can-change.md
@@ -126,6 +131,7 @@ parts:
       - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/036-enough-local-capacity.md
   - title: "Part V — An economy that supports life"
     epigraph: "Make useful production compatible with shared prosperity and ecological limits."
+    image: plates/part-05.jpg
     chapters:
       - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/037-an-economy-of-enough.md
       - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/038-account-for-the-full-cost.md
@@ -138,6 +144,7 @@ parts:
       - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/045-a-fair-transition.md
   - title: "Part VI — Power that remains answerable"
     epigraph: "Make collective action possible while preventing temporary authority from becoming permanent domination."
+    image: plates/part-06.jpg
     chapters:
       - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/046-power-must-explain-itself.md
       - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/047-citizens-who-deliberate.md
@@ -150,6 +157,7 @@ parts:
       - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/054-constitutions-that-can-learn.md
   - title: "Part VII — A civilization that can know"
     epigraph: "Keep knowledge useful, contestable, accessible, and capable of surviving its creators."
+    image: plates/part-07.jpg
     chapters:
       - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/055-shared-reality.md
       - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/056-show-the-work.md
@@ -162,6 +170,7 @@ parts:
       - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/063-measure-what-matters.md
   - title: "Part VIII — Living with artificial minds"
     epigraph: "Separate questions of capability, authority, ownership, and moral standing."
+    image: plates/part-08.jpg
     chapters:
       - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/064-delegated-intelligence.md
       - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/065-auditable-power.md
@@ -174,6 +183,7 @@ parts:
       - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/072-no-irreversible-surrender.md
   - title: "Part IX — Continuity through disruption"
     epigraph: "Make catastrophe less likely and recovery possible without normalizing permanent emergency."
+    image: plates/part-09.jpg
     chapters:
       - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/073-diverse-systems.md
       - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/074-failure-that-stays-local.md
@@ -186,6 +196,7 @@ parts:
       - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/081-remember-the-near-misses.md
   - title: "Part X — Neighbors in the cosmos"
     epigraph: "Extend responsibility beyond Earth while taking uncertainty and distance seriously."
+    image: plates/part-10.jpg
     chapters:
       - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/082-earth-is-not-disposable.md
       - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/083-space-as-a-shared-responsibility.md
@@ -198,6 +209,7 @@ parts:
       - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/090-the-right-to-remain-unknown.md
   - title: "Part XI — Lives worth living"
     epigraph: "Make room for joy, beauty, culture, spiritual inquiry, and experiences that need no economic justification."
+    image: plates/part-11.jpg
     chapters:
       - manuscript/PART-11-LIVES-WORTH-LIVING/091-time-that-is-your-own.md
       - manuscript/PART-11-LIVES-WORTH-LIVING/092-a-living-culture.md
@@ -210,6 +222,7 @@ parts:
       - manuscript/PART-11-LIVES-WORTH-LIVING/099-beauty-without-possession.md
   - title: "Part XII — Putting the language to work"
     epigraph: "Turn large commitments into local action and let experience improve the book."
+    image: plates/part-12.jpg
     chapters:
       - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/100-begin-with-a-place.md
       - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/101-map-who-bears-the-cost.md

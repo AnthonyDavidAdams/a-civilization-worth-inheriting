@@ -4,3 +4,18 @@ __pycache__/
 # Internal strategy pieces and the as-delivered manuscript that contains them
 strategy/
 source/
+# Cover: only the sources the chosen cover is rebuilt from are tracked
+cover/*.png
+!cover/art-blue-block-coarse.png
+!cover/art-flag-linocut-registered.png
+!cover/emblem-white.png
+!cover/emblem-cream.png
+# Deck: full-resolution pictures and press files stay with the product, not the public repo
+deck/art/
+deck/print/
+deck/proof/
+deck/print-two-ink/
+deck/proof-two-ink/
+deck/*.log
+deck/deck-review.pdf
+deck/sheets/

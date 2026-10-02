@@ -45,12 +45,18 @@ if variant == "emblem":
     big.resize((size, size), Image.Resampling.LANCZOS).save(out)
     print(out, "emblem"); sys.exit(0)
 
+ART = None
 if variant == "flag":
     field, ring, text, rule = FLAG_BLUE, WHITE, WHITE, (255, 255, 255, 170)
+elif variant == "flag-art":
+    # The emblem comes already printed in the supplied picture (a linocut of
+    # the flag); only the type is set here, in the cream of the carved rings.
+    ART = Image.open(sys.argv[3]).convert("RGB").resize((W, H), Image.Resampling.LANCZOS)
+    field, ring, text, rule = FLAG_BLUE, None, CREAM, (243, 238, 227, 190)
 else:
     field, ring, text, rule = CREAM, FLAG_BLUE, INK, (22, 28, 45, 140)
 
-img = Image.new("RGB", (W, H), field)
+img = ART.copy() if ART else Image.new("RGB", (W, H), field)
 
 # --- Seven rings (flower-of-life arrangement: one centre, six at distance r) ---
 cx, cy = TRIM_W * DPI / 2, B + TRIM_H * DPI * 0.36
@@ -60,7 +66,7 @@ big = Image.new("RGBA", (W * SS, H * SS), (0, 0, 0, 0))
 d = ImageDraw.Draw(big)
 centres = [(cx, cy)] + [(cx + r * cos(a), cy + r * sin(a))
                         for a in [k * pi / 3 for k in range(6)]]
-for (x, y) in centres:
+for (x, y) in ([] if ART else centres):
     d.ellipse([(x - r) * SS, (y - r) * SS, (x + r) * SS, (y + r) * SS],
               outline=ring + (255,), width=round(stroke * SS))
 rings = big.resize((W, H), Image.Resampling.LANCZOS)

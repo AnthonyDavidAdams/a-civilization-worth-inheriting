@@ -19,6 +19,8 @@ non-commercial open license, the build that typesets it, and an open door for re
 [CONTRIBUTING.md](CONTRIBUTING.md), and in particular the standing invitation
 to AI models to review and fork it.
 
+**Site:** https://anthonydavidadams.github.io/a-civilization-worth-inheriting/
+
 ## Read it
 
 - **PDF** (print layout, covers included): see the latest
@@ -26,6 +28,9 @@ to AI models to review and fork it.
 - **Talk with the book**: an AI coach that has read every pattern is at
   [civilization.galley.so](https://civilization.galley.so). Free.
 - **Paperback**: coming to Amazon.
+- **The Pattern Deck**: all 108 patterns as tarot-size cards, a picture on the
+  front and the pattern in brief on the back. See `deck/DESIGN.md`; a first
+  printing is in preparation.
 
 ## Layout
 
@@ -37,7 +42,11 @@ to AI models to review and fork it.
 - `extras/` — *A dispatch from 3026*, a fictional newspaper feature about the
   book's thousandth anniversary. Written with the manuscript, left out of the
   printed book.
-- `book.yaml`, `cover.yaml`, `cover/render_front.py` — the print build.
+- `plates/` — the twelve part-opener plates, two-tone greyscale.
+- `book.yaml`, `cover.yaml`, `cover/` — the print build and the woodcut cover.
+- `deck/` — the Pattern Deck: scenes, palette, renderers and the design system.
+  Full-resolution pictures and press files are not in the repository.
+- `docs/` — the site.
 
 ## Build
 
@@ -45,14 +54,15 @@ The typesetting runs on the Imprint pipeline (pandoc + XeLaTeX, memoir class),
 part of EarthPilot's book tooling. With that installed:
 
 ```bash
-python build-kdp-pdf/build.py .                       # interior, 6x9
-python cover/render_front.py flag cover/front-flag.png
-python kdp-cover/build_cover.py . --art cover/front-flag.png
+python build-kdp-pdf/build.py .                       # interior, 6x9, with the part plates
+python cover/build_woodcut_wrap.py                    # the carved-blue block, rings registered
+python kdp-cover/build_cover.py . --art cover/front-flag-woodcut.png
 ```
 
-The cover carries the seven interlocking rings of the International Flag of
-Planet Earth, drawn as vectors; the same emblem marks the title pages, the
-parts, and the end of every pattern.
+The cover is a woodcut of the International Flag of Planet Earth: its seven
+interlocking rings carved out of a block of the flag's blue. The same emblem
+marks the title pages, the parts, and the end of every pattern, and each part
+opens with a plate in the same linocut style as the deck.
 
 ## About
 
