@@ -1,0 +1,1594 @@
+{
+"name": "The Pattern Deck",
+"book": "A Civilization Worth Inheriting",
+"author": "Anthony David Adams",
+"base": "https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/cards",
+"front": "{nnn}-front.jpg",
+"back": "{nnn}-back.jpg",
+"cards": [
+{
+"n": 1,
+"title": "Leave Room for the Future",
+"part": "Responsibility across time",
+"summary": "Preserve the conditions and freedom for descendants to choose.",
+"statement": "When making a lasting decision, protect the living conditions, practical capabilities, and freedom that future inhabitants will need to shape their own lives. Meet urgent needs now, make long consequences visible, and preserve a workable route to repair or revision.",
+"first_move": "Choose something you already have some power to influence. It might be a company's purchasing agreement, the governance of a shared home, or a public project in your neighborhood.",
+"connected": [
+2,
+7,
+32,
+72,
+107
+]
+},
+{
+"n": 2,
+"title": "Enough for the Living",
+"part": "Responsibility across time",
+"summary": "Meet present needs while building capacity for later generations.",
+"statement": "Therefore, give every long project an explicit account of how urgent needs will be met during the transition. Seek arrangements that improve present lives while preserving the conditions of future flourishing.",
+"first_move": "Take one long project and identify its first year of consequences for its least secure participants. Fund the means for them to get through that year. Review whether their actual position improves, including time, housing, health, and freedom to refuse.",
+"connected": [
+4,
+38,
+45
+]
+},
+{
+"n": 3,
+"title": "A Seat for the Absent",
+"part": "Responsibility across time",
+"summary": "Give unrepresented interests independent advocates with bounded powers.",
+"statement": "Therefore, identify who cannot participate in an important decision and establish independent, accountable representation for their interests. Define the representative's powers narrowly enough to challenge.",
+"first_move": "Before the next consequential meeting, draw the boundary of those invited and then the wider boundary of those affected. For each important gap, name a practical remedy: direct participation, an advocate, additional evidence, or a formal opportunity to appeal.",
+"connected": [
+8,
+22,
+27,
+47
+]
+},
+{
+"n": 4,
+"title": "A Floor Beneath Everyone",
+"part": "Responsibility across time",
+"summary": "Protect basic security from fortune, productivity, and political favor.",
+"statement": "Therefore, guarantee access to essential conditions of living through arrangements people can understand and use. Make assistance dependable enough that a temporary setback does not become a permanent loss of agency.",
+"first_move": "Follow one person through a foreseeable interruption of income or care. Map every delay, repeated document, and gap in provision. Repair the point at which a temporary problem becomes a threat to basic security.",
+"connected": [
+2,
+16,
+37,
+49
+]
+},
+{
+"n": 5,
+"title": "Many Ways to Flourish",
+"part": "Responsibility across time",
+"summary": "Allow different good lives within shared protections against harm.",
+"statement": "Therefore, protect a wide range of ways to live while maintaining shared limits against coercion and serious harm. Judge institutions partly by the meaningful alternatives they leave available.",
+"first_move": "Examine one institution's image of its ideal participant. Identify who does not fit that image but still deserves to use it. Change a concrete feature that expands their choices without transferring an unreasonable burden to others.",
+"connected": [
+15,
+48,
+94,
+97
+]
+},
+{
+"n": 6,
+"title": "Proportionate Caution",
+"part": "Responsibility across time",
+"summary": "Match safeguards to the scale and reversibility of possible damage.",
+"statement": "Therefore, match the burden of evidence and oversight to the plausible severity, reach, and reversibility of a decision. Count the consequences of delay alongside those of action.",
+"first_move": "For one proposal, write three short accounts: the cost of acting, the cost of waiting, and the cost of being unable to reverse course. Use the differences to determine which safeguards would actually matter.",
+"connected": [
+7,
+66,
+74,
+103
+]
+},
+{
+"n": 7,
+"title": "The Right to Reconsider",
+"part": "Responsibility across time",
+"summary": "Build review, appeal, amendment, and exit into lasting arrangements.",
+"statement": "Therefore, attach understandable procedures for review, appeal, amendment, and appropriate exit to arrangements that exercise lasting power over people's lives.",
+"first_move": "Select a rule people frequently complain about. Trace the actual path from objection to amendment. If nobody can complete that path, assign authority and a deadline for resolving the obstruction.",
+"connected": [
+46,
+54,
+65,
+107
+]
+},
+{
+"n": 8,
+"title": "Decisions at the Right Scale",
+"part": "Responsibility across time",
+"summary": "Keep authority close while governing consequences that cross borders.",
+"statement": "Therefore, place decisions as close as practicable to those affected, while assigning cross-boundary consequences to institutions capable of representing and governing their full reach.",
+"first_move": "Draw the geographic and social reach of one decision's effects. Compare it with the authority making the decision. Where the boundaries differ, establish the missing agreement or representation before expanding that authority further.",
+"connected": [
+3,
+19,
+50,
+51
+]
+},
+{
+"n": 9,
+"title": "Keep the Capacity to Repair",
+"part": "Responsibility across time",
+"summary": "Preserve the skills and resources needed to correct mistakes.",
+"statement": "Therefore, preserve the knowledge, tools, authority, and resources required to restore essential functions and correct harm. Treat repair as part of the original design and an ongoing responsibility.",
+"first_move": "Choose one essential system and ask someone other than its usual caretaker to explain how it would recover from a common failure. Use the gaps to fund training, documentation, parts, or a simpler design.",
+"connected": [
+31,
+32,
+68,
+80
+]
+},
+{
+"n": 10,
+"title": "Safe Beginnings",
+"part": "Becoming human together",
+"summary": "Make early life secure without prescribing a single family form.",
+"statement": "Therefore, organize early life around reliable care, material security, and protection from violence. Support caregivers without treating every household as deficient until inspected.",
+"first_move": "Follow the first month of one family's experience with local services. Identify the point where support depends on luck, personal connections, or unpaid exhaustion. Build a dependable route across that gap and let caregivers judge whether it helps.",
+"connected": [
+4,
+11,
+16,
+43
+]
+},
+{
+"n": 11,
+"title": "A Village Around Every Child",
+"part": "Becoming human together",
+"summary": "Support caregivers and reproductive freedom through reliable public provision.",
+"statement": "Therefore, surround children and caregivers with dependable opportunities for help, friendship, play, and shared responsibility. Protect the freedom to form a family or decline parenthood.",
+"first_move": "Map one ordinary school day from waking to bedtime. Locate the periods in which care becomes precarious. Bring the affected caregivers and service providers together to close one recurring gap with named responsibilities and realistic funding.",
+"connected": [
+10,
+14,
+28,
+43
+]
+},
+{
+"n": 12,
+"title": "The Skill of Relationship",
+"part": "Becoming human together",
+"summary": "Practice listening, boundaries, conflict, commitment, and repair.",
+"statement": "Therefore, treat relational competence as a lifelong civic and personal practice. Make opportunities to learn and exercise it available without demanding emotional disclosure or agreement.",
+"first_move": "Choose one recurring disagreement with a willing partner. Describe the behavior, its consequences, and one feasible request. Agree on a way to pause and return if either person becomes overwhelmed. Review what changed after the next occurrence.",
+"connected": [
+13,
+52,
+57,
+98
+]
+},
+{
+"n": 13,
+"title": "Consent as a Daily Practice",
+"part": "Becoming human together",
+"summary": "Make refusal intelligible, consequential, and safe.",
+"statement": "Therefore, make permission specific, informed, and proportionate to the stakes. Provide meaningful ways to decline, renegotiate, or withdraw where the nature of the commitment allows.",
+"first_move": "Find an agreement people commonly accept without understanding. Ask several users what they believe they permitted. Compare their answers with actual practice, then simplify the arrangement and make the consequential choices visible.",
+"connected": [
+12,
+49,
+60,
+67
+]
+},
+{
+"n": 14,
+"title": "A Common Table",
+"part": "Becoming human together",
+"summary": "Create recurring places to share food, attention, and responsibility.",
+"statement": "Therefore, establish accessible, recurring occasions to share food and attention. Make participation possible without requiring purchase, performance, or disclosure.",
+"first_move": "Host a small recurring meal for a defined period with shared responsibility for preparation and cleanup. Ask guests what would make it easier to return. Decide how it can continue without depending on one person's exhaustion.",
+"connected": [
+11,
+34,
+43,
+96
+]
+},
+{
+"n": 15,
+"title": "A Place to Be Alone",
+"part": "Becoming human together",
+"summary": "Protect privacy and solitude within a connected life.",
+"statement": "Therefore, give people access to privacy, quiet, and temporary withdrawal while preserving routes back into support and shared life.",
+"first_move": "Ask where a person with little money can spend an undisturbed hour in your community. Improve one place so it offers quiet, accessible seating, predictable availability, and a welcome that does not require consumption.",
+"connected": [
+5,
+29,
+67,
+91
+]
+},
+{
+"n": 16,
+"title": "Care Across a Lifetime",
+"part": "Becoming human together",
+"summary": "Organize health, disability support, and aging around actual needs.",
+"statement": "Therefore, organize care around continuity, accessibility, and the person's own priorities. Make transitions between services explicit responsibilities with named people accountable for completing them.",
+"first_move": "Examine one transition between services. Identify who remains responsible until the receiving service has actually begun. If the answer is unclear, establish a handoff that the person receiving care can understand and challenge.",
+"connected": [
+4,
+13,
+18,
+43
+]
+},
+{
+"n": 17,
+"title": "Work With Meaning",
+"part": "Becoming human together",
+"summary": "Offer contribution, mastery, and recognition beyond economic necessity.",
+"statement": "Therefore, separate basic security from compulsory employment while expanding opportunities for useful contribution, mastery, recognition, and chosen responsibility.",
+"first_move": "Ask a group facing economic transition what they would like to become better at and which local needs they could help meet. Fund a small number of real projects with fair terms and evaluate both their usefulness and participants' experience.",
+"connected": [
+37,
+39,
+58,
+91
+]
+},
+{
+"n": 18,
+"title": "A Dignified Death",
+"part": "Becoming human together",
+"summary": "Support choice, companionship, and relief at the end of life.",
+"statement": "Therefore, make competent end-of-life care accessible and organize decisions around the person's informed values, comfort, relationships, and dignity. Support those accompanying them before and after the death.",
+"first_move": "Examine how someone in your community obtains end-of-life support without money or influential contacts. Repair a barrier to competent care or informed conversation, and include bereaved caregivers when evaluating what is missing.",
+"connected": [
+13,
+16,
+93,
+98
+]
+},
+{
+"n": 19,
+"title": "Watersheds as Commons",
+"part": "The living planet",
+"summary": "Coordinate water responsibilities across property and political boundaries.",
+"statement": "Therefore, coordinate water use, protection, and restoration across the full basin. Give upstream and downstream communities, affected ecosystems, and future users effective standing in the arrangement.",
+"first_move": "Trace the source of your community's water and the destination of its discharge. Identify one important affected group absent from decisions about either. Establish a shared investigation and a route for its findings to change practice.",
+"connected": [
+3,
+8,
+27,
+35
+]
+},
+{
+"n": 20,
+"title": "Room for Wildness",
+"part": "The living planet",
+"summary": "Protect habitat where other species can pursue their own lives.",
+"statement": "Therefore, protect and restore sufficient, connected habitat for other species to pursue their lives. Establish durable protection through legitimate relationships with the people who inhabit and care for the place.",
+"first_move": "Identify a habitat under pressure and learn which functions it actually supports. Work with local stewards and relevant expertise to protect the feature most at risk, including its connections, rather than simply preserving a convenient acreage.",
+"connected": [
+21,
+22,
+28,
+60
+]
+},
+{
+"n": 21,
+"title": "Connected Habitats",
+"part": "The living planet",
+"summary": "Let living populations move as seasons and climates change.",
+"statement": "Therefore, protect and restore the connections living populations need between habitats. Design crossings and corridors around actual ecological requirements and review their effects over time.",
+"first_move": "Locate one barrier between important habitats. Identify the species and movements affected, the parties controlling the land, and the smallest credible repair. Establish a way to observe whether that repair works before repeating the design elsewhere.",
+"connected": [
+19,
+20,
+74,
+104
+]
+},
+{
+"n": 22,
+"title": "Animals With Interests",
+"part": "The living planet",
+"summary": "Consider individual suffering and agency alongside species survival.",
+"statement": "Therefore, consider the welfare and agency of individual animals in decisions affecting them, alongside ecological integrity. Match protections to the best available evidence and remain explicit about uncertainty.",
+"first_move": "Choose one routine practice involving animals. Document the actual experience it creates, including what is unknown. Compare feasible alternatives and change the practice where harm can be reduced without displacing greater harm elsewhere.",
+"connected": [
+20,
+23,
+27,
+70
+]
+},
+{
+"n": 23,
+"title": "Food Without Cruelty",
+"part": "The living planet",
+"summary": "Build nourishing food systems that move beyond animal confinement and slaughter.",
+"statement": "Therefore, make nourishing food with lower animal suffering and environmental burdens easy to obtain, prepare, and enjoy. Change provision and incentives alongside individual choices.",
+"first_move": "Improve one recurring meal for a defined group. Establish what people need, make the alternative attractive, and examine uptake and waste. Use the results to improve provision before extending the change.",
+"connected": [
+14,
+22,
+38,
+45
+]
+},
+{
+"n": 24,
+"title": "Soil as an Inheritance",
+"part": "The living planet",
+"summary": "Restore fertility, living structure, and the capacity to retain water.",
+"statement": "Therefore, manage land to preserve and restore soil's living functions, including fertility, structure, water movement, and resistance to erosion. Align tenure and incentives with the time required for improvement.",
+"first_move": "Choose one parcel and establish what is known about its condition, management history, and likely future use. Agree on a modest improvement, a suitable way to observe it, and who will remain responsible long enough to learn from the result.",
+"connected": [
+19,
+31,
+41,
+63
+]
+},
+{
+"n": 25,
+"title": "Oceans With Guardians",
+"part": "The living planet",
+"summary": "Assign enforceable duties for ecosystems beyond easy public scrutiny.",
+"statement": "Therefore, assign clear, enforceable duties for ocean stewardship, including independent scrutiny of extraction, pollution, habitat damage, and animal welfare. Fund observation and enforcement as continuing public responsibilities.",
+"first_move": "Trace one local marine concern through the authorities and commercial actors responsible for it. Find where accountability becomes unclear. Establish a shared record and a specific demand for action at that point, supported by evidence and affected communities.",
+"connected": [
+22,
+26,
+27,
+51
+]
+},
+{
+"n": 26,
+"title": "End Pollution at the Source",
+"part": "The living planet",
+"summary": "Prevent persistent harm and fund cleanup where prevention fails.",
+"statement": "Therefore, reduce harmful releases at their source before relying on downstream treatment. Make producers responsible for credible prevention, monitoring, cleanup, and the remaining consequences of their activities.",
+"first_move": "Select a recurring waste stream. Ask why it is created, whether its function can be met differently, and who bears its remaining consequences. Test a source-reduction measure and verify that the burden has not simply moved elsewhere.",
+"connected": [
+31,
+38,
+42,
+78
+]
+},
+{
+"n": 27,
+"title": "Guardians With Duties",
+"part": "The living planet",
+"summary": "Make ecological representatives accountable for evidence, conflicts, and results.",
+"statement": "Therefore, give guardians explicit mandates, independent resources, obligations to disclose evidence and conflicts, and procedures for challenge, review, and replacement.",
+"first_move": "Draft a one-page mandate for an existing or proposed representative. Include whom or what they represent, their evidence obligations, powers, funding, and removal procedure. Ask both supporters and likely critics where it could be abused or rendered ineffective.",
+"connected": [
+3,
+19,
+46,
+104
+]
+},
+{
+"n": 28,
+"title": "Settlements That Belong to Place",
+"part": "Places and material life",
+"summary": "Design with local ecology, climate, history, and inhabitants.",
+"statement": "Therefore, let local ecology, climate, history, and inhabitants shape the settlement. Adapt useful ideas from elsewhere through investigation rather than copying a complete form.",
+"first_move": "Before commissioning a plan, prepare a short account of how the place currently works and for whom. Identify one valuable relationship a new project could damage and one existing burden it could relieve. Make both explicit design requirements.",
+"connected": [
+19,
+20,
+29,
+41
+]
+},
+{
+"n": 29,
+"title": "Housing That Can Change",
+"part": "Places and material life",
+"summary": "Let homes adapt to different bodies, households, and uses.",
+"statement": "Therefore, design and manage housing so that foreseeable changes in bodies, households, and uses can be accommodated with reasonable effort and cost. Preserve security of occupancy during necessary transitions.",
+"first_move": "Choose an existing home and imagine three plausible changes in its occupants' needs. Identify the alteration that would be hardest to make. Address that constraint in the next repair or renovation, with the residents' priorities guiding the choice.",
+"connected": [
+11,
+15,
+16,
+31
+]
+},
+{
+"n": 30,
+"title": "Clean Energy in Many Hands",
+"part": "Places and material life",
+"summary": "Combine reliable supply with public accountability and distributed capability.",
+"statement": "Therefore, build reliable low-emission energy systems whose benefits and responsibilities are broadly shared. Combine appropriate coordination with distributed capability and meaningful public accountability.",
+"first_move": "For one planned energy investment, map who owns it, who controls operation, who bears interruption risk, and who pays for retirement. Change the arrangement where control and responsibility have become disconnected.",
+"connected": [
+32,
+38,
+39,
+73
+]
+},
+{
+"n": 31,
+"title": "Materials That Can Return",
+"part": "Places and material life",
+"summary": "Design for reuse while accounting for losses and extraction.",
+"statement": "Therefore, use materials and assemblies that can be maintained, separated, reused, or responsibly recovered. Record what they contain and provide for the residues that cannot safely return to circulation.",
+"first_move": "Choose a recurring purchase and follow it to the end of its useful life. Identify the point at which repair or recovery becomes impractical. Change the specification, contract, or supporting logistics before the next purchase.",
+"connected": [
+9,
+26,
+32,
+38
+]
+},
+{
+"n": 32,
+"title": "Pay for Maintenance First",
+"part": "Places and material life",
+"summary": "Fund upkeep, repair, replacement, and retirement before expansion.",
+"statement": "Therefore, establish credible provision for operation, maintenance, replacement, and eventual retirement before adding an asset or service. Give ongoing care a stable place in budgets and public recognition.",
+"first_move": "List the essential assets in one organization and identify who is responsible for their next major repair. Where responsibility or funding is missing, address that gap before approving an expansion that adds another obligation.",
+"connected": [
+2,
+9,
+44,
+80
+]
+},
+{
+"n": 33,
+"title": "Beauty in Ordinary Places",
+"part": "Places and material life",
+"summary": "Bring proportion, craft, sensory pleasure, and living things into daily life.",
+"statement": "Therefore, make sensory pleasure and care in construction part of everyday environments. Let the people who use and maintain a place help define what makes it welcoming and alive.",
+"first_move": "Choose a place people must use frequently but seldom enjoy. Spend time there with its users and caretakers. Make one lasting improvement to comfort or sensory experience, then return to learn whether it improved ordinary life.",
+"connected": [
+28,
+32,
+34,
+99
+]
+},
+{
+"n": 34,
+"title": "Public Space Without a Purchase",
+"part": "Places and material life",
+"summary": "Provide places to gather without having to buy access.",
+"statement": "Therefore, provide welcoming places where people can remain without buying anything. Design access, care, and rules so that the right to be there is practical rather than merely declared.",
+"first_move": "Try spending an afternoon in your community without buying anything. Record where you can sit, use a toilet, find shelter, and meet someone. Repair the most consequential gap with the people currently excluded from those possibilities.",
+"connected": [
+4,
+14,
+15,
+96
+]
+},
+{
+"n": 35,
+"title": "Water Where Life Needs It",
+"part": "Places and material life",
+"summary": "Coordinate drinking water, sanitation, flood protection, and ecological flows.",
+"statement": "Therefore, plan water services as parts of a shared living system. Protect safe access for people and sufficient ecological function, with clear standards, monitoring, and responsibility for each use.",
+"first_move": "Follow water through one neighborhood during ordinary and difficult conditions. Identify a recurring failure that falls between institutional responsibilities. Convene the responsible parties around a shared remedy and a clear plan for its upkeep.",
+"connected": [
+19,
+24,
+32,
+78
+]
+},
+{
+"n": 36,
+"title": "Enough Local Capacity",
+"part": "Places and material life",
+"summary": "Retain essential capabilities while participating in wider networks.",
+"statement": "Therefore, retain sufficient local skills, resources, and decision-making capacity to meet essential needs during plausible disruptions. Combine that capacity with reciprocal relationships beyond the locality.",
+"first_move": "Choose one essential function and imagine its usual supplier unavailable for a realistic period. Identify the smallest investment in skills, reserves, or agreements that would materially improve continuity, then verify that the community can actually use it.",
+"connected": [
+9,
+73,
+76,
+79
+]
+},
+{
+"n": 37,
+"title": "An Economy of Enough",
+"part": "An economy that supports life",
+"summary": "Secure sufficiency and make room for ambition without compulsory consumption.",
+"statement": "Therefore, organize economic success around secure sufficiency, meaningful freedom, and ecological continuity. Welcome improvements in life while examining what must grow, what should shrink, and what can remain steady.",
+"first_move": "Take one local economic success story and ask who gained time, security, health, or freedom from it. Identify a group whose conditions did not improve. Add their experience to the criteria used for the next decision.",
+"connected": [
+2,
+4,
+38,
+63,
+91
+]
+},
+{
+"n": 38,
+"title": "Account for the Full Cost",
+"part": "An economy that supports life",
+"summary": "Expose harms shifted onto strangers, animals, and future inhabitants.",
+"statement": "Therefore, make consequential costs visible and assign responsibility to those able to prevent or bear them fairly. Use prices where they help, and enforce limits where payment cannot justify the harm.",
+"first_move": "Choose one recurring purchase and list the people, places, and future obligations missing from its price. Address the largest credible omission in the next contract, and specify how you will check whether responsibility actually changed.",
+"connected": [
+22,
+26,
+31,
+45,
+101
+]
+},
+{
+"n": 39,
+"title": "Share the Gains of Invention",
+"part": "An economy that supports life",
+"summary": "Broaden participation in the wealth created by improving technology.",
+"statement": "Therefore, establish fair ways to share the gains of invention before those gains become concentrated. Include the people whose labor, knowledge, public support, and inherited resources make the advance possible.",
+"first_move": "Before adopting one labor-saving tool, write down who is expected to gain, who may lose income or bargaining power, and how the gains will be measured. Agree on a review after deployment, with affected workers able to influence the response.",
+"connected": [
+17,
+40,
+45,
+64,
+91
+]
+},
+{
+"n": 40,
+"title": "Common Wealth Dividends",
+"part": "An economy that supports life",
+"summary": "Return a share of jointly created value to the public.",
+"statement": "Therefore, identify wealth that properly carries a common claim, protect the underlying inheritance, and share an accountable portion of its benefits through services, common investment, or direct distributions.",
+"first_move": "Inventory one community's publicly held assets and their existing revenue flows. Select an asset with a plausible common return, then compare direct payments, universal services, and preservation of principal. Publish the tradeoffs before choosing a distribution.",
+"connected": [
+4,
+19,
+39,
+42,
+50
+]
+},
+{
+"n": 41,
+"title": "Land With Lasting Duties",
+"part": "An economy that supports life",
+"summary": "Connect landholding to stewardship, access, and responsibility for displacement.",
+"statement": "Therefore, attach durable and reviewable duties to land use, while protecting secure occupancy and confronting unjust acquisition. Treat stewardship, access, and ecological limits as continuing obligations.",
+"first_move": "For one parcel or shared landscape, map occupancy, decision rights, ecological duties, and disputed claims. Identify one responsibility likely to disappear at the next transfer. Give that responsibility a named successor and a credible means of enforcement.",
+"connected": [
+19,
+24,
+27,
+29,
+60
+]
+},
+{
+"n": 42,
+"title": "Ownership With Obligations",
+"part": "An economy that supports life",
+"summary": "Match control and reward with liability and public duties.",
+"statement": "Therefore, match ownership powers with obligations to the people and systems affected by their use. Make responsibility survive changes in management, financing, and legal form.",
+"first_move": "Choose one asset on which many people depend. Write a one-page account of its owner's powers and obligations. Find the largest mismatch, then establish a practical remedy that affected people can invoke without the owner's voluntary cooperation.",
+"connected": [
+32,
+40,
+46,
+49,
+80
+]
+},
+{
+"n": 43,
+"title": "Pay for Care",
+"part": "An economy that supports life",
+"summary": "Recognize and support labor that sustains people beyond formal markets.",
+"statement": "Therefore, provide material support, time, training, and shared responsibility for care. Recognize care recipients and caregivers as people with distinct rights, relationships, and aspirations.",
+"first_move": "Ask one caregiver what responsibility they cannot put down, even briefly. Arrange dependable relief for that responsibility and check with the person receiving care that the new arrangement supports their preferences. Reliability matters more than a symbolic offer of help.",
+"connected": [
+11,
+16,
+17,
+39,
+91
+]
+},
+{
+"n": 44,
+"title": "Finance That Can Wait",
+"part": "An economy that supports life",
+"summary": "Fund long projects without giving creditors permanent political control.",
+"statement": "Therefore, match the duration and obligations of finance to the work being financed. Combine patient support with transparent review, fair risk allocation, and credible ways to correct course.",
+"first_move": "Review one long-lived project whose funding ends early. Identify the unfunded period and the likely consequence of abandonment. Redesign the commitment to cover stewardship and review, or reduce the project's scope to something that can be responsibly sustained.",
+"connected": [
+1,
+7,
+32,
+38,
+80
+]
+},
+{
+"n": 45,
+"title": "A Fair Transition",
+"part": "An economy that supports life",
+"summary": "Support affected workers and communities as harmful systems are retired.",
+"statement": "Therefore, plan necessary transitions with affected workers and communities, sharing their costs and creating credible routes to a worthwhile next life. Begin before the old arrangement collapses.",
+"first_move": "Choose one foreseeable closure or major technological change. Convene affected workers, residents, service providers, and decision-makers to identify three promises a transition plan must fulfill. Assign responsibility and funding to each before announcing success.",
+"connected": [
+17,
+30,
+39,
+43,
+58
+]
+},
+{
+"n": 46,
+"title": "Power Must Explain Itself",
+"part": "Power that remains answerable",
+"summary": "Require reasons, disclosure, review, and enforceable limits.",
+"statement": "Therefore, require consequential power to give intelligible reasons, identify accountable decision-makers, and provide a practical route to challenge and remedy. Scale the obligation to the effects of the decision.",
+"first_move": "Find one consequential decision people routinely struggle to understand. Rewrite its explanation with affected users, add a named route for correction, and test whether a person can identify both the reason and their next available step.",
+"connected": [
+42,
+47,
+56,
+65,
+104
+]
+},
+{
+"n": 47,
+"title": "Citizens Who Deliberate",
+"part": "Power that remains answerable",
+"summary": "Combine representative institutions with informed, inclusive public judgment.",
+"statement": "Therefore, give a broadly representative group of people the time, resources, evidence, and authority needed to reason together about consequential public questions. Connect their work to a clear decision process.",
+"first_move": "Select one bounded local question with meaningful alternatives. Establish a small, supported deliberative process and publish in advance exactly how its recommendation will affect the decision. Evaluate participation and influence, not merely participant satisfaction.",
+"connected": [
+3,
+46,
+48,
+55,
+57
+]
+},
+{
+"n": 48,
+"title": "Rights That Majorities Cannot Remove",
+"part": "Power that remains answerable",
+"summary": "Protect basic freedoms and equal standing against popularity contests.",
+"statement": "Therefore, protect basic rights against ordinary political convenience, and make those protections usable by people with little money or influence. Maintain fair processes for interpreting conflicts among rights.",
+"first_move": "Identify a group whose basic access depends heavily on the goodwill of current officials. Map the protection available if that goodwill disappears. Strengthen the most consequential gap in remedy, representation, or enforcement.",
+"connected": [
+4,
+13,
+46,
+49,
+97
+]
+},
+{
+"n": 49,
+"title": "The Right to Exit and Belong",
+"part": "Power that remains answerable",
+"summary": "Allow departure without making displacement the price of dissent.",
+"statement": "Therefore, make membership meaningful and departure possible. Reduce avoidable dependence on a single employer, household, institution, platform, or political community, while protecting continuity of essential rights and relationships.",
+"first_move": "Choose one institution central to your life and describe the steps needed to leave it. Identify which losses are unavoidable and which are designed into the arrangement. Change one unnecessary dependency while maintaining the relationships people freely value.",
+"connected": [
+13,
+29,
+42,
+48,
+85
+]
+},
+{
+"n": 50,
+"title": "Commons at Every Scale",
+"part": "Power that remains answerable",
+"summary": "Match shared resources with usable rules and accountable stewardship.",
+"statement": "Therefore, create governance suited to each shared resource, with clear responsibilities, meaningful participation, monitoring, and fair ways to resolve conflict. Connect local arrangements to wider systems where consequences cross boundaries.",
+"first_move": "Choose one resource already shared in practice. Write down its users, caretakers, rules, and unresolved conflicts. Address the largest gap between who benefits, who decides, and who performs the work of keeping it available.",
+"connected": [
+8,
+19,
+25,
+40,
+69
+]
+},
+{
+"n": 51,
+"title": "Treaties for Shared Hazards",
+"part": "Power that remains answerable",
+"summary": "Govern risks that no community can contain by itself.",
+"statement": "Therefore, build durable agreements for hazards that no community can manage alone. Match commitments with verification, assistance, fair allocation of burdens, and procedures for responding to noncompliance and new evidence.",
+"first_move": "Map one cross-boundary hazard and the institutions already responsible for pieces of it. Find the consequential gap no institution owns. Propose a specific shared obligation, with a feasible means of verification and support for participants unable to meet it alone.",
+"connected": [
+8,
+25,
+46,
+52,
+83
+]
+},
+{
+"n": 52,
+"title": "Peace as a Maintained Practice",
+"part": "Power that remains answerable",
+"summary": "Invest in prevention, negotiation, verification, and repair after violence.",
+"statement": "Therefore, maintain the relationships, institutions, and material conditions that make nonviolent resolution possible. Protect people from coercion while creating credible routes away from recurring conflict.",
+"first_move": "Identify one recurring conflict before its next predictable escalation. Establish a trusted channel, agree on how disputed facts will be checked, and define an immediate protective step for anyone at risk. Evaluate whether the arrangement reduces harm and makes grievances more answerable.",
+"connected": [
+12,
+46,
+48,
+51,
+62
+]
+},
+{
+"n": 53,
+"title": "Emergency Powers That End",
+"part": "Power that remains answerable",
+"summary": "Require deadlines, independent review, and restoration of ordinary authority.",
+"statement": "Therefore, give emergency powers a specific purpose, limited scope, short review intervals, and a real expiry. Preserve oversight and require affirmative justification for renewal.",
+"first_move": "Review one existing emergency authority. Find its activation test, expiry, renewal process, oversight route, and restoration duties. If any are missing, specify them before the next crisis makes careful design more difficult.",
+"connected": [
+6,
+46,
+48,
+77,
+78
+]
+},
+{
+"n": 54,
+"title": "Constitutions That Can Learn",
+"part": "Power that remains answerable",
+"summary": "Allow legitimate revision while protecting people during political change.",
+"statement": "Therefore, preserve fundamental protections while providing demanding, inclusive, and intelligible ways to revise institutions. Treat constitutional learning as an ordinary responsibility rather than a privilege of moments of collapse.",
+"first_move": "Choose one governing charter and identify a provision that repeatedly frustrates its stated purpose. Document the problem, the available revision route, and the people who should participate. Propose a bounded change with a plan to examine its effects.",
+"connected": [
+1,
+7,
+47,
+48,
+107
+]
+},
+{
+"n": 55,
+"title": "Shared Reality",
+"part": "A civilization that can know",
+"summary": "Support reliable public inquiry without installing an official monopoly on truth.",
+"statement": "Therefore, maintain independent, accessible institutions and practices for discovering what is happening, correcting error, and distinguishing observation from interpretation. Let people contest claims without requiring them to join a political identity.",
+"first_move": "Choose one disputed local factual claim. Assemble its strongest available evidence, the remaining uncertainty, and what finding would change the conclusion. Publish the account in a form that both supporters and critics can inspect and correct.",
+"connected": [
+46,
+56,
+57,
+61,
+63
+]
+},
+{
+"n": 56,
+"title": "Show the Work",
+"part": "A civilization that can know",
+"summary": "Make consequential claims traceable to methods, evidence, and uncertainty.",
+"statement": "Therefore, expose the evidence, methods, assumptions, and limits behind consequential claims at a level that permits appropriate independent scrutiny. Protect people and sensitive information without making the reasoning disappear.",
+"first_move": "Take one consequential claim your organization makes. Ask a skeptical reader to trace it from conclusion to evidence. Repair the first broken link, then state the most important limitation beside the claim rather than hiding it in a distant appendix.",
+"connected": [
+46,
+55,
+60,
+65,
+105
+]
+},
+{
+"n": 57,
+"title": "Keep Dissent Safe",
+"part": "A civilization that can know",
+"summary": "Protect challenges to authority, including scientific and cultural authority.",
+"statement": "Therefore, protect good-faith criticism and create credible routes for unwelcome information to reach people able to act. Distinguish disagreement from harassment and make retaliation itself answerable.",
+"first_move": "Ask people with the least power which concern they would hesitate to raise. Without requiring them to disclose the concern itself, identify the feared consequence. Establish a protection that addresses that consequence and a way to check whether it works.",
+"connected": [
+46,
+48,
+55,
+62,
+81
+]
+},
+{
+"n": 58,
+"title": "Learning Across a Lifetime",
+"part": "A civilization that can know",
+"summary": "Make education available across age, circumstance, and changing capabilities.",
+"statement": "Therefore, make meaningful learning available throughout adulthood, with time, support, and routes back after interruption. Include practical competence, civic judgment, art, curiosity, and the pleasure of understanding.",
+"first_move": "Find a group that wants to learn but is not participating. Ask which barrier matters most, then remove it for one practical course or project. Judge success by sustained participation and useful learning, not enrollment alone.",
+"connected": [
+17,
+45,
+59,
+68,
+94
+]
+},
+{
+"n": 59,
+"title": "Libraries That Survive",
+"part": "A civilization that can know",
+"summary": "Preserve knowledge through distributed copies, translation, and usable formats.",
+"statement": "Therefore, maintain distributed collections of knowledge with durable formats, active stewardship, contextual explanation, and repeated tests of retrieval. Preserve the skills and institutions needed to interpret what is kept.",
+"first_move": "Select one body of knowledge whose loss would matter. Ask someone unfamiliar with its organization to retrieve and explain a useful part of it. Fix the obstacles they encounter, then assign responsibility for repeating the exercise.",
+"connected": [
+56,
+58,
+60,
+79,
+80
+]
+},
+{
+"n": 60,
+"title": "Local Knowledge With Consent",
+"part": "A civilization that can know",
+"summary": "Learn with communities while respecting attribution, refusal, and control.",
+"statement": "Therefore, seek permission, establish terms, and share authority when learning from communities and knowledge holders. Respect the choice to limit circulation, preserve context, or decline participation.",
+"first_move": "Review one project using community knowledge. Identify the permission, attribution, benefit, and review arrangements actually in place. Ask the knowledge holders which part needs correction, and act before expanding the use of their contribution.",
+"connected": [
+13,
+27,
+41,
+56,
+92
+]
+},
+{
+"n": 61,
+"title": "Public Interest Science",
+"part": "A civilization that can know",
+"summary": "Sustain independent research into neglected needs and shared dangers.",
+"statement": "Therefore, sustain independent inquiry into consequential public questions, including problems with weak commercial incentives. Give affected people a role in setting priorities while protecting rigorous methods and inconvenient findings.",
+"first_move": "Identify a consequential question that receives little research because its beneficiaries lack purchasing power or institutional access. Bring those beneficiaries into a small, credible investigation with a clear question, appropriate expertise, and a commitment to publish what is learned.",
+"connected": [
+3,
+55,
+56,
+57,
+63
+]
+},
+{
+"n": 62,
+"title": "Memory of Harm",
+"part": "A civilization that can know",
+"summary": "Preserve testimony and accountability without making inherited hostility compulsory.",
+"statement": "Therefore, preserve truthful accounts of harm, support those who carry them, and connect remembrance to repair and institutional change. Allow multiple voices without erasing responsibility.",
+"first_move": "Choose one acknowledged institutional harm. Trace the connection between its memorial, its records, and current practice. Identify a lesson that has no operational consequence, then give it a concrete place in decisions, training, or accountability.",
+"connected": [
+48,
+52,
+57,
+59,
+98
+]
+},
+{
+"n": 63,
+"title": "Measure What Matters",
+"part": "A civilization that can know",
+"summary": "Use plural indicators, distributional evidence, and direct lived experience.",
+"statement": "Therefore, choose a small set of measures tied to meaningful outcomes, inspect their distribution and side effects, and keep qualitative judgment alongside them. Revise the measures when they begin to distort the work.",
+"first_move": "Choose one performance target and ask frontline workers how someone could improve the number while worsening the underlying service. Use their answers to revise the target, add a countermeasure, or reduce the consequences attached to it.",
+"connected": [
+37,
+55,
+56,
+61,
+104
+]
+},
+{
+"n": 64,
+"title": "Delegated Intelligence",
+"part": "Living with artificial minds",
+"summary": "Give systems explicit purposes, bounded authority, and answerable operators.",
+"statement": "Therefore, give artificial intelligence explicit mandates, bounded authority, and accountable human governance. Match the freedom to act with demonstrated reliability, the stakes of the task, and effective ways to intervene.",
+"first_move": "For one AI deployment, write a plain-language mandate naming its purpose, permitted actions, prohibited actions, supervisor, and stop conditions. Test the mandate against a plausible mistake with serious consequences. Repair any gap before expanding the system's authority.",
+"connected": [
+46,
+65,
+66,
+68,
+72
+]
+},
+{
+"n": 65,
+"title": "Auditable Power",
+"part": "Living with artificial minds",
+"summary": "Make consequential automated decisions inspectable and open to meaningful appeal.",
+"statement": "Therefore, make consequential automated systems independently examinable throughout their useful life. Preserve the records, expertise, access, and authority needed to investigate failures and require correction.",
+"first_move": "Ask what an independent investigator would need to reconstruct one consequential automated decision six months later. Check whether those records and permissions exist. Establish a retention and review arrangement that preserves evidence without collecting unnecessary personal information.",
+"connected": [
+46,
+56,
+63,
+64,
+104
+]
+},
+{
+"n": 66,
+"title": "Capability With Containment",
+"part": "Living with artificial minds",
+"summary": "Tie access to dangerous capabilities to demonstrated control and oversight.",
+"statement": "Therefore, increase access and autonomy in stages, with barriers proportionate to the potential harm. Test whether failures remain bounded, and require evidence before granting broader authority.",
+"first_move": "Choose one automated system and list its permissions, external connections, and possible irreversible actions. Remove unnecessary authority, then rehearse a plausible failure with a clear decision-maker responsible for stopping and restoring the service.",
+"connected": [
+6,
+64,
+65,
+74,
+103
+]
+},
+{
+"n": 67,
+"title": "Freedom From Machine Persuasion",
+"part": "Living with artificial minds",
+"summary": "Protect attention, privacy, and consent against manipulative optimization.",
+"statement": "Therefore, limit covert and exploitative automated persuasion. Make influential systems' purposes and sponsors visible, protect vulnerable contexts, and give people meaningful control over personalization and attention.",
+"first_move": "Review one system that shapes users' choices. Identify whose goal it optimizes, what personal information informs influence, and how a user can refuse. Remove one mechanism that depends on a person misunderstanding the system's purpose or relationship to them.",
+"connected": [
+13,
+49,
+55,
+64,
+91
+]
+},
+{
+"n": 68,
+"title": "Human Skills Worth Keeping",
+"part": "Living with artificial minds",
+"summary": "Retain competence wherever dependence could destroy meaningful choice.",
+"statement": "Therefore, deliberately preserve human skills whose loss would create serious dependence, weaken judgment, or diminish meaningful participation. Let tools remove needless burden while sustaining the ability to understand, question, and recover.",
+"first_move": "Identify one task whose complete automation would leave your organization unable to judge or recover from failure. Define the minimum human competence worth retaining, assign time to maintain it, and test it in a realistic, supported exercise.",
+"connected": [
+9,
+17,
+58,
+64,
+79
+]
+},
+{
+"n": 69,
+"title": "A Commons of Useful Tools",
+"part": "Living with artificial minds",
+"summary": "Share benefits broadly while governing dangerous capabilities proportionately.",
+"statement": "Therefore, build and maintain accessible collections of useful tools, knowledge, and infrastructure under accountable stewardship. Prioritize practical needs, interoperability, repair, and the ability to move without losing one's work.",
+"first_move": "Choose one recurring task for which local organizations depend on expensive or restrictive tools. Assess a shared alternative with real users, including support and maintenance costs. Begin with a bounded service whose reliability can be demonstrated.",
+"connected": [
+31,
+32,
+50,
+58,
+64
+]
+},
+{
+"n": 70,
+"title": "Uncertain Minds Deserve Care",
+"part": "Living with artificial minds",
+"summary": "Reduce plausible suffering without pretending consciousness has been settled.",
+"statement": "Therefore, take plausible indicators of morally relevant experience seriously without treating appearance or assertion as proof. Develop proportionate precautions, independent inquiry, and revisable judgments about uncertain minds.",
+"first_move": "For one debated case, separate observed capacities, inferred experiences, and proposed protections into distinct statements. Identify the strongest alternative explanation and the evidence needed to distinguish it. Choose a precaution that is proportionate and open to revision.",
+"connected": [
+6,
+22,
+61,
+71,
+94
+]
+},
+{
+"n": 71,
+"title": "Personhood Beyond Resemblance",
+"part": "Living with artificial minds",
+"summary": "Evaluate possible interests without confusing fluent performance with experience.",
+"statement": "Therefore, evaluate claims to protection through relevant capacities, interests, relationships, and vulnerabilities. Develop forms of representation that do not require every protected being to become a human-like legal or political actor.",
+"first_move": "Take one proposal to extend moral or legal recognition. List the specific protections and powers it would grant, the interests each serves, and the possible conflicts. Evaluate those components separately before accepting or rejecting the proposal as a whole.",
+"connected": [
+3,
+22,
+48,
+70,
+88
+]
+},
+{
+"n": 72,
+"title": "No Irreversible Surrender",
+"part": "Living with artificial minds",
+"summary": "Preserve accountable control and workable alternatives to concentrated machine power.",
+"statement": "Therefore, avoid transfers of essential authority that eliminate the practical ability to reconsider. Preserve alternative capabilities, intelligible records, exit routes, and legitimate governance over systems on which collective life depends.",
+"first_move": "Choose one essential system and ask what would happen if its provider changed terms or withdrew tomorrow. Conduct a realistic exit review. Address the single dependency that would most seriously undermine the institution's ability to fulfill its duties.",
+"connected": [
+1,
+7,
+49,
+64,
+79
+]
+},
+{
+"n": 73,
+"title": "Diverse Systems",
+"part": "Continuity through disruption",
+"summary": "Avoid dependence on one supplier, model, crop, or institutional design.",
+"statement": "Therefore, maintain diversity in the ways essential needs are met. Examine shared dependencies and preserve alternatives that fail differently, while coordinating enough to keep the whole system usable.",
+"first_move": "Choose one essential service with an apparent backup. Trace both arrangements to their suppliers, power, networks, personnel, and assumptions. Address the most consequential dependency they share, then test whether the alternative can operate when that dependency is unavailable.",
+"connected": [
+30,
+36,
+50,
+74,
+76
+]
+},
+{
+"n": 74,
+"title": "Failure That Stays Local",
+"part": "Continuity through disruption",
+"summary": "Prevent breakdowns from spreading through every essential network.",
+"statement": "Therefore, organize essential systems into units that can limit the spread of disruption, continue critical functions where feasible, and reconnect safely. Design mutual aid alongside isolation.",
+"first_move": "Map how one plausible failure could spread across three connected services. Identify a boundary that could interrupt the cascade. Test the interruption and reconnection procedures, including the assistance needed by people temporarily served through a limited local arrangement.",
+"connected": [
+8,
+36,
+66,
+73,
+78
+]
+},
+{
+"n": 75,
+"title": "Public Health for All Species",
+"part": "Continuity through disruption",
+"summary": "Coordinate prevention across human, animal, and ecological health.",
+"statement": "Therefore, coordinate the protection of human, animal, and environmental health. Build shared observation and response capacity while addressing the conditions that expose people and other beings to preventable harm.",
+"first_move": "Bring the responsible human-health, animal-health, and environmental teams together around one shared local concern. Identify a gap in communication or responsibility and repair it through an agreed procedure, with privacy safeguards and a clear route to qualified assessment.",
+"connected": [
+20,
+22,
+26,
+51,
+77
+]
+},
+{
+"n": 76,
+"title": "Reserves Before Scarcity",
+"part": "Continuity through disruption",
+"summary": "Maintain accessible buffers of essentials with transparent release rules.",
+"statement": "Therefore, maintain proportionate reserves of essential goods, capacity, money, and trained attention. Govern their use transparently and replenish them as part of ordinary operations.",
+"first_move": "Choose one essential service and ask how long it could operate during a realistic interruption. Identify the limiting resource, then create or improve a proportionate reserve with a named caretaker, a rotation plan, and fair rules for release.",
+"connected": [
+32,
+36,
+73,
+77,
+78
+]
+},
+{
+"n": 77,
+"title": "Practice the Emergency",
+"part": "Continuity through disruption",
+"summary": "Rehearse real responsibilities without turning preparation into public intimidation.",
+"statement": "Therefore, rehearse plausible disruptions with the people who would actually respond and those who would need assistance. Use exercises to discover gaps, improve coordination, and revise plans without punishing honest learning.",
+"first_move": "Run a short tabletop exercise for one plausible interruption. Ask each participant what they would do first and what they would need from others. Choose the three most consequential gaps, assign responsibility, and schedule a repeat after they have been addressed.",
+"connected": [
+53,
+74,
+75,
+76,
+81
+]
+},
+{
+"n": 78,
+"title": "Recovery Before Disaster",
+"part": "Continuity through disruption",
+"summary": "Establish restoration plans, mutual aid, and fair claims in advance.",
+"statement": "Therefore, establish the relationships, resources, records, and fair procedures needed to restore life after disruption. Design recovery to reduce vulnerability and preserve affected people's influence over what comes next.",
+"first_move": "Choose one plausible local disaster and describe the first year after the immediate response. Identify the decision most likely to be made unfairly under pressure. Establish a participatory procedure and practical support for making that decision before the pressure arrives.",
+"connected": [
+29,
+45,
+53,
+74,
+98
+]
+},
+{
+"n": 79,
+"title": "A Civilization That Can Reboot",
+"part": "Continuity through disruption",
+"summary": "Preserve usable tools and knowledge across severe infrastructure loss.",
+"statement": "Therefore, preserve the knowledge, tools, skills, and cooperative institutions needed to restore essential capabilities after severe disruption. Design recovery paths for reduced conditions rather than assuming the full system remains available.",
+"first_move": "Choose one essential service and remove a major digital dependency from the imagined recovery conditions. Ask qualified staff whether they could still find, understand, and use the information needed to begin restoration. Repair the first dependency that makes recovery impossible.",
+"connected": [
+9,
+36,
+59,
+68,
+72
+]
+},
+{
+"n": 80,
+"title": "Institutions With Successors",
+"part": "Continuity through disruption",
+"summary": "Transfer skills and authority before founders become indispensable.",
+"statement": "Therefore, design institutions to hand over their duties, resources, knowledge, and accountability. Prepare successors before they are urgently needed, and provide a responsible path to closure when the institution no longer serves its purpose.",
+"first_move": "Ask which person's unexpected departure would most seriously impair your institution. Transfer one essential responsibility through supported practice, clarify the authority that accompanies it, and record what the exercise reveals about the institution's dependence.",
+"connected": [
+27,
+32,
+42,
+44,
+59
+]
+},
+{
+"n": 81,
+"title": "Remember the Near Misses",
+"part": "Continuity through disruption",
+"summary": "Turn narrowly avoided failures into shared, revisable knowledge.",
+"statement": "Therefore, make it easy to report and investigate serious near misses. Identify the conditions that allowed them, share useful lessons, and verify that corrective action changes the system.",
+"first_move": "Invite one team to describe a recent occasion when harm was narrowly avoided. Identify the safeguard that worked and the weakness it compensated for. Strengthen the system so the same outcome does not depend on the same person's luck or vigilance.",
+"connected": [
+57,
+63,
+77,
+80,
+105
+]
+},
+{
+"n": 82,
+"title": "Earth Is Not Disposable",
+"part": "Neighbors in the cosmos",
+"summary": "Preserve our living home as capabilities beyond it expand.",
+"statement": "Therefore, pursue exploration and possible settlement beyond Earth while treating the continuity of Earth's living systems as a central obligation. Evaluate new capabilities by how they affect that obligation and the people who remain here.",
+"first_move": "For one proposed expansion or exploration project, write an account of its Earthbound obligations and plausible benefits. Identify which promises depend on uncertain future capabilities. Judge the present commitment using what can responsibly be supported now.",
+"connected": [
+19,
+20,
+30,
+38,
+83
+]
+},
+{
+"n": 83,
+"title": "Space as a Shared Responsibility",
+"part": "Neighbors in the cosmos",
+"summary": "Govern debris, resources, access, and responsibilities across borders.",
+"statement": "Therefore, govern consequential space activity through cooperative arrangements that protect shared access, scientific value, environmental conditions, and future options. Make operators responsible for the continuing effects of their activities.",
+"first_move": "Choose one space activity with effects beyond its operator. Identify the shared condition it depends on and the obligation needed to preserve that condition. Compare existing arrangements with that obligation and propose a concrete, reviewable improvement.",
+"connected": [
+1,
+38,
+50,
+51,
+84
+]
+},
+{
+"n": 84,
+"title": "Worlds With Their Own Claims",
+"part": "Neighbors in the cosmos",
+"summary": "Investigate before disturbing places that may harbor unfamiliar life.",
+"statement": "Therefore, assess unfamiliar worlds and environments before altering them irreversibly. Preserve representative and exceptional places, protect possible life, and require reasons proportionate to the permanence of the change.",
+"first_move": "For one proposed intervention in a little-understood environment, identify what could be permanently lost before its significance is known. Design an earlier stage that gathers useful evidence while leaving that feature intact.",
+"connected": [
+1,
+6,
+20,
+83,
+89
+]
+},
+{
+"n": 85,
+"title": "Settlements That Can Refuse",
+"part": "Neighbors in the cosmos",
+"summary": "Protect consent where dependence on life support magnifies coercion.",
+"statement": "Therefore, establish enforceable rights, independent representation, and practical routes to refuse, challenge, and leave within highly dependent settlements. Separate essential life support from obedience to employers or political leaders.",
+"first_move": "For any highly dependent residential project, trace the consequences of a resident saying no to an employer or leader. Identify where refusal threatens essential services or all practical recourse. Redesign that relationship before accepting residents.",
+"connected": [
+4,
+13,
+48,
+49,
+53
+]
+},
+{
+"n": 86,
+"title": "Listen Before Sending",
+"part": "Neighbors in the cosmos",
+"summary": "Distinguish observation from transmissions that expose others to consequences.",
+"statement": "Therefore, develop observation, understanding, and shared deliberation before undertaking intentional communication with potentially civilization-wide consequences. Treat uncertainty honestly and distinguish the decision to investigate from the decision to address another intelligence.",
+"first_move": "Draft a decision process for a hypothetical proposal to send a consequential interstellar message. Separate scientific verification, public deliberation, authorization, and execution. Identify who can pause the process and what would justify resuming it.",
+"connected": [
+1,
+6,
+51,
+87,
+88
+]
+},
+{
+"n": 87,
+"title": "Confirm Before Announcing",
+"part": "Neighbors in the cosmos",
+"summary": "Verify extraordinary evidence through independent, transparent examination.",
+"statement": "Therefore, distinguish a candidate observation from a verified interpretation. Seek independent examination, preserve the evidence, and communicate uncertainty clearly before presenting extraordinary conclusions as fact.",
+"first_move": "Create a communication template that separates observation, analysis, confidence, alternative explanations, and next steps. Test it on a hypothetical extraordinary finding with both technical reviewers and non-specialist readers. Revise any wording that turns possibility into apparent confirmation.",
+"connected": [
+55,
+56,
+57,
+59,
+86
+]
+},
+{
+"n": 88,
+"title": "No One Speaks for Earth",
+"part": "Neighbors in the cosmos",
+"summary": "Require legitimate, plural authorization for acts claiming planetary representation.",
+"statement": "Therefore, distinguish discovery and technical capability from representative legitimacy. Build plural, accountable processes for decisions made in Earth's name, and describe the limits of any mandate honestly.",
+"first_move": "Write two versions of a hypothetical contact statement: one describing what a specific institution knows, and another claiming to commit Earth to an action. Identify the additional authority the second would require and design a process that could credibly examine that claim.",
+"connected": [
+3,
+47,
+51,
+71,
+86
+]
+},
+{
+"n": 89,
+"title": "Contact Without Contamination",
+"part": "Neighbors in the cosmos",
+"summary": "Control biological, ecological, and informational hazards in both directions.",
+"statement": "Therefore, approach unfamiliar environments and possible life through staged, independently reviewed procedures that limit contamination in both directions. Extend the same discipline to information and interpretation without inventing unsupported threats.",
+"first_move": "For a hypothetical encounter, distinguish physical contamination, loss of evidence, interpretive error, and information risk. Assign each question to appropriate expertise and identify what can be investigated without making the consequences irreversible.",
+"connected": [
+6,
+56,
+66,
+84,
+87
+]
+},
+{
+"n": 90,
+"title": "The Right to Remain Unknown",
+"part": "Neighbors in the cosmos",
+"summary": "Respect refusal, privacy, and limits to disclosure across civilizations.",
+"statement": "Therefore, recognize a presumptive claim to privacy, distance, and nonparticipation where beings or communities have relevant interests. Investigate carefully, seek consent where possible, and require strong reasons for overriding a clear refusal.",
+"first_move": "Review one research, media, or exploration project that depends on access to others. Identify how a subject can decline or set limits. Make that choice practical, document its consequences, and establish a fair process for exceptional conflicts.",
+"connected": [
+13,
+49,
+60,
+84,
+96
+]
+},
+{
+"n": 91,
+"title": "Time That Is Your Own",
+"part": "Lives worth living",
+"summary": "Protect leisure and autonomy as productivity and lifespans change.",
+"statement": "Therefore, protect a meaningful share of time from compulsory work, administrative burden, and relentless demands for attention. Make this freedom available across differences of income, care responsibility, and bodily capacity.",
+"first_move": "Ask a group of residents or workers which recurring demand consumes time without adding value to their lives. Remove or simplify one such demand. Check who actually receives the time saved and whether another person has quietly inherited the work.",
+"connected": [
+14,
+17,
+39,
+43,
+67
+]
+},
+{
+"n": 92,
+"title": "A Living Culture",
+"part": "Lives worth living",
+"summary": "Support creation, transmission, adaptation, and cultural self-determination.",
+"statement": "Therefore, sustain the people, places, languages, and practices through which culture is made and transmitted. Allow communities to preserve, reinterpret, and change their inheritance without surrendering it to exploitation or compulsory conformity.",
+"first_move": "Choose one cultural practice that people want to continue. Ask practitioners what most threatens its living transmission: space, time, language, income, access, or confidence. Address that condition with them, rather than beginning with a promotional campaign about its importance.",
+"connected": [
+58,
+59,
+60,
+91,
+97
+]
+},
+{
+"n": 93,
+"title": "Rituals for Change",
+"part": "Lives worth living",
+"summary": "Mark birth, commitment, transition, loss, and collective renewal.",
+"statement": "Therefore, create voluntary, adaptable ways to mark consequential transitions. Let people acknowledge what is ending, recognize what is beginning, and make the promises or support appropriate to the change.",
+"first_move": "Identify a transition your community currently handles only through paperwork or silence. Ask those experiencing it what acknowledgment would help. Create a modest, optional practice with one concrete commitment that continues after the occasion ends.",
+"connected": [
+10,
+18,
+49,
+92,
+98
+]
+},
+{
+"n": 94,
+"title": "Wonder Without Compulsion",
+"part": "Lives worth living",
+"summary": "Protect spiritual inquiry alongside freedom from imposed belief.",
+"statement": "Therefore, make encounters with nature, art, inquiry, and mystery widely available. Protect the freedom to explore meaning without requiring a prescribed belief or a profitable result.",
+"first_move": "Create one recurring, accessible opportunity to encounter something beyond ordinary routine. Remove a practical barrier to attendance, then leave room for participants to follow their own questions. Judge the occasion partly by whether people feel freer to notice and inquire afterward.",
+"connected": [
+15,
+33,
+58,
+70,
+99
+]
+},
+{
+"n": 95,
+"title": "Games Worth Playing",
+"part": "Lives worth living",
+"summary": "Create challenge, mastery, delight, and cooperation without manufactured desperation.",
+"statement": "Therefore, make room for voluntary play with fair rules, accessible entry, meaningful challenge, and the ability to stop. Protect games from incentives that exploit compulsion or turn every activity into ranking.",
+"first_move": "Invite a mixed group to play something whose rules can be changed. Notice who participates, who withdraws, and why. Adjust one rule or condition so more people can experience meaningful challenge without requiring everyone to enjoy the same activity.",
+"connected": [
+11,
+34,
+67,
+91,
+97
+]
+},
+{
+"n": 96,
+"title": "Hospitality Across Difference",
+"part": "Lives worth living",
+"summary": "Welcome encounter while respecting boundaries and reciprocal responsibilities.",
+"statement": "Therefore, establish ordinary practices that help strangers and newcomers participate with dignity. Make expectations understandable, offer meaningful choices, and allow mutual learning within fair boundaries.",
+"first_move": "Ask someone unfamiliar with a community space to describe their first ten minutes there. Identify the point at which they felt unsure, unwelcome, or dependent on insider knowledge. Change that condition and test the welcome again with a different newcomer.",
+"connected": [
+14,
+34,
+49,
+90,
+92
+]
+},
+{
+"n": 97,
+"title": "Freedom to Be Strange",
+"part": "Lives worth living",
+"summary": "Leave room for eccentricity, experimentation, and harmless refusal.",
+"statement": "Therefore, protect harmless eccentricity, unconventional relationships, minority expression, and experiments in living. Require a concrete account of harm before using collective power to enforce conformity.",
+"first_move": "Review one rule that limits expression or participation. State the concrete harm it prevents and examine whether a less restrictive rule would address that harm. Remove requirements whose main function is to make everyone resemble the people already in charge.",
+"connected": [
+5,
+13,
+48,
+49,
+92
+]
+},
+{
+"n": 98,
+"title": "Grief With Somewhere to Go",
+"part": "Lives worth living",
+"summary": "Give private and collective loss companionship, expression, and time.",
+"statement": "Therefore, make room for mourning in private and collective life. Offer practical support, voluntary forms of remembrance, and continuing companionship without prescribing a timetable or a single acceptable expression.",
+"first_move": "Choose one setting where loss is currently handled through silence or a brief formal gesture. Ask affected people what ongoing support would be welcome. Establish one dependable practice that remains available after attention has moved elsewhere.",
+"connected": [
+16,
+18,
+62,
+78,
+93
+]
+},
+{
+"n": 99,
+"title": "Beauty Without Possession",
+"part": "Lives worth living",
+"summary": "Expand opportunities to enjoy what need not be individually owned.",
+"statement": "Therefore, create opportunities to encounter beauty through shared access, care, attention, and temporary participation. Protect the places, beings, and makers involved from being reduced to objects of possession.",
+"first_move": "Identify one source of beauty people could enjoy more fairly without owning it. Work with its makers or caretakers to improve access while funding care and respecting limits. Notice whether the arrangement deepens attention or simply increases consumption.",
+"connected": [
+20,
+33,
+34,
+60,
+94
+]
+},
+{
+"n": 100,
+"title": "Begin With a Place",
+"part": "Putting the language to work",
+"summary": "Choose a real place, its inhabitants, and a tractable need.",
+"statement": "Therefore, begin where you can observe consequences, form relationships, and accept responsibility. Learn the place before deciding which patterns it needs, and connect local action to wider obligations.",
+"first_move": "Spend time in one place without proposing a solution. Ask three people with different relationships to it what works, what hurts, and what they fear losing. Write a short account they can correct, then choose one question worth investigating together.",
+"connected": [
+8,
+28,
+34,
+60,
+101
+]
+},
+{
+"n": 101,
+"title": "Map Who Bears the Cost",
+"part": "Putting the language to work",
+"summary": "Trace benefits, burdens, dependencies, and missing voices.",
+"statement": "Therefore, identify who benefits, who bears costs, who decides, and who cannot speak within the process. Follow consequences across places, species, institutions, and time before fixing the design.",
+"first_move": "For one live proposal, draw four columns: benefits, burdens, decision power, and missing voices. Put names or clearly defined groups into each. Find the largest mismatch between burden and influence, then change the process to address it.",
+"connected": [
+3,
+22,
+27,
+38,
+100
+]
+},
+{
+"n": 102,
+"title": "Assemble a Working Language",
+"part": "Putting the language to work",
+"summary": "Connect the patterns needed for one coherent intervention.",
+"statement": "Therefore, select a small group of connected patterns around a concrete purpose. Make their tensions explicit and develop a design that serves them together rather than treating them as independent boxes to check.",
+"first_move": "Choose five patterns for a current project. Write one sentence explaining what each requires in this place, then identify the hardest conflict among them. Produce two plausible designs that handle the conflict differently and compare their consequences with affected people.",
+"connected": [
+5,
+8,
+100,
+101,
+103
+]
+},
+{
+"n": 103,
+"title": "Small Trials With Real Boundaries",
+"part": "Putting the language to work",
+"summary": "Test safely with consent and limits on exposure.",
+"statement": "Therefore, test uncertain proposals through bounded trials with clear purposes, informed participation where relevant, stop conditions, and a credible ending. Protect people from bearing serious risks merely because a project is labeled experimental.",
+"first_move": "Write a one-page trial agreement naming the learning question, boundaries, responsibilities, stop conditions, and ending plan. Ask an affected person to identify the promise they would rely on most. Make that promise credible before beginning.",
+"connected": [
+6,
+7,
+13,
+66,
+104
+]
+},
+{
+"n": 104,
+"title": "Independent Eyes",
+"part": "Putting the language to work",
+"summary": "Invite reviewers who can challenge incentives and conclusions.",
+"statement": "Therefore, invite qualified scrutiny from people who can examine consequential claims without depending on the project's success. Give them access, a clear remit, and a route for findings to affect decisions.",
+"first_move": "Identify the claim your project most needs an outsider to believe. Invite a qualified reviewer to test it, provide the evidence they reasonably need, and agree in advance how an unfavorable finding would change the next decision.",
+"connected": [
+46,
+56,
+63,
+65,
+103
+]
+},
+{
+"n": 105,
+"title": "Publish the Failures",
+"part": "Putting the language to work",
+"summary": "Share negative results while protecting personal privacy.",
+"statement": "Therefore, share useful accounts of failure, limitation, and correction alongside success. Preserve enough context for others to judge what the experience means, while protecting people from unnecessary exposure or blame.",
+"first_move": "Write a short account of one attempt that did not work as hoped. Include what you expected, what happened, what you still do not know, and what another practitioner should consider before trying it. Invite someone affected to correct the account before sharing it.",
+"connected": [
+56,
+57,
+59,
+81,
+104
+]
+},
+{
+"n": 106,
+"title": "Make Better Practices Easier",
+"part": "Putting the language to work",
+"summary": "Remove obstacles in defaults, financing, training, and rules.",
+"statement": "Therefore, redesign ordinary conditions so that beneficial practices are accessible, affordable, intelligible, and convenient. Preserve meaningful choice while removing unnecessary friction from doing the right thing.",
+"first_move": "Follow a willing participant through one beneficial practice from intention to completion. Record every point where they need unusual effort, money, knowledge, or permission. Remove the most consequential unnecessary obstacle and check whether the practice becomes easier for people with fewer resources.",
+"connected": [
+23,
+31,
+43,
+67,
+102
+]
+},
+{
+"n": 107,
+"title": "Return and Reconsider",
+"part": "Putting the language to work",
+"summary": "Revisit consequences, repair harms, and revise or retire.",
+"statement": "Therefore, attach review to consequential commitments from the beginning. Revisit purposes, outcomes, burdens, and assumptions at intervals suited to the stakes, and act on what has changed.",
+"first_move": "Choose one significant commitment without a review date. Set a proportionate date, identify who should participate, and state which evidence would justify changing or ending the arrangement. Allocate the time and authority needed for the review to have consequences.",
+"connected": [
+7,
+32,
+54,
+63,
+108
+]
+},
+{
+"n": 108,
+"title": "Keep the Language Open",
+"part": "Putting the language to work",
+"summary": "Preserve attribution, competing versions, and freedom to improve.",
+"statement": "Therefore, treat these patterns as a revisable common instrument. Preserve their history, invite evidence and dissent, and keep the process of changing them accessible to people who bear their consequences.",
+"first_move": "Choose the pattern you most doubt. Find a situation that tests it, record what happens, and propose a correction that another person can examine. Begin there. Somewhere, a thousand years from now, someone may inherit the room you left them to disagree.",
+"connected": [
+1,
+5,
+56,
+57,
+107
+]
+}
+]
+}
