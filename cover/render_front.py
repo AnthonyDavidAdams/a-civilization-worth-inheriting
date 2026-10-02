@@ -29,6 +29,7 @@ def font(style, px):
     return ImageFont.truetype(FONTS + f"EBGaramond-{style}.otf", px)
 
 variant, out = sys.argv[1], sys.argv[2]
+sys.argv = [a for a in sys.argv if a != "--lang" and a != "zh"] if False else sys.argv
 
 if variant == "emblem":
     # Standalone rings on a transparent field, for the spine (and anywhere else
@@ -86,25 +87,39 @@ def centred(txt, f, y, fill, tracking=0):
     draw.text((cx - w / 2, y), txt, font=f, fill=fill)
     return w
 
-# --- Title ---
-tf = font("Regular", 168)
-y = B + TRIM_H * DPI * 0.575
-for line in ["A Civilization", "Worth Inheriting"]:
-    centred(line, tf, y, text)
-    y += 168 * 1.08
+ZH = "--lang" in sys.argv and sys.argv[sys.argv.index("--lang") + 1] == "zh"
+CJK = "/Users/anthony/Library/Fonts/"
+cjk = lambda style, px: ImageFont.truetype(CJK + ("NotoSerifCJKsc-Bold.otf" if style == "Bold" else "LXGWWenKai-Regular.ttf" if style == "Kai" else "NotoSerifCJKsc-Regular.otf"), px)
 
-# --- Rule + subtitle ---
-y += 70
-draw.line([(cx - 0.55 * DPI, y), (cx + 0.55 * DPI, y)], fill=rule, width=3)
-y += 62
-sf = font("Italic", 64)
-for line in ["A Pattern Language", "for the Next Thousand Years"]:
-    centred(line, sf, y, text)
-    y += 64 * 1.25
+if ZH:
+    # --- 书名 ---
+    y = B + TRIM_H * DPI * 0.585
+    centred("值得继承的文明", cjk("Regular", 190), y, text, tracking=10); y += 190 + 70
+    draw.line([(cx - 0.55 * DPI, y), (cx + 0.55 * DPI, y)], fill=rule, width=3); y += 60
+    centred("下一个千年的模式语言", cjk("Kai", 74), y, text, tracking=6)
+    af = cjk("Regular", 50)
+    centred("安东尼·大卫·亚当斯", af, B + TRIM_H * DPI - 0.78 * DPI, text, tracking=8)
+    centred("ANTHONY DAVID ADAMS", font("Medium", 34), B + TRIM_H * DPI - 0.50 * DPI, text, tracking=10)
+else:
+    # --- Title ---
+    tf = font("Regular", 168)
+    y = B + TRIM_H * DPI * 0.575
+    for line in ["A Civilization", "Worth Inheriting"]:
+        centred(line, tf, y, text)
+        y += 168 * 1.08
 
-# --- Author, letterspaced caps at the foot ---
-af = font("Medium", 52)
-centred("ANTHONY DAVID ADAMS", af, B + TRIM_H * DPI - 0.62 * DPI, text, tracking=14)
+    # --- Rule + subtitle ---
+    y += 70
+    draw.line([(cx - 0.55 * DPI, y), (cx + 0.55 * DPI, y)], fill=rule, width=3)
+    y += 62
+    sf = font("Italic", 64)
+    for line in ["A Pattern Language", "for the Next Thousand Years"]:
+        centred(line, sf, y, text)
+        y += 64 * 1.25
+
+    # --- Author, letterspaced caps at the foot ---
+    af = font("Medium", 52)
+    centred("ANTHONY DAVID ADAMS", af, B + TRIM_H * DPI - 0.62 * DPI, text, tracking=14)
 
 img.save(out, dpi=(DPI, DPI))
 print(out, img.size)

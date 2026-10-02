@@ -20,3 +20,10 @@ deck/*.log
 deck/deck-review.pdf
 deck/sheets/
 deck/print-qpmn/
+zh/deck/print/
+zh/deck/proof/
+zh/deck/sheets/
+zh/deck/*.log
+zh/deck/deck-review.pdf
+zh/deck/print-qpmn/
+zh/build/

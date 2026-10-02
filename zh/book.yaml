@@ -1,0 +1,232 @@
+title: 值得继承的文明
+output_name: a-civilization-worth-inheriting-zh
+subtitle: 下一个千年的模式语言
+author: 安东尼·大卫·亚当斯
+trim:
+  width_in: 6.0
+  height_in: 9.0
+margins:
+  inside_in: 0.875
+  outside_in: 0.625
+  top_in: 0.8
+  bottom_in: 0.8
+indent_in: 0.2
+openright: true
+plate_layout: above
+justified: true
+hyphenation: true
+layout_priority: balanced
+body:
+  font: EB Garamond
+  size_pt: 10
+  line_spacing: 1.45
+  paragraph_style: indented
+heading_font: EB Garamond
+chapter_number:
+  show: true
+  format: numeral
+  font: EB Garamond
+  size_pt: 40
+chapter_title:
+  font: EB Garamond
+  size_pt: 22
+  align: left
+  bold: false
+  italic: false
+running_head:
+  layout: author_title
+  font: EB Garamond
+  size_pt: 9
+drop_caps: false
+scene_break: emblem
+emblem: rings
+footnotes:
+  location: page
+  size_multiplier: 1.0
+toc: true
+toc_depth: 0
+copyright_year: 2026
+rights_notice:
+- 保留部分权利。本作品采用知识共享 署名—非商业性使用—相同方式共享 4.0 国际许可协议（CC BY-NC-SA 4.0）授权。
+- 你可以为非商业目的复制、分享和改编本书，但须署名作者、链接至原项目、说明所作修改，并以相同许可发布你的版本。商业权利由作者保留。
+- 许可协议：creativecommons.org/licenses/by-nc-sa/4.0
+- 原项目：github.com/AnthonyDavidAdams/a-civilization-worth-inheriting
+- '英文原版：A Civilization Worth Inheriting: A Pattern Language for the Next Thousand Years。中文译本据 2026 年第二版译出。'
+galley:
+  url: https://civilization.galley.so
+  heading: 与本书对话
+  body: 本书有一位“教练”：一个读过全部 108 个模式的人工智能，可以回答问题、帮你找到那个只记得一半的模式，并帮助你为自己所在的地方组装一套可用的语言。扫描二维码或访问下方地址即可，对话免费。目前它以英文读过本书，但可以用中文交谈。
+  caption: 向这本书提问
+front_matter:
+- manuscript/00-FRONT/02-the-patterns-at-a-glance.md
+- manuscript/00-FRONT/03-how-to-use-this-language.md
+back_matter:
+- manuscript/99-BACK/01-a-working-kit.md
+- manuscript/99-BACK/02-entry-points-by-scale-and-problem.md
+- manuscript/99-BACK/04-evidence-disagreements-and-revision.md
+- manuscript/99-BACK/05-sources-and-further-reading.md
+parts:
+- title: Part I — 跨越时间的责任
+  epigraph: 确立一个文明对当下的生命、以及对将继承其决定的后人所负有的责任。
+  image: ../plates/part-01.jpg
+  chapters:
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/001-leave-room-for-the-future.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/002-enough-for-the-living.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/003-a-seat-for-the-absent.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/004-a-floor-beneath-everyone.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/005-many-ways-to-flourish.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/006-proportionate-caution.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/007-the-right-to-reconsider.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/008-decisions-at-the-right-scale.md
+  - manuscript/PART-01-RESPONSIBILITY-ACROSS-TIME/009-keep-the-capacity-to-repair.md
+- title: Part II — 共同成为人
+  epigraph: 创造让人们得以成长、归属并彼此照护的条件。
+  image: ../plates/part-02.jpg
+  chapters:
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/010-safe-beginnings.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/011-a-village-around-every-child.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/012-the-skill-of-relationship.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/013-consent-as-a-daily-practice.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/014-a-common-table.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/015-a-place-to-be-alone.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/016-care-across-a-lifetime.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/017-work-with-meaning.md
+  - manuscript/PART-02-BECOMING-HUMAN-TOGETHER/018-a-dignified-death.md
+- title: Part III — 活着的星球
+  epigraph: 将生态完整性与动物个体的生命视为既有区别又相互关联的责任。
+  image: ../plates/part-03.jpg
+  chapters:
+  - manuscript/PART-03-THE-LIVING-PLANET/019-watersheds-as-commons.md
+  - manuscript/PART-03-THE-LIVING-PLANET/020-room-for-wildness.md
+  - manuscript/PART-03-THE-LIVING-PLANET/021-connected-habitats.md
+  - manuscript/PART-03-THE-LIVING-PLANET/022-animals-with-interests.md
+  - manuscript/PART-03-THE-LIVING-PLANET/023-food-without-cruelty.md
+  - manuscript/PART-03-THE-LIVING-PLANET/024-soil-as-an-inheritance.md
+  - manuscript/PART-03-THE-LIVING-PLANET/025-oceans-with-guardians.md
+  - manuscript/PART-03-THE-LIVING-PLANET/026-end-pollution-at-the-source.md
+  - manuscript/PART-03-THE-LIVING-PLANET/027-guardians-with-duties.md
+- title: Part IV — 场所与物质生活
+  epigraph: 建造令人乐于居住、也能够持续维系的聚落。
+  image: ../plates/part-04.jpg
+  chapters:
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/028-settlements-that-belong-to-place.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/029-housing-that-can-change.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/030-clean-energy-in-many-hands.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/031-materials-that-can-return.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/032-pay-for-maintenance-first.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/033-beauty-in-ordinary-places.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/034-public-space-without-a-purchase.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/035-water-where-life-needs-it.md
+  - manuscript/PART-04-PLACES-AND-MATERIAL-LIFE/036-enough-local-capacity.md
+- title: Part V — 支持生命的经济
+  epigraph: 让有用的生产与共享的繁荣及生态限度相容。
+  image: ../plates/part-05.jpg
+  chapters:
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/037-an-economy-of-enough.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/038-account-for-the-full-cost.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/039-share-the-gains-of-invention.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/040-common-wealth-dividends.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/041-land-with-lasting-duties.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/042-ownership-with-obligations.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/043-pay-for-care.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/044-finance-that-can-wait.md
+  - manuscript/PART-05-AN-ECONOMY-THAT-SUPPORTS-LIFE/045-a-fair-transition.md
+- title: Part VI — 保持可问责的权力
+  epigraph: 让集体行动成为可能，同时防止临时的权威变成永久的支配。
+  image: ../plates/part-06.jpg
+  chapters:
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/046-power-must-explain-itself.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/047-citizens-who-deliberate.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/048-rights-that-majorities-cannot-remove.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/049-the-right-to-exit-and-belong.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/050-commons-at-every-scale.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/051-treaties-for-shared-hazards.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/052-peace-as-a-maintained-practice.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/053-emergency-powers-that-end.md
+  - manuscript/PART-06-POWER-THAT-REMAINS-ANSWERABLE/054-constitutions-that-can-learn.md
+- title: Part VII — 能够认知的文明
+  epigraph: 让知识保持有用、可质疑、可获取，并能在创造者之后继续存续。
+  image: ../plates/part-07.jpg
+  chapters:
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/055-shared-reality.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/056-show-the-work.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/057-keep-dissent-safe.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/058-learning-across-a-lifetime.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/059-libraries-that-survive.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/060-local-knowledge-with-consent.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/061-public-interest-science.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/062-memory-of-harm.md
+  - manuscript/PART-07-A-CIVILIZATION-THAT-CAN-KNOW/063-measure-what-matters.md
+- title: Part VIII — 与人工心智共处
+  epigraph: 把能力、权威、所有权与道德地位的问题分开来看。
+  image: ../plates/part-08.jpg
+  chapters:
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/064-delegated-intelligence.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/065-auditable-power.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/066-capability-with-containment.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/067-freedom-from-machine-persuasion.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/068-human-skills-worth-keeping.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/069-a-commons-of-useful-tools.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/070-uncertain-minds-deserve-care.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/071-personhood-beyond-resemblance.md
+  - manuscript/PART-08-LIVING-WITH-ARTIFICIAL-MINDS/072-no-irreversible-surrender.md
+- title: Part IX — 穿越动荡的延续
+  epigraph: 降低灾难发生的可能，让复原成为可能，同时不让永久紧急状态成为常态。
+  image: ../plates/part-09.jpg
+  chapters:
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/073-diverse-systems.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/074-failure-that-stays-local.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/075-public-health-for-all-species.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/076-reserves-before-scarcity.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/077-practice-the-emergency.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/078-recovery-before-disaster.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/079-a-civilization-that-can-reboot.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/080-institutions-with-successors.md
+  - manuscript/PART-09-CONTINUITY-THROUGH-DISRUPTION/081-remember-the-near-misses.md
+- title: Part X — 宇宙中的邻居
+  epigraph: 把责任延伸到地球之外，同时认真对待不确定性与距离。
+  image: ../plates/part-10.jpg
+  chapters:
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/082-earth-is-not-disposable.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/083-space-as-a-shared-responsibility.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/084-worlds-with-their-own-claims.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/085-settlements-that-can-refuse.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/086-listen-before-sending.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/087-confirm-before-announcing.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/088-no-one-speaks-for-earth.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/089-contact-without-contamination.md
+  - manuscript/PART-10-NEIGHBORS-IN-THE-COSMOS/090-the-right-to-remain-unknown.md
+- title: Part XI — 值得过的生活
+  epigraph: 为欢乐、美、文化、精神探寻，以及无需经济理由的体验留出空间。
+  image: ../plates/part-11.jpg
+  chapters:
+  - manuscript/PART-11-LIVES-WORTH-LIVING/091-time-that-is-your-own.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/092-a-living-culture.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/093-rituals-for-change.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/094-wonder-without-compulsion.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/095-games-worth-playing.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/096-hospitality-across-difference.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/097-freedom-to-be-strange.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/098-grief-with-somewhere-to-go.md
+  - manuscript/PART-11-LIVES-WORTH-LIVING/099-beauty-without-possession.md
+- title: Part XII — 让语言发挥作用
+  epigraph: 把宏大的承诺化为本地行动，并让经验改进这本书。
+  image: ../plates/part-12.jpg
+  chapters:
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/100-begin-with-a-place.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/101-map-who-bears-the-cost.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/102-assemble-a-working-language.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/103-small-trials-with-real-boundaries.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/104-independent-eyes.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/105-publish-the-failures.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/106-make-better-practices-easier.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/107-return-and-reconsider.md
+  - manuscript/PART-12-PUTTING-THE-LANGUAGE-TO-WORK/108-keep-the-language-open.md
+cjk:
+  main: Noto Serif CJK SC
+  bold: Noto Serif CJK SC Bold
+  italic: LXGW WenKai
+  punct: quanjiao
+toc_title: 目录
+part_label: 第\thepart 部分
+copyright_line: 版权所有 © 2026 安东尼·大卫·亚当斯（Anthony David Adams）。

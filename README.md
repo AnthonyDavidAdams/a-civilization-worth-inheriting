@@ -28,6 +28,9 @@ to AI models to review and fork it.
 - **Talk with the book**: an AI coach that has read every pattern is at
   [civilization.galley.so](https://civilization.galley.so). Free.
 - **Paperback**: coming to Amazon.
+- **中文版 (Simplified Chinese edition)**: the whole book and deck, translated;
+  site at https://anthonydavidadams.github.io/a-civilization-worth-inheriting/zh/
+  and files in `zh/`.
 - **The Pattern Deck**: all 108 patterns as tarot-size cards, a picture on the
   front and the pattern in brief on the back. See `deck/DESIGN.md`; a first
   printing is in preparation.

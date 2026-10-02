@@ -15,7 +15,11 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 DPI, BLEED, TRIM_W, TRIM_H, PAGE_IN = 300, 0.125, 6.0, 9.0, 0.0025          # cream paper
-pdf = ROOT / "build/dist/a-civilization-worth-inheriting.pdf"
+ZH = "--lang" in sys.argv and sys.argv[sys.argv.index("--lang") + 1] == "zh"
+SUF = "-zh" if ZH else ""
+pdf = ROOT / ("zh/build/dist/值得继承的文明.pdf" if ZH else "build/dist/a-civilization-worth-inheriting.pdf")
+if ZH and not pdf.exists():
+    pdf = next((ROOT / "zh/build/dist").glob("*.pdf"))
 pages = int(re.search(r"Pages:\s+(\d+)", subprocess.check_output(["pdfinfo", str(pdf)], text=True)).group(1))
 B, TW, TH = round(BLEED * DPI), round(TRIM_W * DPI), round(TRIM_H * DPI)
 SPINE = round(pages * PAGE_IN * DPI)
@@ -41,7 +45,7 @@ fleck = r_ch.point(lambda v: 0 if v < 38 else round(min(1.0, (v - 38) / 150) * 2
 wrap = Image.composite(Image.new("RGB", wrap.size, SCUFF), wrap, fleck)
 flat = Image.new("RGB", wrap.size, tuple(round(c) for c in __import__("PIL.ImageStat", fromlist=["Stat"]).Stat(wrap).mean))
 wrap = Image.blend(flat, wrap, TEXTURE)
-wrap.save(ROOT / "cover/wrap-bg.png", dpi=(DPI, DPI))
+wrap.save(ROOT / f"cover/wrap-bg{SUF}.png", dpi=(DPI, DPI))
 
 # Front panel = the right-hand end of the block, plus the rings.
 front = wrap.crop((FRONT_X0, 0, FRONT_X0 + TW + B, H))
@@ -53,7 +57,7 @@ alpha = cream.point(lambda v: 0 if v < 95 else 255 if v > 185 else round((v - 95
 window = Image.new("L", rings.size, 0); window.paste(255, (cx - half, cy - half, cx + half, cy + half))
 alpha = Image.composite(alpha, Image.new("L", rings.size, 0), window)
 front.paste(rings, (0, 0), alpha)
-front.save(ROOT / "cover/art-flag-woodcut.png", dpi=(DPI, DPI))
+front.save(ROOT / f"cover/art-flag-woodcut{SUF}.png", dpi=(DPI, DPI))
 subprocess.run([sys.executable, str(ROOT / "cover/render_front.py"), "flag-art",
-                str(ROOT / "cover/front-flag-woodcut.png"), str(ROOT / "cover/art-flag-woodcut.png")], check=True)
+                str(ROOT / f"cover/front-flag-woodcut{SUF}.png"), str(ROOT / f"cover/art-flag-woodcut{SUF}.png")] + (["--lang", "zh"] if ZH else []), check=True)
 print(f"pages {pages} | spine {SPINE / DPI:.3f} in | wrap {W}x{H}px | front panel starts at x={FRONT_X0}")

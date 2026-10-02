@@ -13,12 +13,15 @@ import csv, json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw
 
-ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from i18n import pick
+L = pick(sys.argv)
+ROOT = Path(__file__).resolve().parent.parent / L["deck_dir"]
 cards = json.loads((ROOT / "cards.json").read_text())
 order = [("T00", "A Civilization Worth Inheriting", 0)]
 for part in range(1, 13):
     mine = [c for c in cards if c["part"] == part]
-    order.append((f"P{part:02d}", f"Part {mine[0]['part_roman']}: {mine[0]['part_name']}", part))
+    order.append((f"P{part:02d}", f"{mine[0].get('part_cn') if L['cjk'] else 'Part ' + mine[0]['part_roman']}: {mine[0]['part_name']}", part))
     order += [(f"{c['n']:03d}", f"{c['n']} {c['title']}", part) for c in mine]
 
 missing = [f"{cid}-{side}" for cid, _, _ in order for side in ("front", "back") if not (ROOT / "print" / f"{cid}-{side}.png").exists()]

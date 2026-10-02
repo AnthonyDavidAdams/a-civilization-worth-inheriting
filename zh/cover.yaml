@@ -1,0 +1,42 @@
+## 中文版封面：与英文版相同的木刻蓝色底版，中文字体。
+##   ~/.fal-venv/bin/python cover/build_woodcut_wrap.py --lang zh
+##   cd zh && ~/.fal-venv/bin/python ~/book-suite/plugins/imprint/skills/kdp-cover/build_cover.py . --art ../cover/front-flag-woodcut-zh.png
+
+paper: cream
+wrap_bg: ../cover/wrap-bg-zh.png
+
+front:
+  overlay_text: false
+  overlay_opacity: 0.0
+  title_color: "#F3EEE3"
+  title_font: "Noto Serif CJK SC"
+
+accent_color: "#F3EEE3"
+
+spine:
+  bg_color: "#023CA7"
+  text_color: "#F3EEE3"
+  font: "Noto Serif CJK SC"
+  emblem: ../cover/emblem-cream.png
+
+back:
+  bg_color: "#023CA7"
+  text_color: "#F3EEE3"
+  body_font: "Noto Serif CJK SC"
+  quote_font: "LXGW WenKai"
+  quote: |
+    如果我们希望一千年后生命依然繁荣，今天应该建造什么？
+  blurb: |
+    一个孩子需要一处安全的玩耍之地。一条河需要可以流动的空间。一个强大的人工智能需要在所有权更替之后依然有效的限制。
+
+    受克里斯托弗·亚历山大《模式语言》启发，本书为一个繁荣的文明提出了 108 个模式。每个模式都指出一个反复出现的问题，提出一种可用的回应，权衡其代价，并与其他模式相连。从一个家庭、一家公司、一个街区或一个流域开始，沿着这些联系一路向外，直到行星级的制度、人工心智、地球之外的定居点，以及与其他智慧生命接触的可能。
+
+    本书写给创业者、公民、设计者和教育者——写给每一个准备为世界的某一部分承担责任的人。它提供的是在人的尺度上可以着手的起点。
+  about_author: |
+    安东尼·大卫·亚当斯（Anthony David Adams）创立了 EarthPilot 研究实验室，这是一家研究人工智能性格及前沿语言模型社会影响的私人实验室。他拥有威斯康星大学城市规划硕士学位，研究方向为技术与社会。
+  cta:
+    url: "https://civilization.galley.so"
+    headline: "与本书对话"
+    body: "扫描二维码，向教练询问任何一个模式，或带着一个真实的决定一起思考。"
+    qr_size_in: 1.0
+  isbn: ""

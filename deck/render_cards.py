@@ -34,6 +34,8 @@ PT = lambda pt: round(pt * DPI / 72)                         # type size in poin
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from palette import CREAM, INK, BLUE, PART_COLOURS, rgb      # noqa: E402
+from i18n import pick                                        # noqa: E402
+L = pick(sys.argv)
 
 # Each part (suit) has its own third colour: a band under the picture that
 # shows when cards are fanned, the rules and labels, and an ink in the picture.
@@ -42,14 +44,19 @@ ACCENT = "--two-ink" not in sys.argv
 def accent(c):
     return rgb(PART_COLOURS[c["part"]][1]) if ACCENT else BLUE
 ART_H = IN(3.22)                                             # art runs off top, left, right
-FONTS = "/Users/anthony/Library/Fonts/EBGaramond-"
-font = lambda style, px: ImageFont.truetype(f"{FONTS}{style}.otf", px)
+font = lambda style, px: ImageFont.truetype(L["fonts"][style], px)
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent / L["deck_dir"]       # deck/ or zh/deck/
+ART = Path(__file__).resolve().parent / "art"                       # pictures are shared across editions
+ROOT.mkdir(exist_ok=True)
 cards = {c["n"]: c for c in json.loads((ROOT / "cards.json").read_text())}
 
 
+from cjkwrap import wrap_cjk, has_cjk                        # noqa: E402
+
 def wrap(text, f, width):
+    if L["cjk"] or has_cjk(text):
+        return wrap_cjk(text, f.getlength, width)
     lines, cur = [], ""
     for word in text.split():
         trial = f"{cur} {word}".strip()
@@ -91,7 +98,7 @@ def emblem(img, cx, cy, r, colour):
 
 
 def part_label(c):
-    return f"PART {c['part_roman']}  ·  {c['part_name'].upper()}"
+    return L["part_label"](c["part_roman"], c["part_name"], c.get("part_cn", ""))
 
 
 def front(c, art_path):
@@ -109,7 +116,7 @@ def front(c, art_path):
     num_f, lab_f = font("Regular", PT(25)), font("Medium", PT(5.4))
     size = 15.5
     while True:                                                 # title shrinks only if it must
-        title_f = font("Italic", PT(size)); lines = wrap(c["title"], title_f, SX1 - SX0)
+        title_f = font("Regular" if L["cjk"] else "Italic", PT(size)); lines = wrap(c["title"], title_f, SX1 - SX0)
         if len(lines) <= 2 or size <= 12: break
         size -= 0.5
     lead = round(PT(size) * 1.12)
@@ -133,7 +140,7 @@ def back(c):
     tracked(d, part_label(c), font("Medium", PT(5)), CX, y, accent(c), 3.0); y += PT(5) + 34
     d.line([(CX - IN(0.22), y), (CX + IN(0.22), y)], fill=accent(c), width=3); y += 38
 
-    conn = "  ·  ".join(f"{n} {cards[n]['title']}" for n in c["connected"])
+    conn = "  ·  ".join(f"{n} {cards[n]['title']}" for n in c["connected"] if n in cards)
     scale = 1.0
     while True:                                                 # one scale for the whole back
         sum_f, body_f, lab_f, con_f = (font("Italic", PT(11.2 * scale)), font("Regular", PT(8.9 * scale)),
@@ -149,13 +156,13 @@ def back(c):
         scale -= 0.03
     y = centred_lines(d, s_lines, sum_f, y, INK, s_lead) + 40
     y = left_lines(d, t_lines, body_f, SX0, y, INK, b_lead) + 40
-    tracked(d, "A FIRST MOVE", lab_f, SX0 + font("Medium", PT(5.2)).getlength("A FIRST MOVE") / 2 + 3.0 * 5.5, y, accent(c), 3.0); y += PT(5.2) + 18
+    tracked(d, L["first_move"], lab_f, SX0 + font("Medium", PT(5.2)).getlength(L["first_move"]) / 2 + 3.0 * 5.5, y, accent(c), 3.0); y += PT(5.2) + 18
     left_lines(d, f_lines, body_f, SX0, y, INK, b_lead)
     if not c["connected"]:
         return img, scale
     fy = SY1 - foot                                             # connections sit on the foot of the safe area
     d.line([(B + IN(RULE_INSET), fy - 22), (W - B - IN(RULE_INSET), fy - 22)], fill=(200, 192, 176), width=2)
-    tracked(d, "CONNECTED PATTERNS", lab_f, SX0 + font("Medium", PT(5.2)).getlength("CONNECTED PATTERNS") / 2 + 3.0 * 8.5, fy, accent(c), 3.0)
+    tracked(d, L["connected"], lab_f, SX0 + font("Medium", PT(5.2)).getlength(L["connected"]) / 2 + 3.0 * 8.5, fy, accent(c), 3.0)
     left_lines(d, c_lines, con_f, SX0, fy + PT(5.2) + 16, INK, c_lead)
     return img, scale
 
@@ -169,7 +176,7 @@ def with_guides(img):
 
 
 if __name__ == "__main__":
-    have = sorted({int(p.name[:3]) for p in (ROOT / "art").glob("*-linocut*.png")})
+    have = sorted({int(p.name[:3]) for p in ART.glob("*-linocut*.png")})
     nums = [int(x) for x in sys.argv[1:] if x.isdigit()] or have
     OUT = "print" if ACCENT else "print-two-ink"
     PROOF = "proof" if ACCENT else "proof-two-ink"
@@ -177,7 +184,7 @@ if __name__ == "__main__":
     pages = []
     for n in nums:
         c = cards[n]
-        two, three = ROOT / "art" / f"{n:03d}-linocut.png", ROOT / "art" / f"{n:03d}-linocut3.png"
+        two, three = ART / f"{n:03d}-linocut.png", ART / f"{n:03d}-linocut3.png"
         art = three if (three.exists() and (ACCENT or not two.exists())) else two
         f = front(c, art); b, scale = back(c)
         for side, im in (("front", f), ("back", b)):
