@@ -27,3 +27,8 @@ zh/deck/*.log
 zh/deck/deck-review.pdf
 zh/deck/print-qpmn/
 zh/build/
+deck/qpmn/.env
+# Rigid box: MPC's template and the rendered press files stay local; the renderer is tracked
+deck/rigid-box/template.pdf
+deck/rigid-box/box.*
+deck/rigid-box/proof-over-template.png

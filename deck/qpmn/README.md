@@ -25,6 +25,35 @@ from its own pages on 2026-10-01; every figure below is from those pages.
 - **No fees for the API** beyond product and shipping. You set the retail
   price in your own store and pay QPMN the base cost per order.
 
+## What the account now holds (set up 2026-10-01)
+
+- Partner account registered by Anthony; store **the-pattern-deck**, type
+  API Integration, id **751463488**, currency USD.
+- Store product **751481485**: Tarot Cards 2.75 x 4.75, PS30 stock, 121 cards,
+  full colour both sides, matte, **custom tuck box** (printed outside, T30
+  aqueous matte, full colour), shrink-wrapped. Active.
+- Price per deck at that configuration, from the tiered table: 1 to 5 decks
+  $57.88 with the box ($40.07 without); the dashboard quotes $29.15 at 50 per
+  combined order. Shipping and the 10% US import fee are extra.
+- `design-schema.json` and `sample-order.json` are the product's own schema and
+  sample, pulled from the dashboard. They settle three things:
+  - **Card images are 3.0 x 5.0 in at 300 DPI, i.e. exactly 900 x 1500 px**, so
+    `deck/print/` uploads as-is. (`print-qpmn/` at 897 x 1497 is for MPC.)
+  - **The tuck box takes one 9.59 x 9.85 in image** (2877 x 2955 px), a flat
+    wrap for their "dynamic" box. The dieline is not on the public template
+    page; ask QPMN for it or pull it from their design tool.
+  - **`Card_Back` has qty 1: this product prints ONE shared back.** Our deck
+    has a unique back per card. Either QPMN has a variant with 121 backs (ask),
+    or the QPMN edition uses a uniform emblem back with the text in a booklet,
+    or the deck is printed where unique backs are supported (MPC, Game Crafter,
+    DriveThruCards all do, per the earlier research).
+- The sample order shape: top-level `externalId`, `externalOrderNumber`,
+  `shippingMethod`, `paymentMethod` ("PayPal"), `currency`, `deliveryAddress`,
+  `billingAddress`, `priceInfo`, and `items[]` each with `storeProductId`,
+  `quantity`, `unitPrice` and `productDesignData.designData[]` keyed by the
+  material codes in the schema. Images are referenced by `imageUrl` and the
+  effect is `"CMYK"`.
+
 ## How the API works (as published)
 
 - Register as a partner, create a store of type **Api Integration**, add the

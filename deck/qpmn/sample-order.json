@@ -1,0 +1,20 @@
+{
+ "externalId": "<your order id>",
+ "externalOrderNumber": "<your order number>",
+ "shippingMethod": "Standard",
+ "paymentMethod": "PayPal",
+ "currency": "USD",
+ "deliveryAddress": {"countryCode": "US", "countryName": "United States", "stateCode": "CA", "state": "California", "city": "NY", "postCode": "92602", "firstName": "first", "lastName": "last", "mobile": "123456789", "email": "x@x.xxx", "address_1": "line 1", "address_2": "line 2", "phone": "0777-123456"},
+ "billingAddress": {"countryCode": "US", "countryName": "United States", "stateCode": "CA", "state": "California", "city": "NY", "postCode": "92602", "firstName": "first", "lastName": "last", "mobile": "123456789", "email": "x@x.xxx", "address_1": "line 1", "address_2": "line 2", "phone": "0777-123456"},
+ "priceInfo": {"currency": "USD", "subtotal": 43.73, "discount": 0, "shipping": 0, "tax": 0},
+ "items": [{
+  "externalId": "<your line id>", "unitPrice": 43.73, "storeProductId": "751481485", "quantity": 1,
+  "productDesignData": {"designData": [
+   {"code": "MTMyMDAzMDEyLDEzMjAxNzU3NCwxMTYxODA5NTU=", "views": [
+     {"code": "Card_Front", "designs": [{"index": 0, "effectImages": [{"effect": "CMYK", "imageUrl": "https://.../001-front.png"}]}, "... index 1 to 120 ..."]},
+     {"code": "Card_Back", "designs": [{"index": 0, "effectImages": [{"effect": "CMYK", "imageUrl": "https://.../back.png"}]}]}]},
+   {"code": "MTMyMDAzMDEyLDEzMjAxNzU3NSw3MDEzNzE1Mg==", "views": [
+     {"code": "Dynamic_tuck_box_outside_easyv1", "designs": [{"index": 0, "effectImages": [{"effect": "CMYK", "imageUrl": "https://.../tuck-box.png"}]}]}]}
+  ]}
+ }]
+}

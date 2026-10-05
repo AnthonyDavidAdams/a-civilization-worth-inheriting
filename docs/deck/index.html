@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Pattern Deck</title>
+<meta name="description" content="A digital deck of the 108 patterns from A Civilization Worth Inheriting. Shuffle the real cards, step through them, turn any card over, and follow its connected patterns.">
+<link rel="canonical" href="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/deck/">
+<link rel="alternate" hreflang="en" href="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/deck/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="A Civilization Worth Inheriting">
+<meta property="og:title" content="The Pattern Deck">
+<meta property="og:description" content="108 patterns for a civilization worth inheriting. Shuffle, draw, flip, and follow the connections.">
+<meta property="og:url" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/deck/">
+<meta property="og:image" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/og-deck.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Pattern Deck">
+<meta name="twitter:description" content="108 patterns for a civilization worth inheriting. Shuffle, draw, flip, and follow the connections.">
+<meta name="twitter:image" content="https://anthonydavidadams.github.io/a-civilization-worth-inheriting/assets/og-deck.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+SC:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{ --cream:#F3EEE3; --ink:#161C2D; --muted:#5A6070; --blue:#023CA7; --rule:#D9D1C0; --panel:#FBF8F1; --shadow:rgba(0,0,0,.18); }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --cream:#14161C; --ink:#EDE7DA; --muted:#A8AEBB; --blue:#7FA3F0; --rule:#2C3140; --panel:#1C1F27; --shadow:rgba(0,0,0,.5); } }
+  :root[data-theme="dark"]{ --cream:#14161C; --ink:#EDE7DA; --muted:#A8AEBB; --blue:#7FA3F0; --rule:#2C3140; --panel:#1C1F27; --shadow:rgba(0,0,0,.5); }
+  *{box-sizing:border-box}
+  [hidden]{display:none !important}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"EB Garamond",Georgia,"Times New Roman",serif;font-size:19px;line-height:1.5;min-height:100vh}
+  a{color:var(--blue)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 0 0;gap:12px}
+  .topbar .brand{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px;text-decoration:none}
+  .topbar .brand img{width:26px;height:26px;border-radius:6px}
+  .langs{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-size:15px}
+  .langs a{padding:7px 16px;text-decoration:none;color:var(--blue)}
+  .langs a[aria-current="page"]{background:var(--blue);color:#F3EEE3}
+  .langs a+a{border-left:1px solid var(--rule)}
+  .langs a[lang="zh-Hans"]{font-family:"Noto Serif SC","Songti SC",serif}
+  header{padding:30px 0 6px;text-align:center}
+  .eyebrow{font-variant:all-small-caps;letter-spacing:.14em;color:var(--blue);font-weight:500;margin:0 0 10px}
+  h1{font-weight:400;font-size:clamp(34px,5vw,52px);line-height:1.08;margin:0 0 10px}
+  .lede{color:var(--muted);max-width:640px;margin:0 auto}
+  .btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-size:18px;border:1px solid var(--blue);background:transparent;color:var(--blue);font-family:inherit;cursor:pointer}
+  .btn.primary{background:var(--blue);color:#F3EEE3}
+  .btn:disabled{opacity:.45;cursor:default}
+  .btn.small{padding:9px 14px;font-size:16px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:18px 0 0}
+  /* the table: the deck on the left, what the top card says on the right */
+  .table{display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,1.1fr);gap:44px;align-items:start;padding:30px 0 10px}
+  .deckside{display:flex;flex-direction:column;align-items:center}
+  .pile{position:relative;width:min(100%,340px);aspect-ratio:600/1037;perspective:1400px;margin:14px auto 0;
+         --r1:translate(2px,3px) rotate(.8deg); --r2:translate(-5px,5px) rotate(-1.8deg); --r3:translate(6px,8px) rotate(2.4deg)}
+  /* Stepping moves every card one slot: the under cards rise while the top card leaves,
+     so the next card is already in the top position when the swap happens. */
+  .under.to-top{transform:none} .under.to-1{transform:var(--r1)} .under.to-2{transform:var(--r2)} .under.to-3{transform:var(--r3)}
+  .pile.noanim .under,.pile.noanim .card3d{transition:none !important;animation:none !important}
+  .card3d.drop1{animation:drop1 .5s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes drop1{to{transform:var(--r1)}}
+  .incoming{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:0 16px 38px var(--shadow);z-index:4;animation:comeBack .5s cubic-bezier(.2,.7,.2,1) both}
+  .incoming img{width:100%;height:100%;object-fit:cover;display:block}
+  .under{position:absolute;inset:0;border-radius:16px;overflow:hidden;box-shadow:0 10px 26px var(--shadow);background:var(--panel);transform:var(--rest);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+  .under img{width:100%;height:100%;object-fit:cover;display:block}
+  .card3d{position:absolute;inset:0;z-index:2;cursor:pointer;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.7,.2,1);border-radius:16px;-webkit-tap-highlight-color:transparent;outline:none}
+  .card3d.flipped{transform:rotateY(180deg)}
+  .card3d .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;overflow:hidden;box-shadow:0 16px 38px var(--shadow);background:var(--panel)}
+  .card3d .face img{width:100%;height:100%;object-fit:cover;display:block}
+  .card3d .back{transform:rotateY(180deg)}
+  .card3d:focus-visible{outline:3px solid var(--blue);outline-offset:6px}
+  /* step: the top card leaves to one side and the next one rises from the pile */
+  .card3d.go-next{animation:leaveLeft .45s cubic-bezier(.4,0,.8,.4) forwards}
+  .card3d.come-back{animation:comeBack .5s cubic-bezier(.2,.7,.2,1)}
+  .card3d.arrive{animation:arrive .5s cubic-bezier(.2,.7,.2,1)}
+  @keyframes leaveLeft{to{transform:translate(-70%,6%) rotate(-12deg);opacity:0}}
+  @keyframes comeBack{from{transform:translate(-70%,6%) rotate(-12deg);opacity:0} to{transform:none;opacity:1}}
+  @keyframes arrive{from{transform:translate(0,14px) scale(.97);opacity:.6} to{transform:none;opacity:1}}
+  /* Riffle. A temporary layer of twenty real cards: 'split' fans them into two halves,
+     'drop' lets them fall back into the middle one at a time, alternating sides (the
+     --j delay), then the pile squares up and the new top card lifts off it. */
+  .rlayer{position:absolute;inset:0;pointer-events:none}
+  .rc{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:0 6px 18px var(--shadow);transform:translate(0,calc(var(--k) * -0.6px))}
+  .rc img{width:100%;height:100%;object-fit:cover;display:block}
+  .rlayer.split .rc{animation:split .42s cubic-bezier(.3,.7,.3,1) forwards;animation-delay:calc(var(--k) * 12ms)}
+  .rlayer.drop .rc{animation:drop .46s cubic-bezier(.5,0,.6,1) both;animation-delay:calc(var(--j) * 38ms)}
+  @keyframes split{
+    to{transform:translate(calc(var(--side) * 54%), calc(var(--k) * -1.4px - 3%)) rotate(calc(var(--side) * (7deg + var(--k) * 0.5deg)))}
+  }
+  @keyframes drop{
+    0%{transform:translate(calc(var(--side) * 54%), calc(var(--k) * -1.4px - 3%)) rotate(calc(var(--side) * (7deg + var(--k) * 0.5deg)))}
+    55%{transform:translate(calc(var(--side) * 10%), calc(var(--j) * -0.6px - 6%)) rotate(calc(var(--side) * 3deg))}
+    100%{transform:translate(0,calc(var(--j) * -0.6px)) rotate(0)}
+  }
+  .pile.squaring .under,.pile.squaring .card3d{animation:square .35s ease-out}
+  @keyframes square{0%{transform:translate(0,-6px) scale(1.015)} 100%{transform:var(--rest,none)}}
+  .card3d.lift{animation:lift .55s cubic-bezier(.2,.7,.2,1)}
+  @keyframes lift{0%{transform:translate(0,-2%) scale(1.04);box-shadow:none} 100%{transform:none}}
+  .card3d.tuck{animation:tuck .4s cubic-bezier(.4,0,.8,.4) forwards}
+  /* A connected pattern is pulled out of the deck: it slides out from under the pile to
+     the side, comes over the top card, and lands on top. */
+  .puller{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:var(--panel);box-shadow:0 16px 38px var(--shadow);z-index:0;animation:pullOut .85s cubic-bezier(.3,.6,.3,1) forwards}
+  .puller.over{z-index:5}
+  .puller img{width:100%;height:100%;object-fit:cover;display:block}
+  @keyframes pullOut{
+    0%{transform:translate(0,6px) scale(.98)}
+    45%{transform:translate(64%,-2%) rotate(9deg) scale(1)}
+    100%{transform:none}
+  }
+  .card3d.settle{animation:settle .4s ease-out .45s both}
+  @keyframes settle{to{transform:var(--r1)}}
+  @keyframes tuck{to{transform:translate(0,10px) scale(.985);opacity:0}}
+  .count{color:var(--muted);font-size:15px;margin:12px 0 0;text-align:center}
+  .hint{color:var(--muted);font-size:15px;margin:8px 0 0}
+  kbd{font-family:inherit;border:1px solid var(--rule);border-radius:4px;padding:0 5px}
+  /* the reading side */
+  .reading .part{font-variant:all-small-caps;letter-spacing:.12em;font-size:16px;margin:0}
+  .reading h2{font-weight:400;font-size:30px;margin:2px 0 6px;line-height:1.15}
+  .reading p.sum{margin:0 0 6px;font-style:italic;font-size:21px}
+  /* The head keeps one height whether the title and summary take one line or two
+     (longest title 36 characters, longest summary 85), so "Connected patterns"
+     never moves between cards. */
+  .reading .head{min-height:222px}
+  .reading .connections{margin:14px 0 0}
+  .reading .head,.reading .connections{transition:opacity .28s ease,transform .28s ease}
+  .reading.changing .head,.reading.changing .connections{opacity:0;transform:translateY(6px)}
+  .reading.changing .connections{transition-delay:.04s}
+  .reading h3{font-weight:400;font-size:21px;margin:0 0 8px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{border:1px solid var(--rule);border-left:6px solid var(--acc,#999);background:var(--panel);color:var(--ink);border-radius:10px;padding:8px 12px;font:inherit;font-size:17px;cursor:pointer;text-align:left}
+  .chip:hover{border-color:var(--blue)}
+  .chip small{color:var(--muted);margin-right:6px}
+  footer{border-top:1px solid var(--rule);margin-top:40px;padding:26px 0 48px;color:var(--muted);font-size:16px}
+  footer p{margin:6px 0}
+  @media (max-width:760px){ .table{grid-template-columns:1fr;gap:26px} .pile{width:min(100%,300px)} body{font-size:18px} .reading{text-align:center} .reading .head{min-height:250px} .chips{justify-content:center} }
+  @media (prefers-reduced-motion: reduce){ .card3d,.under,.rc,.reading .head,.reading .connections{transition:none;animation:none !important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="topbar" aria-label="Site">
+    <a class="brand" href="../"><img src="../favicon.svg" alt="" width="26" height="26">A Civilization Worth Inheriting</a>
+    <span class="langs"><a href="./" lang="en" aria-current="page">English</a><a href="../zh/" lang="zh-Hans" hreflang="zh-Hans">中文</a></span>
+  </nav>
+  <header>
+    <p class="eyebrow">The Pattern Deck</p>
+    <h1>Shuffle the deck</h1>
+    <p class="lede">The 108 patterns as cards. Shuffle them, step through, turn any card over to read it, and follow its connections to the next.</p>
+  </header>
+
+  <section class="table" id="table">
+    <div class="deckside">
+      <div class="pile" id="pile">
+        <div class="under" id="u3" style="--rest:var(--r3)"><img id="u3img" src="" alt="" width="600" height="1037"></div>
+        <div class="under" id="u2" style="--rest:var(--r2)"><img id="u2img" src="" alt="" width="600" height="1037"></div>
+        <div class="under" id="u1" style="--rest:var(--r1)"><img id="u1img" src="" alt="" width="600" height="1037"></div>
+        <div class="card3d" id="card" role="button" tabindex="0" aria-label="Turn the top card over" aria-pressed="false">
+          <span class="face front"><img id="cardFront" src="" width="600" height="1037" alt=""></span>
+          <span class="face back"><img id="cardBack" src="" width="600" height="1037" alt=""></span>
+        </div>
+        <div class="rlayer" id="rlayer" aria-hidden="true" hidden></div>
+      </div>
+      <div class="actions">
+        <button class="btn small" id="prevBtn" type="button" aria-label="Previous card">&larr; Previous</button>
+        <button class="btn small" id="flipBtn" type="button">Turn it over</button>
+        <button class="btn small" id="nextBtn" type="button" aria-label="Next card">Next &rarr;</button>
+      </div>
+      <div class="actions" style="margin-top:10px">
+        <button class="btn primary" id="shuffleBtn" type="button">Shuffle</button>
+        <a class="btn" id="shareLink" href="#">Link to this card</a>
+      </div>
+      <p class="count" id="count"></p>
+      <p class="hint" style="text-align:center"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> step · <kbd>space</kbd> turns it over · <kbd>s</kbd> shuffles</p>
+    </div>
+
+    <div class="reading">
+      <div class="head">
+        <p class="part" id="partLabel"></p>
+        <h2 id="cardTitle"></h2>
+        <p class="sum" id="cardSummary"></p>
+        <p class="hint">The picture side names the pattern; the other side gives it in brief, with a first move. Tap the card to turn it.</p>
+      </div>
+      <div class="connections">
+        <h3>Connected patterns</h3>
+        <p class="hint" style="margin:0 0 10px">The patterns this card leans on. Pick one and it comes to the top of the deck.</p>
+        <div class="chips" id="chips"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>These are the 108 patterns of <a href="../">A Civilization Worth Inheriting</a>. The printed deck has a picture on every front and the pattern in brief on the back; the book has the whole argument. <a href="https://civilization.galley.so">Talk with the book</a> if a card raises a question.</p>
+    <p><strong>by <a href="https://earthpilot.ai">EarthPilot</a></strong> · built in the open at the <a href="https://earthpilot.ai/playground">Singularity Playground</a>. Text CC BY-NC-SA 4.0 · Copyright © 2026 Anthony David Adams. Some rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var PARTS = {"1": {"roman": "I", "name": "Responsibility across time", "color": "#8F6208"}, "2": {"roman": "II", "name": "Becoming human together", "color": "#B13B2B"}, "3": {"roman": "III", "name": "The living planet", "color": "#3B7431"}, "4": {"roman": "IV", "name": "Places and material life", "color": "#6B4423"}, "5": {"roman": "V", "name": "An economy that supports life", "color": "#6B6A1A"}, "6": {"roman": "VI", "name": "Power that remains answerable", "color": "#8A1C3C"}, "7": {"roman": "VII", "name": "A civilization that can know", "color": "#6B3FA0"}, "8": {"roman": "VIII", "name": "Living with artificial minds", "color": "#0D7371"}, "9": {"roman": "IX", "name": "Continuity through disruption", "color": "#B0500F"}, "10": {"roman": "X", "name": "Neighbors in the cosmos", "color": "#8A2585"}, "11": {"roman": "XI", "name": "Lives worth living", "color": "#B83E70"}, "12": {"roman": "XII", "name": "Putting the language to work", "color": "#4E5B66"}};
+  var CARDS = [{"n":1,"id":"001","t":"Leave Room for the Future","p":1,"s":"Preserve the conditions and freedom for descendants to choose.","c":[2,7,32,72,107]},{"n":2,"id":"002","t":"Enough for the Living","p":1,"s":"Meet present needs while building capacity for later generations.","c":[4,38,45]},{"n":3,"id":"003","t":"A Seat for the Absent","p":1,"s":"Give unrepresented interests independent advocates with bounded powers.","c":[8,22,27,47]},{"n":4,"id":"004","t":"A Floor Beneath Everyone","p":1,"s":"Protect basic security from fortune, productivity, and political favor.","c":[2,16,37,49]},{"n":5,"id":"005","t":"Many Ways to Flourish","p":1,"s":"Allow different good lives within shared protections against harm.","c":[15,48,94,97]},{"n":6,"id":"006","t":"Proportionate Caution","p":1,"s":"Match safeguards to the scale and reversibility of possible damage.","c":[7,66,74,103]},{"n":7,"id":"007","t":"The Right to Reconsider","p":1,"s":"Build review, appeal, amendment, and exit into lasting arrangements.","c":[46,54,65,107]},{"n":8,"id":"008","t":"Decisions at the Right Scale","p":1,"s":"Keep authority close while governing consequences that cross borders.","c":[3,19,50,51]},{"n":9,"id":"009","t":"Keep the Capacity to Repair","p":1,"s":"Preserve the skills and resources needed to correct mistakes.","c":[31,32,68,80]},{"n":10,"id":"010","t":"Safe Beginnings","p":2,"s":"Make early life secure without prescribing a single family form.","c":[4,11,16,43]},{"n":11,"id":"011","t":"A Village Around Every Child","p":2,"s":"Support caregivers and reproductive freedom through reliable public provision.","c":[10,14,28,43]},{"n":12,"id":"012","t":"The Skill of Relationship","p":2,"s":"Practice listening, boundaries, conflict, commitment, and repair.","c":[13,52,57,98]},{"n":13,"id":"013","t":"Consent as a Daily Practice","p":2,"s":"Make refusal intelligible, consequential, and safe.","c":[12,49,60,67]},{"n":14,"id":"014","t":"A Common Table","p":2,"s":"Create recurring places to share food, attention, and responsibility.","c":[11,34,43,96]},{"n":15,"id":"015","t":"A Place to Be Alone","p":2,"s":"Protect privacy and solitude within a connected life.","c":[5,29,67,91]},{"n":16,"id":"016","t":"Care Across a Lifetime","p":2,"s":"Organize health, disability support, and aging around actual needs.","c":[4,13,18,43]},{"n":17,"id":"017","t":"Work With Meaning","p":2,"s":"Offer contribution, mastery, and recognition beyond economic necessity.","c":[37,39,58,91]},{"n":18,"id":"018","t":"A Dignified Death","p":2,"s":"Support choice, companionship, and relief at the end of life.","c":[13,16,93,98]},{"n":19,"id":"019","t":"Watersheds as Commons","p":3,"s":"Coordinate water responsibilities across property and political boundaries.","c":[3,8,27,35]},{"n":20,"id":"020","t":"Room for Wildness","p":3,"s":"Protect habitat where other species can pursue their own lives.","c":[21,22,28,60]},{"n":21,"id":"021","t":"Connected Habitats","p":3,"s":"Let living populations move as seasons and climates change.","c":[19,20,74,104]},{"n":22,"id":"022","t":"Animals With Interests","p":3,"s":"Consider individual suffering and agency alongside species survival.","c":[20,23,27,70]},{"n":23,"id":"023","t":"Food Without Cruelty","p":3,"s":"Build nourishing food systems that move beyond animal confinement and slaughter.","c":[14,22,38,45]},{"n":24,"id":"024","t":"Soil as an Inheritance","p":3,"s":"Restore fertility, living structure, and the capacity to retain water.","c":[19,31,41,63]},{"n":25,"id":"025","t":"Oceans With Guardians","p":3,"s":"Assign enforceable duties for ecosystems beyond easy public scrutiny.","c":[22,26,27,51]},{"n":26,"id":"026","t":"End Pollution at the Source","p":3,"s":"Prevent persistent harm and fund cleanup where prevention fails.","c":[31,38,42,78]},{"n":27,"id":"027","t":"Guardians With Duties","p":3,"s":"Make ecological representatives accountable for evidence, conflicts, and results.","c":[3,19,46,104]},{"n":28,"id":"028","t":"Settlements That Belong to Place","p":4,"s":"Design with local ecology, climate, history, and inhabitants.","c":[19,20,29,41]},{"n":29,"id":"029","t":"Housing That Can Change","p":4,"s":"Let homes adapt to different bodies, households, and uses.","c":[11,15,16,31]},{"n":30,"id":"030","t":"Clean Energy in Many Hands","p":4,"s":"Combine reliable supply with public accountability and distributed capability.","c":[32,38,39,73]},{"n":31,"id":"031","t":"Materials That Can Return","p":4,"s":"Design for reuse while accounting for losses and extraction.","c":[9,26,32,38]},{"n":32,"id":"032","t":"Pay for Maintenance First","p":4,"s":"Fund upkeep, repair, replacement, and retirement before expansion.","c":[2,9,44,80]},{"n":33,"id":"033","t":"Beauty in Ordinary Places","p":4,"s":"Bring proportion, craft, sensory pleasure, and living things into daily life.","c":[28,32,34,99]},{"n":34,"id":"034","t":"Public Space Without a Purchase","p":4,"s":"Provide places to gather without having to buy access.","c":[4,14,15,96]},{"n":35,"id":"035","t":"Water Where Life Needs It","p":4,"s":"Coordinate drinking water, sanitation, flood protection, and ecological flows.","c":[19,24,32,78]},{"n":36,"id":"036","t":"Enough Local Capacity","p":4,"s":"Retain essential capabilities while participating in wider networks.","c":[9,73,76,79]},{"n":37,"id":"037","t":"An Economy of Enough","p":5,"s":"Secure sufficiency and make room for ambition without compulsory consumption.","c":[2,4,38,63,91]},{"n":38,"id":"038","t":"Account for the Full Cost","p":5,"s":"Expose harms shifted onto strangers, animals, and future inhabitants.","c":[22,26,31,45,101]},{"n":39,"id":"039","t":"Share the Gains of Invention","p":5,"s":"Broaden participation in the wealth created by improving technology.","c":[17,40,45,64,91]},{"n":40,"id":"040","t":"Common Wealth Dividends","p":5,"s":"Return a share of jointly created value to the public.","c":[4,19,39,42,50]},{"n":41,"id":"041","t":"Land With Lasting Duties","p":5,"s":"Connect landholding to stewardship, access, and responsibility for displacement.","c":[19,24,27,29,60]},{"n":42,"id":"042","t":"Ownership With Obligations","p":5,"s":"Match control and reward with liability and public duties.","c":[32,40,46,49,80]},{"n":43,"id":"043","t":"Pay for Care","p":5,"s":"Recognize and support labor that sustains people beyond formal markets.","c":[11,16,17,39,91]},{"n":44,"id":"044","t":"Finance That Can Wait","p":5,"s":"Fund long projects without giving creditors permanent political control.","c":[1,7,32,38,80]},{"n":45,"id":"045","t":"A Fair Transition","p":5,"s":"Support affected workers and communities as harmful systems are retired.","c":[17,30,39,43,58]},{"n":46,"id":"046","t":"Power Must Explain Itself","p":6,"s":"Require reasons, disclosure, review, and enforceable limits.","c":[42,47,56,65,104]},{"n":47,"id":"047","t":"Citizens Who Deliberate","p":6,"s":"Combine representative institutions with informed, inclusive public judgment.","c":[3,46,48,55,57]},{"n":48,"id":"048","t":"Rights That Majorities Cannot Remove","p":6,"s":"Protect basic freedoms and equal standing against popularity contests.","c":[4,13,46,49,97]},{"n":49,"id":"049","t":"The Right to Exit and Belong","p":6,"s":"Allow departure without making displacement the price of dissent.","c":[13,29,42,48,85]},{"n":50,"id":"050","t":"Commons at Every Scale","p":6,"s":"Match shared resources with usable rules and accountable stewardship.","c":[8,19,25,40,69]},{"n":51,"id":"051","t":"Treaties for Shared Hazards","p":6,"s":"Govern risks that no community can contain by itself.","c":[8,25,46,52,83]},{"n":52,"id":"052","t":"Peace as a Maintained Practice","p":6,"s":"Invest in prevention, negotiation, verification, and repair after violence.","c":[12,46,48,51,62]},{"n":53,"id":"053","t":"Emergency Powers That End","p":6,"s":"Require deadlines, independent review, and restoration of ordinary authority.","c":[6,46,48,77,78]},{"n":54,"id":"054","t":"Constitutions That Can Learn","p":6,"s":"Allow legitimate revision while protecting people during political change.","c":[1,7,47,48,107]},{"n":55,"id":"055","t":"Shared Reality","p":7,"s":"Support reliable public inquiry without installing an official monopoly on truth.","c":[46,56,57,61,63]},{"n":56,"id":"056","t":"Show the Work","p":7,"s":"Make consequential claims traceable to methods, evidence, and uncertainty.","c":[46,55,60,65,105]},{"n":57,"id":"057","t":"Keep Dissent Safe","p":7,"s":"Protect challenges to authority, including scientific and cultural authority.","c":[46,48,55,62,81]},{"n":58,"id":"058","t":"Learning Across a Lifetime","p":7,"s":"Make education available across age, circumstance, and changing capabilities.","c":[17,45,59,68,94]},{"n":59,"id":"059","t":"Libraries That Survive","p":7,"s":"Preserve knowledge through distributed copies, translation, and usable formats.","c":[56,58,60,79,80]},{"n":60,"id":"060","t":"Local Knowledge With Consent","p":7,"s":"Learn with communities while respecting attribution, refusal, and control.","c":[13,27,41,56,92]},{"n":61,"id":"061","t":"Public Interest Science","p":7,"s":"Sustain independent research into neglected needs and shared dangers.","c":[3,55,56,57,63]},{"n":62,"id":"062","t":"Memory of Harm","p":7,"s":"Preserve testimony and accountability without making inherited hostility compulsory.","c":[48,52,57,59,98]},{"n":63,"id":"063","t":"Measure What Matters","p":7,"s":"Use plural indicators, distributional evidence, and direct lived experience.","c":[37,55,56,61,104]},{"n":64,"id":"064","t":"Delegated Intelligence","p":8,"s":"Give systems explicit purposes, bounded authority, and answerable operators.","c":[46,65,66,68,72]},{"n":65,"id":"065","t":"Auditable Power","p":8,"s":"Make consequential automated decisions inspectable and open to meaningful appeal.","c":[46,56,63,64,104]},{"n":66,"id":"066","t":"Capability With Containment","p":8,"s":"Tie access to dangerous capabilities to demonstrated control and oversight.","c":[6,64,65,74,103]},{"n":67,"id":"067","t":"Freedom From Machine Persuasion","p":8,"s":"Protect attention, privacy, and consent against manipulative optimization.","c":[13,49,55,64,91]},{"n":68,"id":"068","t":"Human Skills Worth Keeping","p":8,"s":"Retain competence wherever dependence could destroy meaningful choice.","c":[9,17,58,64,79]},{"n":69,"id":"069","t":"A Commons of Useful Tools","p":8,"s":"Share benefits broadly while governing dangerous capabilities proportionately.","c":[31,32,50,58,64]},{"n":70,"id":"070","t":"Uncertain Minds Deserve Care","p":8,"s":"Reduce plausible suffering without pretending consciousness has been settled.","c":[6,22,61,71,94]},{"n":71,"id":"071","t":"Personhood Beyond Resemblance","p":8,"s":"Evaluate possible interests without confusing fluent performance with experience.","c":[3,22,48,70,88]},{"n":72,"id":"072","t":"No Irreversible Surrender","p":8,"s":"Preserve accountable control and workable alternatives to concentrated machine power.","c":[1,7,49,64,79]},{"n":73,"id":"073","t":"Diverse Systems","p":9,"s":"Avoid dependence on one supplier, model, crop, or institutional design.","c":[30,36,50,74,76]},{"n":74,"id":"074","t":"Failure That Stays Local","p":9,"s":"Prevent breakdowns from spreading through every essential network.","c":[8,36,66,73,78]},{"n":75,"id":"075","t":"Public Health for All Species","p":9,"s":"Coordinate prevention across human, animal, and ecological health.","c":[20,22,26,51,77]},{"n":76,"id":"076","t":"Reserves Before Scarcity","p":9,"s":"Maintain accessible buffers of essentials with transparent release rules.","c":[32,36,73,77,78]},{"n":77,"id":"077","t":"Practice the Emergency","p":9,"s":"Rehearse real responsibilities without turning preparation into public intimidation.","c":[53,74,75,76,81]},{"n":78,"id":"078","t":"Recovery Before Disaster","p":9,"s":"Establish restoration plans, mutual aid, and fair claims in advance.","c":[29,45,53,74,98]},{"n":79,"id":"079","t":"A Civilization That Can Reboot","p":9,"s":"Preserve usable tools and knowledge across severe infrastructure loss.","c":[9,36,59,68,72]},{"n":80,"id":"080","t":"Institutions With Successors","p":9,"s":"Transfer skills and authority before founders become indispensable.","c":[27,32,42,44,59]},{"n":81,"id":"081","t":"Remember the Near Misses","p":9,"s":"Turn narrowly avoided failures into shared, revisable knowledge.","c":[57,63,77,80,105]},{"n":82,"id":"082","t":"Earth Is Not Disposable","p":10,"s":"Preserve our living home as capabilities beyond it expand.","c":[19,20,30,38,83]},{"n":83,"id":"083","t":"Space as a Shared Responsibility","p":10,"s":"Govern debris, resources, access, and responsibilities across borders.","c":[1,38,50,51,84]},{"n":84,"id":"084","t":"Worlds With Their Own Claims","p":10,"s":"Investigate before disturbing places that may harbor unfamiliar life.","c":[1,6,20,83,89]},{"n":85,"id":"085","t":"Settlements That Can Refuse","p":10,"s":"Protect consent where dependence on life support magnifies coercion.","c":[4,13,48,49,53]},{"n":86,"id":"086","t":"Listen Before Sending","p":10,"s":"Distinguish observation from transmissions that expose others to consequences.","c":[1,6,51,87,88]},{"n":87,"id":"087","t":"Confirm Before Announcing","p":10,"s":"Verify extraordinary evidence through independent, transparent examination.","c":[55,56,57,59,86]},{"n":88,"id":"088","t":"No One Speaks for Earth","p":10,"s":"Require legitimate, plural authorization for acts claiming planetary representation.","c":[3,47,51,71,86]},{"n":89,"id":"089","t":"Contact Without Contamination","p":10,"s":"Control biological, ecological, and informational hazards in both directions.","c":[6,56,66,84,87]},{"n":90,"id":"090","t":"The Right to Remain Unknown","p":10,"s":"Respect refusal, privacy, and limits to disclosure across civilizations.","c":[13,49,60,84,96]},{"n":91,"id":"091","t":"Time That Is Your Own","p":11,"s":"Protect leisure and autonomy as productivity and lifespans change.","c":[14,17,39,43,67]},{"n":92,"id":"092","t":"A Living Culture","p":11,"s":"Support creation, transmission, adaptation, and cultural self-determination.","c":[58,59,60,91,97]},{"n":93,"id":"093","t":"Rituals for Change","p":11,"s":"Mark birth, commitment, transition, loss, and collective renewal.","c":[10,18,49,92,98]},{"n":94,"id":"094","t":"Wonder Without Compulsion","p":11,"s":"Protect spiritual inquiry alongside freedom from imposed belief.","c":[15,33,58,70,99]},{"n":95,"id":"095","t":"Games Worth Playing","p":11,"s":"Create challenge, mastery, delight, and cooperation without manufactured desperation.","c":[11,34,67,91,97]},{"n":96,"id":"096","t":"Hospitality Across Difference","p":11,"s":"Welcome encounter while respecting boundaries and reciprocal responsibilities.","c":[14,34,49,90,92]},{"n":97,"id":"097","t":"Freedom to Be Strange","p":11,"s":"Leave room for eccentricity, experimentation, and harmless refusal.","c":[5,13,48,49,92]},{"n":98,"id":"098","t":"Grief With Somewhere to Go","p":11,"s":"Give private and collective loss companionship, expression, and time.","c":[16,18,62,78,93]},{"n":99,"id":"099","t":"Beauty Without Possession","p":11,"s":"Expand opportunities to enjoy what need not be individually owned.","c":[20,33,34,60,94]},{"n":100,"id":"100","t":"Begin With a Place","p":12,"s":"Choose a real place, its inhabitants, and a tractable need.","c":[8,28,34,60,101]},{"n":101,"id":"101","t":"Map Who Bears the Cost","p":12,"s":"Trace benefits, burdens, dependencies, and missing voices.","c":[3,22,27,38,100]},{"n":102,"id":"102","t":"Assemble a Working Language","p":12,"s":"Connect the patterns needed for one coherent intervention.","c":[5,8,100,101,103]},{"n":103,"id":"103","t":"Small Trials With Real Boundaries","p":12,"s":"Test safely with consent and limits on exposure.","c":[6,7,13,66,104]},{"n":104,"id":"104","t":"Independent Eyes","p":12,"s":"Invite reviewers who can challenge incentives and conclusions.","c":[46,56,63,65,103]},{"n":105,"id":"105","t":"Publish the Failures","p":12,"s":"Share negative results while protecting personal privacy.","c":[56,57,59,81,104]},{"n":106,"id":"106","t":"Make Better Practices Easier","p":12,"s":"Remove obstacles in defaults, financing, training, and rules.","c":[23,31,43,67,102]},{"n":107,"id":"107","t":"Return and Reconsider","p":12,"s":"Revisit consequences, repair harms, and revise or retire.","c":[7,32,54,63,108]},{"n":108,"id":"108","t":"Keep the Language Open","p":12,"s":"Preserve attribution, competing versions, and freedom to improve.","c":[1,5,56,57,107]}];
+  var byN = {}; CARDS.forEach(function(c){ byN[c.n] = c; });
+  var IMG = '../assets/deck/';
+  var $ = function(id){ return document.getElementById(id); };
+  var card = $('card'), front = $('cardFront'), back = $('cardBack'), pile = $('pile');
+  var unders = [$('u1img'), $('u2img'), $('u3img')];
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var order = [], pos = 0, busy = false;
+
+  function newOrder(){
+    order = CARDS.map(function(c){ return c.n; });
+    for (var i = order.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = order[i]; order[i] = order[j]; order[j] = t; }
+  }
+  function src(n){ return IMG + byN[n].id + '-front.jpg'; }
+  function setHash(n){ if (history.replaceState) history.replaceState(null, '', '#' + n); else location.hash = String(n); }
+  var reading = document.querySelector('.reading'), fadeTimer = null;
+  function render(){
+    paintCards();                       // pictures change at the hand-off, instantly
+    if (reduced) { paintText(); return; }
+    // The words fade out, change while invisible, and fade back in.
+    reading.classList.add('changing');
+    clearTimeout(fadeTimer);
+    fadeTimer = setTimeout(function(){ paintText(); reading.classList.remove('changing'); }, 290);
+  }
+  function paintCards(){
+    var n = order[pos], c = byN[n];
+    front.src = src(n); back.src = IMG + c.id + '-back.jpg';
+    front.alt = 'Front of card ' + c.n + ', ' + c.t; back.alt = 'Back of card ' + c.n + ': ' + c.s;
+    for (var k = 0; k < 3; k++) {
+      var m = order[(pos + 1 + k) % order.length];
+      unders[k].src = src(m); unders[k].parentNode.style.visibility = order.length > k + 1 ? 'visible' : 'hidden';
+    }
+    $('shareLink').href = '#' + c.n;
+    document.title = c.n + ' · ' + c.t + ' · The Pattern Deck';
+    new Image().src = src(order[(pos - 1 + order.length) % order.length]);
+    setHash(n);
+  }
+  function paintText(){
+    var n = order[pos], c = byN[n];
+    var p = PARTS[c.p];
+    $('partLabel').textContent = 'Part ' + p.roman + ' · ' + p.name; $('partLabel').style.color = p.color;
+    $('cardTitle').textContent = c.n + ' · ' + c.t;
+    $('cardSummary').textContent = c.s;
+    $('count').textContent = 'Card ' + (pos + 1) + ' of ' + order.length + ' in this shuffle';
+    var chips = $('chips'); chips.innerHTML = '';
+    c.c.forEach(function(m){
+      var k = byN[m]; if (!k) return;
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'chip';
+      b.style.setProperty('--acc', PARTS[k.p].color);
+      b.innerHTML = '<small>' + k.n + '</small>' + k.t; b.title = k.s;
+      b.addEventListener('click', function(){ jump(m); });
+      chips.appendChild(b);
+      new Image().src = src(m);
+    });
+  }
+  // Never hard-reset a turned card: if it is showing its back, turn it face up first
+  // (the normal flip transition), then carry on.
+  function faceUp(then){
+    if (!card.classList.contains('flipped') || reduced) { card.classList.remove('flipped'); card.setAttribute('aria-pressed', 'false'); then(); return; }
+    card.classList.remove('flipped'); card.setAttribute('aria-pressed', 'false');
+    setTimeout(then, 720);
+  }
+  function step(dir){
+    if (busy) return;
+    busy = true;
+    faceUp(function(){ stepNow(dir); });
+  }
+  var underEls = [$('u1'), $('u2'), $('u3')];
+  // Swap the top card's picture only once it is decoded, so nothing flashes.
+  function ready(n, then){
+    // Wait for the picture to decode, but never longer than the leave animation:
+    // a hidden tab can defer decoding, and the deck must not lock up waiting.
+    var im = new Image(), done = false; im.src = src(n);
+    var go = function(){ if (done) return; done = true; then(); };
+    if (im.decode) im.decode().then(go, go); else if (im.complete) go(); else { im.onload = go; im.onerror = go; }
+    setTimeout(go, 400);
+  }
+  // Put every element back on its slot with no motion, then repaint the pile.
+  function resetSlots(){
+    pile.classList.add('noanim');
+    underEls.forEach(function(u){ u.classList.remove('to-top', 'to-1', 'to-2', 'to-3'); });
+    card.classList.remove('go-next', 'drop1', 'settle', 'arrive', 'come-back', 'lift');
+    void pile.offsetWidth;
+    setTimeout(function(){ pile.classList.remove('noanim'); }, 30);
+  }
+  function stepNow(dir){
+    if (reduced) { pos = (pos + dir + order.length) % order.length; render(); busy = false; return; }
+    if (dir > 0) {
+      // Next: the top card leaves left while the pile rises one slot; when the swap
+      // comes, the next card is already sitting in the top position.
+      var n = order[(pos + 1) % order.length];
+      card.classList.add('go-next');
+      underEls[0].classList.add('to-top'); underEls[1].classList.add('to-1'); underEls[2].classList.add('to-2');
+      ready(n, function(){
+        setTimeout(function(){
+          pos = (pos + 1) % order.length;
+          resetSlots(); render(); busy = false;
+        }, 450);
+      });
+      return;
+    }
+    // Previous: the earlier card slides back in over the top while the current top
+    // eases down into the first slot and the pile drops one slot.
+    var m = order[(pos - 1 + order.length) % order.length];
+    var inc = document.createElement('div'); inc.className = 'incoming';
+    var im = document.createElement('img'); im.src = src(m); im.alt = ''; im.width = 600; im.height = 1037; inc.appendChild(im);
+    ready(m, function(){
+      pile.appendChild(inc);
+      card.classList.add('drop1');
+      underEls[0].classList.add('to-2'); underEls[1].classList.add('to-3');
+      setTimeout(function(){
+        pos = (pos - 1 + order.length) % order.length;
+        resetSlots(); render(); inc.remove(); busy = false;
+      }, 520);
+    });
+  }
+  function jump(n){
+    if (busy) return;
+    var i = order.indexOf(n); if (i < 0 || i === pos) return;
+    busy = true;
+    faceUp(function(){ jumpNow(n, i); });
+  }
+  function jumpNow(n, i){
+    // Pull the card out of the deck and put it on top of where we are: Next goes on
+    // from it, Previous returns to the card we came from.
+    var place = function(){
+      order.splice(i, 1); if (i < pos) pos -= 1;        // take it out of the deck
+      order.splice(pos + 1, 0, n); pos += 1; render();  // lay it on top of the card we were on
+    };
+    if (reduced) { place(); busy = false; return; }
+    var pull = document.createElement('div'); pull.className = 'puller';
+    var im = document.createElement('img'); im.src = src(n); im.alt = ''; im.width = 600; im.height = 1037; pull.appendChild(im);
+    pile.insertBefore(pull, card);                      // behind the top card to start
+    card.classList.remove('arrive', 'come-back', 'lift');
+    card.classList.add('settle');
+    underEls[0].classList.add('to-2'); underEls[1].classList.add('to-3');                       // the old top card eases back as the new one lands
+    setTimeout(function(){ pull.classList.add('over'); }, 380);   // past the edge: now it crosses over the top
+    setTimeout(function(){
+      resetSlots(); place(); pull.remove(); busy = false;
+    }, 880);
+  }
+  var N_RIFFLE = 20;
+  function shuffle(){
+    if (busy) return;
+    busy = true;
+    faceUp(shuffleNow);
+  }
+  function shuffleNow(){
+    newOrder(); pos = 0;
+    if (reduced) { render(); busy = false; return; }
+    var layer = $('rlayer');
+    layer.innerHTML = '';
+    // Build the layer from the NEW order so the card that ends on top is the one you
+    // then see: drop index j lands j-th from the bottom, so j = N-1 is the top card.
+    for (var j = 0; j < N_RIFFLE; j++) {
+      var d = document.createElement('div'); d.className = 'rc';
+      d.style.setProperty('--j', j); d.style.setProperty('--k', Math.floor(j / 2)); d.style.setProperty('--side', j % 2 ? 1 : -1);
+      d.style.zIndex = j;
+      var im = document.createElement('img'); im.src = src(order[(N_RIFFLE - 1 - j) % order.length]); im.alt = ''; im.width = 600; im.height = 1037;
+      d.appendChild(im); layer.appendChild(d);
+    }
+    // 1. the top card tucks into the pile and the layer takes over
+    card.classList.remove('arrive', 'lift'); card.classList.add('tuck');
+    setTimeout(function(){
+      layer.hidden = false; card.style.visibility = 'hidden'; card.classList.remove('tuck');
+      layer.classList.add('split');                                   // 2. two halves
+      setTimeout(function(){
+        layer.classList.remove('split'); layer.classList.add('drop'); // 3. interleave
+        var total = 460 + (N_RIFFLE - 1) * 38;
+        setTimeout(function(){
+          resetSlots(); render();                                     // 4. square up, new top card lifts
+          card.style.visibility = ''; layer.hidden = true; layer.classList.remove('drop'); layer.innerHTML = '';
+          pile.classList.add('squaring'); card.classList.add('lift');
+          setTimeout(function(){ pile.classList.remove('squaring'); card.classList.remove('lift'); busy = false; }, 560);
+        }, total + 60);
+      }, 520);
+    }, 380);
+  }
+  function flip(){ var f = card.classList.toggle('flipped'); card.setAttribute('aria-pressed', f ? 'true' : 'false'); }
+
+  card.addEventListener('click', flip);
+  card.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } });
+  $('flipBtn').addEventListener('click', flip);
+  $('nextBtn').addEventListener('click', function(){ step(1); });
+  $('prevBtn').addEventListener('click', function(){ step(-1); });
+  $('shuffleBtn').addEventListener('click', shuffle);
+  document.addEventListener('keydown', function(e){
+    if (e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+    if (e.key === 'ArrowRight') step(1);
+    else if (e.key === 'ArrowLeft') step(-1);
+    else if (e.key === 's' || e.key === 'S') shuffle();
+    else if ((e.key === ' ' || e.key === 'f' || e.key === 'F') && document.activeElement !== card) { e.preventDefault(); flip(); }
+  });
+  window.addEventListener('hashchange', function(){ var n = parseInt(location.hash.slice(1), 10); if (byN[n] && n !== order[pos]) jump(n); });
+
+  newOrder();
+  var start = parseInt(location.hash.slice(1), 10);
+  if (byN[start]) { var i = order.indexOf(start); order.splice(i, 1); order.unshift(start); }
+  paintCards(); paintText();
+})();
+</script>
+</body>
+</html>
