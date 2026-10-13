@@ -32,3 +32,6 @@ deck/qpmn/.env
 deck/rigid-box/template.pdf
 deck/rigid-box/box.*
 deck/rigid-box/proof-over-template.png
+
+# Workbook: generated PDF and TeX stay out; scripts and prompts are tracked
+workbook/build/

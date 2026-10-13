@@ -1,0 +1,868 @@
+{
+ "1": [
+  "What have you already made easier for a successor to repair or change? Name the records, skills, or supplier choices that make this possible.",
+  "Whose urgent need could your long-term plan delay? What support would let them get through the wait without losing housing, health, or income?",
+  "Which promise in your plan needs stability to work? Where would keeping every option open abandon someone who depends on it?",
+  "In a month, could someone outside your team use the records to explain one lasting decision? What would their confusion reveal?",
+  "Choose a date to share one dependency with someone likely to inherit it. Save their objection alongside your reasons for proceeding."
+ ],
+ "65": [
+  "Which records already let you trace an automated decision from input to outcome? Where does the trail stop at a vendor's door?",
+  "Who cannot currently challenge a decision that affects them? What access would help them without exposing someone else's private information?",
+  "Who pays your reviewer, and what can they refuse to let the reviewer inspect? How will affected people learn about those limits?",
+  "A month after a review finds a serious error, what record would show that someone corrected it rather than merely acknowledged the report?",
+  "Set a date to ask an independent reviewer what they still could not judge with your current records. Name who can address that gap."
+ ],
+ "2": [
+  "Where does your project already improve life before its final benefits arrive? Name one repair or service you could bring forward.",
+  "Who pays first and benefits last in your plan? Describe a cost in rent, travel, missed work, or care that the budget overlooks.",
+  "Could someone refuse your proposed changes and still receive help? Where might relief keep them dependent on the arrangement causing their hardship?",
+  "After one month, what would show you that a participant has more security? Include time or freedom to refuse, alongside money.",
+  "Set a date to ask affected people which promised benefit they would trade for earlier relief. Record disagreements before the next budget decision."
+ ],
+ "3": [
+  "Whose concerns have already changed your proposal despite their absence from meetings? What gave those concerns weight?",
+  "Who could speak for themselves if you paid for translation, transportation, or time away from work? Where would an advocate get in their way?",
+  "How could you challenge someone claiming to speak for future residents or a habitat? What would expose their private preferences or conflicts of interest?",
+  "A month after an advocate joins, what change in your decision or evidence would show their role is more than a name on the agenda?",
+  "By what date will you ask a proposed advocate to disclose who pays them, what they can demand, and how they can be replaced?"
+ ],
+ "4": [
+  "What help in your household or institution already arrives without repeated proof of hardship? What makes it dependable?",
+  "Who cannot use the help you offer because no accessible home, bus route, or care worker is available? What would money alone leave unsolved?",
+  "Where do your rules make a small pay raise costly, or make support depend on intrusive questions? Whose account would help you check?",
+  "What would you need to see next month to know help arrived before a missed bill threatened someone's home? Look beyond approved applications.",
+  "Choose a date to ask a recipient which document request you could remove. Name who can approve that change without weakening necessary checks."
+ ],
+ "5": [
+  "Where does your school, workplace, or neighborhood already welcome different household sizes, care duties, or needs for solitude? What keeps those choices available?",
+  "Which shared rule protects your quiet, access, or safety while limiting someone else's choices? What evidence would justify keeping or changing it?",
+  "In a group you belong to, what would someone lose by disagreeing or leaving? Who could describe that risk without leaders speaking for them?",
+  "What could you learn in a month that an attendance count or income figure would miss about people's ability to live as they choose?",
+  "Set a date to test a proposed room layout or schedule with someone whose daily life differs from yours. Record any new burden they identify."
+ ],
+ "6": [
+  "Which safeguard in your proposal already limits real damage? What evidence connects it to a failure that could actually happen?",
+  "Who is being harmed while your decision waits? Are you asking the proposed replacement for stronger proof than you require from the current arrangement?",
+  "If your small trial spread beyond its planned boundary, could you stop it? Describe what would remain after permission was withdrawn.",
+  "During the next month, what observation would tell you to pause? Could the person watching obtain the evidence and require action?",
+  "Set a date for someone independent to question your weakest assumption. Write down what answer would change the size or timing of your next step."
+ ],
+ "7": [
+  "When has an objection actually changed a rule in your organization? What made a fair hearing possible then?",
+  "Who cannot afford to wait for your appeal process? What temporary arrangement would protect their housing, work, or care while a decision is pending?",
+  "Which protection do you rely on that should survive a missed review date? Who could be hurt if a persistent challenger secured an abrupt change?",
+  "Over the next month, how will you check whether people receive clear decisions in time, rather than merely receive an appeal form?",
+  "Choose a date to ask for a written reason behind one rejected request. Where will you keep it so others can challenge the reasoning?"
+ ],
+ "8": [
+  "Where do you already share rules with another household, team, or community while keeping daily choices local? Which decisions belong clearly to each side?",
+  "Which responsibility has your group received without enough money, staff, or equipment? Who bears the cost when you cannot carry it out?",
+  "When two authorities disagree about your service or project, who must respond? Where could each blame the other while harm continues?",
+  "What could you check next month to tell whether a shared limit is enforced? Who outside your boundary could challenge the result?",
+  "Before your next joint meeting, set a date to propose one clear dispute procedure. Specify which unrelated local choices the larger body cannot take over."
+ ],
+ "9": [
+  "Which records, spare parts, or shared passwords already let your system survive its creator's absence? What can a second person actually reach and use?",
+  "Who quietly keeps your equipment, records, or relationships working? What paid time would prevent that work from becoming a permanent personal obligation?",
+  "Which recurring repair in your budget restores something that keeps causing harm? What different way of meeting the need deserves a comparison?",
+  "What safe practice task could you complete within a month to reveal an unavailable tool or missing permission before a real breakdown?",
+  "Choose a date to pay your usual caretaker for a teaching session. What will the learner practice, and where will you keep their notes?"
+ ],
+ "_source": {
+  "1": "astra",
+  "2": "astra",
+  "3": "astra",
+  "4": "astra",
+  "5": "astra",
+  "6": "astra",
+  "7": "astra",
+  "8": "astra",
+  "9": "astra",
+  "10": "astra",
+  "11": "astra",
+  "12": "astra",
+  "13": "astra",
+  "14": "astra",
+  "15": "astra",
+  "16": "astra",
+  "17": "astra",
+  "18": "astra",
+  "19": "astra",
+  "20": "astra",
+  "21": "astra",
+  "22": "astra",
+  "23": "astra",
+  "24": "astra",
+  "25": "astra",
+  "26": "astra",
+  "27": "astra",
+  "28": "astra",
+  "29": "astra",
+  "30": "astra",
+  "31": "astra",
+  "32": "astra",
+  "33": "astra",
+  "34": "astra",
+  "35": "astra",
+  "36": "astra",
+  "37": "astra",
+  "38": "astra",
+  "39": "astra",
+  "40": "astra",
+  "41": "astra",
+  "42": "astra",
+  "43": "astra",
+  "44": "astra",
+  "45": "astra",
+  "46": "astra",
+  "47": "astra",
+  "48": "astra",
+  "49": "astra",
+  "50": "astra",
+  "51": "astra",
+  "52": "astra",
+  "53": "astra",
+  "54": "astra",
+  "55": "astra",
+  "56": "astra",
+  "57": "astra",
+  "58": "astra",
+  "59": "astra",
+  "60": "astra",
+  "61": "astra",
+  "62": "astra",
+  "63": "astra",
+  "64": "astra",
+  "65": "astra",
+  "66": "astra",
+  "67": "astra",
+  "68": "astra",
+  "69": "astra",
+  "70": "astra",
+  "71": "astra",
+  "72": "astra",
+  "73": "astra",
+  "74": "astra",
+  "75": "astra",
+  "76": "astra",
+  "77": "astra",
+  "78": "astra",
+  "79": "astra",
+  "80": "astra",
+  "81": "astra",
+  "82": "astra",
+  "83": "astra",
+  "84": "astra",
+  "85": "astra",
+  "86": "astra",
+  "87": "astra",
+  "88": "astra",
+  "89": "astra",
+  "90": "astra",
+  "91": "astra",
+  "92": "astra",
+  "93": "astra",
+  "94": "astra",
+  "95": "astra",
+  "96": "astra",
+  "97": "astra",
+  "98": "astra",
+  "99": "astra",
+  "100": "astra",
+  "101": "astra",
+  "102": "astra",
+  "103": "astra",
+  "104": "astra",
+  "105": "astra",
+  "106": "astra",
+  "107": "astra",
+  "108": "astra"
+ },
+ "10": [
+  "Which familiar adults could keep caring for a young child here if the main caregiver became ill? Where would that continuity break?",
+  "What does a local parenting program ask caregivers to do? Name the time, food, money, or transport it leaves them to find.",
+  "Where could a caregiver here mistake an offer of help for an inspection? What protection is needed without making family differences grounds for suspicion?",
+  "After a month, what would show that support reduced a caregiver's exhaustion rather than added appointments and instructions? Whose account would you trust?",
+  "Choose a date to remove one rule or form that keeps a grandparent, adoptive parent, or other caregiver from using an existing service."
+ ],
+ "11": [
+  "Where can children near you already find a familiar adult and room to play? Which children cannot safely reach that place?",
+  "Who answers the emergency calls when other care falls through? Name the pay, backup, and limits that would make their help sustainable.",
+  "Does receiving help here require sharing private family details or accepting pressure to have children? Which condition could you remove?",
+  "In a month, how would you learn whether children feel safe raising concerns about the adults helping them, without making them speak publicly?",
+  "Set a date to ask one school, library, or employer to change an opening or closing time that repeatedly leaves caregivers stranded."
+ ],
+ "12": [
+  "Where have you and another person handled a disagreement without attacking each other's character? Name the words or actions that helped.",
+  "Who risks punishment for speaking plainly in your household or team? What protection would they need before any shared conversation could be safe?",
+  "When has a complaint here been dismissed because of someone's tone? Separate the complaint from the way it was delivered.",
+  "What would you notice within a month if trust were improving? Look for changed behavior and freedom to disagree, rather than apologies alone.",
+  "Choose one promise you have not kept. By what date will you repair the harm or arrange a responsible end to that commitment?"
+ ],
+ "13": [
+  "Which agreement you use already lets people choose separately about recording, sharing, or publication? Where does one yes still cover unrelated uses?",
+  "What could someone lose by refusing your request: work, housing, care, or standing with friends? Which loss makes their apparent choice doubtful?",
+  "If someone withdrew permission tomorrow, what could you actually stop? Name anything already shared and any obligations that would require an orderly exit.",
+  "Within a month, what would show that people can decline an optional use without losing the service they need?",
+  "Set a date to stop collecting one piece of personal information you do not need, removing the request for permission along with it."
+ ],
+ "14": [
+  "Where do people near you already share food without buying anything? What makes it easy for a stranger to find a seat?",
+  "Whose shopping, cooking, or cleaning keeps your gathering possible? Put the missing labor and costs into its budget before inviting more guests.",
+  "What might keep a newcomer from returning: familiar guests closing ranks, forced conversation, or harassment? Which problem needs a host's response?",
+  "After a month, what would show that the meal can happen when its usual organizer is absent, without quietly overloading someone else?",
+  "Before your next meal, choose a date to arrange a quieter seat, accessible entrance, or suitable dish with someone who needs it."
+ ],
+ "15": [
+  "Where can you close a door or stop answering messages without explaining yourself? Who in your home or workplace lacks that freedom?",
+  "Whose care duties prevent an undisturbed hour? What relief would give them quiet without leaving a child or dependent adult unsupported?",
+  "When someone here withdraws, how do you distinguish chosen solitude, unwanted isolation, and credible signs of harm without treating privacy as suspicious?",
+  "Over the next month, what would show that people can use a quiet room without buying anything, explaining their absence, or being tracked?",
+  "Set a date to remove one unnecessary meeting or demand for an immediate reply. Name the shared responsibilities that still need coverage."
+ ],
+ "16": [
+  "Which part of a care plan here already follows what the person wants in daily life? What restriction might remove something they value?",
+  "Who fills the hours between a service ending and its replacement beginning? Count the unpaid work your current plan assumes they will do.",
+  "If a shared care record contains a mistake, who can correct it? Where could the person seek help outside the system that made it?",
+  "A month after a referral, what evidence would show that useful help actually arrived and the person retained a say in their care?",
+  "Choose a date to have one care plan explained in the person's preferred language or format, with someone they choose present if wanted."
+ ],
+ "17": [
+  "What useful work near you goes unpaid or unnoticed? Where could someone doing it gain skills, companionship, or recognition they actually want?",
+  "Who cannot join a local project because they already provide care or need wages? Name the money or relief that would open participation.",
+  "Where does your organization use its mission to excuse low pay, constant urgency, or lost private time? Which condition needs to change?",
+  "After a month, how would participants and the people served judge a project's value? What would distinguish growing skill from being kept busy?",
+  "Set a date for a paid practice session where someone changing fields can use existing skills, try something new, and receive useful feedback."
+ ],
+ "18": [
+  "Where are a person's wishes already guiding care near the end of life? Who can find those wishes, and when were they last checked?",
+  "Who is losing income, sleep, or companionship while supporting someone who is dying? Which needs will remain after services close their records?",
+  "Where might money worries push someone to refuse care, or family pressure push them toward unwanted treatment? Who could help their own wishes be heard?",
+  "Within a month, what would show that a person can reach qualified help for pain, symptoms, or questions instead of merely receiving a brochure?",
+  "Choose a date to offer a bereaved caregiver one practical form of help, such as a meal or time away from work, without requiring conversation."
+ ],
+ "19": [
+  "Where do neighbors or towns already share water information or responsibilities? What could you build on when negotiating across the rest of your watershed?",
+  "Who would lose pay or need childcare to attend your water meetings? What money or technical help would let them question the largest users?",
+  "Which water transfers or groundwater connections extend beyond your council's map? Where could your agreement leave someone else's well or river unprotected?",
+  "Within a month, what change in a water decision would show that your shared investigation mattered? Who could verify that change?",
+  "Set a date to ask your water provider how shortage rules weigh household needs, river health, and livelihoods. Record any tradeoff the rules leave unresolved."
+ ],
+ "20": [
+  "Where could your plan preserve green space while cutting off a feeding area or movement route? Mark what the property boundary hides.",
+  "Which part of your land already lets other species feed, shelter, or breed with little disturbance? What keeps that space usable?",
+  "By what date will you ask whoever manages this habitat how its protection and care would survive a new owner or leader?",
+  "Who could lose access, housing, or a livelihood under your protection plan? Where can they change the plan before it is settled?",
+  "After a month, what evidence would show that your protection kept an essential feeding or nesting area usable, rather than merely green?"
+ ],
+ "21": [
+  "Which routes between local habitats still work, and for which animals? Where could one new fence, road, or land sale close the only route?",
+  "What would you need to observe over the next month to tell whether animals reach usable habitat, rather than simply enter your crossing?",
+  "Whose crops, safety, or access could be affected by the route you restore? Name the practical support they would need.",
+  "Could opening your chosen route also spread disease or bring harmful organisms into a new place? What evidence would justify keeping part of the barrier?",
+  "Choose a date to ask each landowner who will pay to keep their part of the repaired route usable."
+ ],
+ "22": [
+  "Where can animals affected by your work already choose shelter, company, or escape? Where do your fences, schedules, or equipment remove those choices?",
+  "Could your proposed help comfort people while distressing animals or harming their habitat? Name someone who could check your assumptions.",
+  "Choose a date to ask whoever approves your animal-related contract whether the activity is needed at all. What would justify ending it?",
+  "Who pays for animals in your care after they stop producing income? Where could a contract leave their later lives without protection?",
+  "Within a month, what could an independent observer check to tell whether your change reduced distress or gave animals more choice?"
+ ],
+ "23": [
+  "Which plant-based dish do people at your table already enjoy? What makes it affordable, satisfying, and practical for the person cooking?",
+  "Who would carry extra work or lost income if you changed your food purchases? Name one change to your budget that would support them.",
+  "Set a date to ask a cook and a diner with dietary needs what equipment, ingredients, or menu changes would make the meal work.",
+  "After a month, what would meal choices, plate waste, and grocery bills tell you? What result would make you revise the dish or its price?",
+  "Where might your substitute create poor nutrition, unfair working conditions, or extra waste? Compare its actual costs with those of the food it replaces."
+ ],
+ "24": [
+  "Does your lease give the person improving the soil enough time to benefit? Who pays if the agreement ends before the work pays off?",
+  "Where on your parcel does soil already absorb rain and resist washing away? What management history might explain the difference from nearby damaged ground?",
+  "Which soil claim in your plan rests on a label or a single score? What could that measure miss about compaction, contamination, or runoff?",
+  "What could you observe over the next month that would reveal damage early? Separate that warning from improvements that may take years to appear.",
+  "Choose a date to add one missing record of what was applied, removed, or buried to the parcel's history. Give the next caretaker access."
+ ],
+ "25": [
+  "If a vessel or operator changed its name, owner, or registration, would your local marine agreement still hold someone responsible? Where could the duty disappear?",
+  "Which coastal residents would bear lost income from your proposed restrictions? Who needs a voice before the rules and transition support are settled?",
+  "Where does ocean protection you rely on already have staff, observation, and money behind it? What happens when someone reports a violation?",
+  "By what date will you ask the responsible agency to publish permitted activities and enforcement money for the marine area you depend on?",
+  "Within a month, what record would show a response to the harm you raised? What would reveal that the activity had simply moved elsewhere?"
+ ],
+ "26": [
+  "Which step in your process already avoids creating waste? What keeps that approach from reaching the part that still produces harmful releases?",
+  "Set a date to review one waste contract with whoever signs it. Check whether you can follow the material to its final destination.",
+  "Could your proposed replacement reduce one harmful release while creating another? Name the effects you would compare before calling it safer.",
+  "If your operator closed tomorrow, who would pay for monitoring and cleanup? Identify any costs left to residents, workers, or the next owner.",
+  "After a month, what measurements would show less harmful material being created, rather than more being captured, diluted, or sent to another place?"
+ ],
+ "27": [
+  "Where has someone already brought a river's or habitat's needs into your decisions? What gave their evidence weight?",
+  "Could your guardian stop work without showing a connection to their duties, or lack power to obtain any response? Name the missing limit or power.",
+  "Which affected residents cannot challenge your guardian's claims? What would make the hearing, records, and expert help available to them?",
+  "Within a month, what published reasoning would show your guardian examined evidence and disclosed financial ties, even if the river's condition had not improved?",
+  "Set a date to test your removal rule against two cases: a guardian hiding evidence and one angering a powerful sponsor."
+ ],
+ "28": [
+  "Where do shade, drainage, or familiar walking routes already make your site easier to live in? Which details should a borrowed design preserve?",
+  "Who could lose housing or access if your project makes this place more desirable? Which decisions can they still change before plans are fixed?",
+  "Which local design rule protects water, comfort, or history? Which mainly keeps newcomers from finding a home?",
+  "What could you observe over the next month to test whether a proposed route serves children, workers, and people with disabilities?",
+  "Set a date to walk the site with its future caretakers. Record who will maintain one shared space and what money they need."
+ ],
+ "29": [
+  "Who would pay for the alteration you identified, and could the resident stay during the work? What protection appears in the lease or housing rules?",
+  "Which doorway, room, or utility connection already allows your home to change? Where are the records someone would need to alter it safely?",
+  "Where does promised flexibility make your home worse today, through noise, poor privacy, or awkward rooms? What present comfort must survive future changes?",
+  "Within a month, could a resident get a written answer naming an alteration's cost, approval steps, and protection against losing their home?",
+  "Choose a date to ask residents and an accessibility adviser to review one planned repair. Record where their priorities differ from the contractor's proposal."
+ ],
+ "30": [
+  "Where do people paying for your energy system already have a real say? Name a decision their participation has changed.",
+  "Could your community operate its equipment if the software provider or maintenance company withdrew? Which contract gives that supplier control you cannot readily replace?",
+  "Which workers or nearby residents will bear costs from construction or closure? What decision can they influence before money is committed?",
+  "Within a month, what would a review of your outage plan show about keeping essential services running, including who gets power first?",
+  "Set a date to discuss one proposed energy charge with households struggling to pay. Bring an alternative that protects service and covers upkeep."
+ ],
+ "31": [
+  "Which objects in your school, workplace, or home already reach a second user? Who handles the storage, transport, and handoff?",
+  "Your supplier calls a material recyclable. Where would it actually go from your building, and who nearby accepts and uses it?",
+  "Who would handle hazardous parts when your purchase wears out? What information and protection would they need, and who pays?",
+  "What repair could you test within a month to check whether replacement parts, instructions, and removable fasteners make continued use practical?",
+  "Before your next order, set a date to check unused stock with the person who buys it. Name one purchase that could wait."
+ ],
+ "32": [
+  "Which budget line already pays reliably for preventive care? What keeps that money available when a more visible project competes for it?",
+  "Whose repair knowledge was missing when your last asset was chosen? Name a recurring task whose difficulty they could have flagged.",
+  "Where are you protecting upkeep for a service people rarely use while essential repairs wait? What would justify keeping, changing, or retiring it?",
+  "A month from now, what completed inspection, authorized repair, or available money would show that your maintenance gap is actually closing?",
+  "Schedule a review of one proposed purchase with the people who will maintain it. Put the date and their paid time in the plan."
+ ],
+ "33": [
+  "Where does your daily route already offer pleasing light, quiet, texture, or living things? What care keeps that pleasure available?",
+  "Who finds your chosen place too loud, bright, crowded, or dull? Whose sensory needs are missing from the current design discussion?",
+  "Could your improvement raise rents or make current users feel unwelcome? Which housing protection or access rule would help them stay?",
+  "When you return in a month, what will you ask regular users to learn whether comfort improved rather than appearance alone?",
+  "Choose a date to agree on care for one proposed seat, display, or planting with its caretaker. Record the time and money required."
+ ],
+ "34": [
+  "Which free place near you already welcomes people to linger? Can someone reach it without a car and use its seating, shelter, and toilet?",
+  "Who is treated as out of place there despite causing no harm? Which rule or seating design makes that exclusion possible?",
+  "If someone is told to leave your public space, who makes that decision? Where can they find the reason and challenge it?",
+  "Within a month, what would show that someone previously excluded can now stay comfortably without buying anything or asking special permission?",
+  "Set a date to meet the people who clean and support your chosen space. Agree on one response to conflict that does not require removal."
+ ],
+ "35": [
+  "Where do your water crews and residents already share useful information about leaks, blocked drains, or flooding? What makes those reports lead to action?",
+  "Who downstream could bear the cost of your flood fix? Which households and river habitats need protection when water is scarce?",
+  "Is a visible rain garden or pond drawing attention away from broken pipes or unsafe sanitation? What local evidence supports the spending order?",
+  "Over the next month, which service record or water measurement could test your proposed fix? Who will explain what the result does not prove?",
+  "Choose a date to test your water problem reporting route with the responsible offices. Record who must respond when several services fail together."
+ ],
+ "36": [
+  "Which person nearby can already repair or run an essential service? Could someone else find their instructions and tools if they were absent?",
+  "If local supplies are privately held, who can actually use them during a shortage? What rules include visitors and people needing extra care?",
+  "Where would an agreement with a neighboring town serve you better than buying duplicate equipment? Compare likely delays, costs, and consequences.",
+  "Within a month, could your team practice without its usual network and still find records, reach helpers, and perform one essential task?",
+  "Set a date to ask a neighboring group for one specific backup commitment. Write down access, repayment, and who replenishes any supplies used."
+ ],
+ "37": [
+  "Where has your household or community gained more time, safer housing, or better health without buying more? What made that possible?",
+  "Who in your plan is being asked to use less while still lacking food, shelter, or care? What must they receive first?",
+  "Where could your definition of enough block someone else's craft, ambition, or way of living? Which limits protect others from real harm?",
+  "A month from now, whose account of rent, travel, or care would you compare with the averages in your economic report?",
+  "Choose a date to challenge one budget line that increases waste or travel. Propose a change that leaves more time or money for necessities."
+ ],
+ "38": [
+  "Which supplier already pays for repairs, safe disposal, or taking products back? What makes that responsibility hold after the sale?",
+  "Who provides unpaid work or lives with pollution behind your purchase? Which costs might remain after the seller leaves?",
+  "What harm from this purchase would you refuse even if the seller paid a fee? Who could enforce that limit?",
+  "Within a month, what evidence would show that a new charge reduced harm rather than made an essential item unaffordable?",
+  "Set a date to test one uncertain cost estimate with someone who bears the risk. Record whether their account changes your choice."
+ ],
+ "39": [
+  "When an earlier tool saved time in your workplace, who received shorter hours, higher pay, or less strain? What agreement made that happen?",
+  "Which suppliers, contract workers, or nearby businesses could lose income from your new tool without having a voice in its adoption?",
+  "Which promised benefits are delayed while jobs disappear now? What protection is owed today, while still rewarding genuine effort and risk?",
+  "After one month, how will you compare actual savings with changes in hours, pay, and workload? Who can question those numbers?",
+  "Choose a date before signing the tool's contract to ask workers which benefit should be guaranteed even if the expected savings arrive late."
+ ],
+ "40": [
+  "Which public service or payment already draws income from a shared asset in your community? Can residents see where the money goes?",
+  "Who outside the official boundary has a claim on this asset's benefits or bears its damage? Whose claim is missing from the payment rules?",
+  "Could a larger dividend mean faster depletion of the asset or cuts to services people would then buy themselves? Who would lose overall?",
+  "Within a month, could a resident trace one dollar from the asset through costs and reserves to a public benefit? Where would they get stuck?",
+  "Set a date to ask the asset's managers what must remain protected for future users. Request a written answer before the next payout decision."
+ ],
+ "41": [
+  "Which current rule helps people stay on your land while protecting soil, water, or habitat? Who keeps that rule working?",
+  "Whose past displacement or disputed claim is absent from your land records? Could a proposed conservation rule exclude them again?",
+  "What land restriction might become harmful as conditions change? Who can seek a revision without losing their home or weakening the underlying duty?",
+  "Within a month, what record or budget entry would show that a land duty will survive a sale rather than depend on goodwill?",
+  "Choose a date to walk the parcel with a resident whose knowledge rarely reaches its managers. Record one care or access issue they identify."
+ ],
+ "42": [
+  "Which owner already keeps money aside for maintenance or continuity of service? Can the people who depend on the asset verify that reserve?",
+  "Who cannot realistically leave if this owner raises prices, closes, or sells? What notice and support would give them a real choice?",
+  "Could an owner move profits elsewhere and leave duties with an empty company? Which promises would then have no money behind them?",
+  "Within a month, could a tenant, worker, or customer use an existing complaint process without the owner's permission? What outcome would show it has force?",
+  "Set a date to review one sale or loan clause with someone affected. Check whether it preserves their access to records and essential services."
+ ],
+ "43": [
+  "Where does your care arrangement already protect both the caregiver's rest and the recipient's choices? What keeps that support dependable?",
+  "Who remembers appointments, coordinates helpers, and stays reachable in your household? What income, sleep, or freedom does that responsibility cost them?",
+  "Would paying the current caregiver give them more choice, or make it harder to refuse? What alternatives does the person receiving care have?",
+  "After a month, what would each person say about rest, trust, and dignity? How will you hear their answers without exposing private details?",
+  "By what date will you ask an employer or care service for one change that protects care time without requiring someone to remain always available?"
+ ],
+ "44": [
+  "Which part of your project's budget already covers maintenance after opening? What protects that money when early excitement fades?",
+  "Who bears the loss if benefits arrive late? Which debt, guarantee, or restriction could land in a successor's budget without clear warning?",
+  "Does your lender's agreement let future leaders change course? Where could a long commitment protect insiders or crowd out urgent needs?",
+  "In a month, what early evidence would justify continuing, changing methods, or stopping? Who independent of the project could challenge that judgment?",
+  "Set a date to test one project milestone with a maintenance worker and a beneficiary. Check whether it measures lasting usefulness or merely completed construction."
+ ],
+ "45": [
+  "Which local skill, service, or institution could support people after the closure? What does it need to survive the loss of the old industry?",
+  "Who cannot relocate or retrain, and which caregivers or contract workers fall outside your support rules? What would keep their households secure?",
+  "Does your plan protect people's incomes or keep the harmful activity running indefinitely? What verifiable change must happen before the next payment?",
+  "Within a month, what would show that workers changed a real decision about timing, jobs, or services rather than merely attended a meeting?",
+  "Choose a date to check one promised training course against actual job openings. Ask about pay, location, and access for people with care responsibilities."
+ ],
+ "46": [
+  "Which letter or notice you send already helps someone understand a decision? What makes its reasons useful?",
+  "Who could lose housing, work, or care while waiting for your review process? What would keep the delay from making a correction useless?",
+  "Where do your disclosures bury the decisive reason? What private information needs protection even when an independent reviewer examines the decision?",
+  "In a month, what evidence would show that your reviewer can change an outcome, rather than merely explain it?",
+  "Set a date to ask someone who appealed a decision what the process cost them in money, time, and missed opportunities."
+ ],
+ "47": [
+  "Who is missing from your public meetings because attending costs too much? Name the payment, ride, care, or language help they would need.",
+  "Where have people in your community changed their minds after examining evidence together? What made that possible?",
+  "Which part of your question or speaker list favors the organizers' preferred answer? How could participants challenge it?",
+  "After a month, what record would show whether participants' recommendations changed your decision, including where officials rejected them?",
+  "Choose a date to invite someone who disagrees with your proposal to suggest evidence the group should hear."
+ ],
+ "48": [
+  "Which protection in your school, workplace, or town has held firm despite pressure from a popular leader? What kept it enforceable?",
+  "Who would struggle to challenge unequal treatment under your current rules? Where do fees, confusing forms, or fear of retaliation block them?",
+  "In your dispute, which claimed right protects basic dignity or freedom? Which protects an advantage that should remain open to a vote?",
+  "What could you check within a month to learn whether someone with little money can get a fair hearing before serious harm occurs?",
+  "Set a date to ask an independent reviewer how your rules handle conflicting rights and require the least harmful workable response."
+ ],
+ "49": [
+  "What records, savings, or benefits can you already take with you when leaving an institution? What makes that freedom practical?",
+  "Who in your household or organization would face the greatest cost of leaving? Describe what departure would require with little money or dependent children.",
+  "Could someone disagree with your leaders and still keep their place? Could a powerful member leave debts for everyone else?",
+  "Within a month, what would show that someone can refuse a demand without losing housing, care, or valued relationships?",
+  "Choose a date to ask an outside adviser whether your membership rules give someone facing expulsion a fair hearing."
+ ],
+ "50": [
+  "Who already notices damage and repairs the resource you share? What gives their work a voice in decisions?",
+  "Who does unpaid upkeep, and who bears costs outside your group? Name someone affected who cannot currently challenge a rule.",
+  "Where do a few confident people control your shared resource? Which decisions or leadership roles could others take on?",
+  "What could you measure over the next month to see whether your rules protect the resource without pushing damage onto neighbors?",
+  "Set a date to discuss one disputed use with a caretaker and someone affected beyond your boundary. Record who will follow up."
+ ],
+ "51": [
+  "What agreement already helps your town handle harm that crosses its borders? Why do people trust each side to keep its promises?",
+  "Who needs help to meet the rules your group can afford to follow? What money, tools, or training would help them?",
+  "Which promise in your agreement has no due date? Who can check whether the strongest parties follow the same rules as everyone else?",
+  "What could you and your neighbors measure this month to check a shared promise? How would you settle a dispute about the results?",
+  "Set a date to ask a partner how you could update one rule when new facts emerge, without rewriting the whole agreement."
+ ],
+ "52": [
+  "When your recurring conflict heats up, who can still reach people on both sides? What keeps that channel trusted?",
+  "Whose suffering disappears when your group calls the situation peaceful? What protection would let that person speak without pressure to reconcile?",
+  "Where could your proposed dialogue expose someone to retaliation? How could they decline participation without losing help?",
+  "A month from now, what would show fewer threats and more answered complaints, rather than merely fewer people willing to report harm?",
+  "Before the next expected flare-up, schedule a practice call through your trusted channel. Record where the message stalls and who can fix that."
+ ],
+ "53": [
+  "When has an emergency power in your group ended on time? What made leaders give it back?",
+  "Who could be hurt by an emergency order before your next review? Where could they turn for help getting it changed right away?",
+  "Which emergency power now reaches beyond its first purpose? Who outside your response team can ask why normal rules are still too slow?",
+  "A month from now, what records would show that your team has reviewed temporary rules, contracts, and stored personal data?",
+  "Set a date to practice handing one emergency task back to its usual owner. List the records and staff they need."
+ ],
+ "54": [
+  "Where does your charter explain why a rule exists? How has that explanation helped people improve the rule without abandoning its purpose?",
+  "Who has little voice under your current charter? What would let them shape a revision and remain safe while opposing it?",
+  "Could your proposed change let today's majority shut out future opponents? Which basic protections must stay in force during revision?",
+  "Within a month, what could a trial of your proposed rule reveal about the problem it should fix? What would make you withdraw it?",
+  "Choose a date to ask supporters and opponents whether your change counts as routine administration or a shift in rights or power."
+ ],
+ "55": [
+  "Which local records or observations do opposing sides already trust? Where do those records end and arguments about acceptable risk begin?",
+  "Who cannot inspect the evidence because of cost, language, or access? Who pays the people gathering it, and what influence does that buy?",
+  "Who can challenge the accepted account here without punishment? Which claims keep receiving attention despite weak evidence and repeated errors?",
+  "Set a date to examine a budget, visit a site, or watch a measurement with someone who disagrees with you.",
+  "In a month, what would show that your disagreement concerns different priorities rather than conflicting accounts of what happened?"
+ ],
+ "56": [
+  "Which report lets you follow a claim back to its source? What helps someone outside your team understand the steps?",
+  "Who was left out of your count? How might including them change what your report says?",
+  "Whose safety could sharing these records put at risk? What could an outside reviewer check without making private details public?",
+  "Next month, could someone outside your team repeat your math or test a key assumption? What result would make you change the claim?",
+  "Set a date to add a short guide to one report's files. Show which files support the claim and how you used them."
+ ],
+ "57": [
+  "Who has questioned a leader here and been heard fairly? What kept them safe, and could a new worker get the same help?",
+  "After someone reports a problem, who checks for lost work, missed raises, or being shut out? Could that check reveal who spoke up?",
+  "How would you give the person accused a fair chance to respond? What would you do if either person used threats?",
+  "Set a date to share a mistake in your own work. Explain what you changed and who helped you see it.",
+  "A month after a report, how will you check that the person is still safe? Who must show what was done about the concern?"
+ ],
+ "58": [
+  "Where can adults already return to learning after an interruption? What skills can they bring without having to earn the same credit again?",
+  "Whose time, wages, transportation, or care duties would your course consume? Which learners have had a say in its hours and subjects?",
+  "Are you asking people to earn another certificate for a problem better fixed through safer work, better tools, or an employer's support?",
+  "Set a date to arrange one supported practice session where learners can use a skill they chose and receive helpful feedback.",
+  "After a month, who is still participating, and what can they now do or understand? How will you hear from people who stopped?"
+ ],
+ "59": [
+  "Which records here already have copies in separate places and readable formats? What explanation of past choices travels with those copies?",
+  "Whose knowledge is missing from your collection? Whose safety or consent requires a record to be restricted, kept briefly, or destroyed?",
+  "Choose a date to put paid time for maintaining one collection into a budget, with a named person responsible.",
+  "Which supposedly separate copies rely on the same provider, password holder, or software? What single failure could make them all useless?",
+  "At next month's check, could someone use a surviving copy if your main provider disappeared? What would show that the meaning survived too?"
+ ],
+ "60": [
+  "Where do knowledge holders already control how your project uses their contribution? Name a decision they changed or a use they refused.",
+  "Who is absent when your contact gives permission? How could people outside established leadership question the agreement without risking their standing?",
+  "Has your intended audience or purpose changed since permission was given? What can still be withdrawn, and what has already traveled beyond your control?",
+  "By what date will you invite knowledge holders to examine one interpretation with you, including evidence for it and credit for their contribution?",
+  "A month from now, what change in payment, credit, access, or use would show that knowledge holders have more control than before?"
+ ],
+ "61": [
+  "Which research effort here already serves people who cannot pay for answers? What keeps its money and review from depending on one patron?",
+  "Whose daily experience could change the question your project asks? What authority would they need beyond a seat at an advisory meeting?",
+  "If results challenged your sponsor's preferred policy or product, which contract clause or approval step could delay or prevent publication?",
+  "Choose a date to request one written change protecting publication of inconvenient findings, including who can enforce it.",
+  "Within a month, what change to a research question, method, or planned use would show that affected people influenced the work?"
+ ],
+ "62": [
+  "Which current rule or budget line can you trace to a past harm your institution acknowledges? What records explain why it changed?",
+  "Who must keep retelling a painful experience to hold your institution's attention? What support and choices about privacy would let them step back?",
+  "Where does your account name who held power and made decisions? Where might it assign blame to people solely because of their ancestry?",
+  "In a month, what decision or change in resources would show that remembrance helped people still living with the harm?",
+  "Set a date to add one documented past failure to new staff training, alongside the current rule meant to prevent its return."
+ ],
+ "63": [
+  "Which number already helps you make a useful decision? State the purpose it serves and one important part of that purpose it cannot show.",
+  "Whose worsening experience could hide inside your improving average? How could you hear from them without exposing private information?",
+  "What happens when a worker reports that meeting the target harmed someone? Does your response reward honesty or encourage a cleaner-looking report?",
+  "Choose a date to stop collecting one number nobody uses for a decision, while keeping evidence that helps people judge the work.",
+  "Next month, whose account of the service will you compare with the scores? What disagreement between them would trigger a review?"
+ ],
+ "64": [
+  "Where does your AI system already wait for a person's approval? What keeps a suggestion from quietly becoming an instruction?",
+  "If this system wrongly denies someone a service, which person can fix the harm without sending them between the vendor and your staff?",
+  "Does your human reviewer have enough time, knowledge, and authority to disagree? Describe what happens when they challenge an output.",
+  "Over the next month, which real decisions will you check for mistakes that testing missed? Who can reduce the system's authority if needed?",
+  "Choose a date to give the system's supervisor time for review. Name the other work you will remove to make that time real."
+ ],
+ "66": [
+  "Which safety function already stays outside your automated system's control? What keeps it independent when the system makes a mistake?",
+  "Where could one tool's suggestion become another tool's command? Trace a possible mistake through that connection to a person or service.",
+  "Who would your proposed restrictions keep from useful work? Describe a narrower permission that could let them participate without exposing others to serious harm.",
+  "In a month, what test result would show you can restore essential service after access is revoked, rather than merely stop the system?",
+  "Pick a date for someone outside the deployment team to challenge one claimed safety boundary. Who will act on what they find?"
+ ],
+ "67": [
+  "Which reminders or recommendations in your service support goals users chose themselves? How can users change those goals or turn the help off?",
+  "When does your service reach people who are tired, lonely, or young? What personal information makes its influence harder for them to resist?",
+  "What does your service reward staff for increasing? Where could that reward defeat a user's decision to spend less time or money?",
+  "What would users report in a month if refusing personalization worked? Include whether they could still get the service they came for.",
+  "Choose a date to test the refusal settings with a user. Record where they get stuck and assign someone to fix it."
+ ],
+ "68": [
+  "Who on your team can still spot a wrong automated answer or recover without the tool? Where did they learn that skill?",
+  "Which beginner tasks now go straight to a machine? What supervised work could give a newcomer the judgment your experienced staff rely on?",
+  "Who would bear extra work or lose access if you required manual practice? Which skills truly need practice, and where should assistance remain?",
+  "After a month of practice, what could another staff member do without the usual expert? What support would keep that test safe?",
+  "Set a date for an experienced worker to teach one difficult case. Put paid teaching time on the schedule, not only instructions in a manual."
+ ],
+ "69": [
+  "What tool do nearby organizations already share successfully? Who keeps it working when an update fails or a user needs help?",
+  "Which intended user would still struggle with a free shared tool because of language, disability, equipment, or training? What would make it usable?",
+  "Where would your shared service depend on one exhausted volunteer or one supplier? Name the budget line or backup arrangement that would reduce that dependence.",
+  "After a month, what would show that users can finish their work reliably and move their files elsewhere without losing anything important?",
+  "Choose a date to bring users and maintainers together to settle one support responsibility. Record who will do it and how they will be paid."
+ ],
+ "70": [
+  "Which decision about an artificial system in your workplace already allows for uncertainty about its experience? What protection does that uncertainty change?",
+  "Would your judgment change if the same system had no familiar face or persuasive voice? Name the evidence that would still matter.",
+  "Who would carry the cost of your proposed precaution? Identify any care for humans or animals that might lose money or attention.",
+  "Over the next month, what finding would lead you to strengthen, relax, or keep your precaution? Who could judge it independently?",
+  "Set a date to have someone with a different view review your evidence. Record what remains unknown without declaring experience either proven or impossible."
+ ],
+ "71": [
+  "Where do your current rules protect a being from harm without giving it power over others? What could that distinction clarify in your proposal?",
+  "Who would speak for the being whose status you are weighing? What duty and replacement process would keep that representative answerable?",
+  "Could the proposed status shield a creator or company from responsibility? Trace who would gain control over money and who would answer for harm.",
+  "Within a month, what evidence could help you judge whether a proposed protection serves the being's interests rather than its controller's?",
+  "Set a date to review your proposed criteria with someone who defends human equality. Revise any rule that could make basic human protections depend on ability."
+ ],
+ "72": [
+  "Which essential service could your organization still run without its AI provider? Who has the skills, records, and permission to keep it running?",
+  "Who holds the power to stop or change your system? How can the people it affects challenge that person's or company's decisions?",
+  "Where does your contract promise an exit that your staff could not carry out? Estimate the missing time, money, or expertise.",
+  "Within a month, what small transfer of records or work could test your ability to leave without interrupting an essential service?",
+  "Choose a date to give one affected group a say in your next renewal decision. Specify what they can change before you sign."
+ ],
+ "73": [
+  "Which alternative in your household or organization uses different skills, money, or methods from the main arrangement? What has kept it usable?",
+  "Who must learn extra procedures or buy extra equipment because your systems differ? Where would a shared connection or rule ease that burden?",
+  "Which alternative are you keeping only because it is different? What harm or poor performance would justify replacing it?",
+  "Within a month, could someone other than your usual operator run the backup? What result would show it provides real protection?",
+  "Choose a date to review one budget line that keeps an alternative available. Record what protection you would lose by cutting it."
+ ],
+ "74": [
+  "Where can your school, workplace, or neighborhood already keep an essential service running during a wider outage? What limits that independence?",
+  "Who would lose care, supplies, or transport if your part of the network disconnected? Which neighboring group could help them?",
+  "What evidence would your staff need before reconnecting after a fault? Who can refuse reconnection when a normal signal hides an unresolved danger?",
+  "During the next month, what check could show whether your local arrangement still works when its most experienced person is absent?",
+  "Set a date to ask a neighboring service what help you owe each other during isolation. Put one shared obligation in writing."
+ ],
+ "75": [
+  "Who already spots signs of illness or unsafe water near you: farmers, animal carers, waste crews, or neighbors? Who listens when they report a concern?",
+  "Could your health plan harm someone's animals, income, or privacy? Who has the skills to help you find a safer way?",
+  "When your clinic, farm, and water teams meet, who can act on what they learn? Do they have the money and staff they need?",
+  "Within a month, could you check whether a worker's report reached trained help? Were private details kept safe, without asking the worker to diagnose illness?",
+  "Set a date to ask for money to prevent health problems in your area. Name one need, such as safer work or more clinic staff."
+ ],
+ "76": [
+  "Where do you already have breathing room: stored supplies, spare money, rested staff, or neighbors who can help? Which reserve is quietly shrinking?",
+  "Could buying your reserve make essentials harder for others to obtain now? Who could help you coordinate purchases across communities?",
+  "What happens to your stored supplies before they expire? Name the budget line that pays someone to check, rotate, and replace them.",
+  "In a check next month, could a person with urgent needs actually receive your supplies? What would reveal an unfair rule or locked door?",
+  "Set a date to bring one disputed release rule to the people it affects. Record how exceptions will be decided and challenged."
+ ],
+ "77": [
+  "Which part of your emergency plan has someone actually practiced? What did that attempt reveal that the written instructions missed?",
+  "Who would struggle to join your exercise or feel frightened by it? What notice, access, and way to leave would protect their trust?",
+  "Where might your rehearsal reward looking prepared instead of admitting confusion? Who could observe without grading or humiliating participants?",
+  "A month after practice, what could a different staff member do that they cannot do now? What changed resource or instruction would make that possible?",
+  "Choose a date to ask someone who would need assistance to review your exercise plan. Offer payment or practical support for their time."
+ ],
+ "78": [
+  "Which records or mutual aid agreements could your neighbors already use after losing their homes? What would remain accessible if the main office closed?",
+  "Who could lose a home or livelihood under your rebuilding plan while having little say? What support would let them challenge that decision?",
+  "Which part of your plan would rebuild the same exposure to harm? What safer option could preserve residents' choices rather than push them out?",
+  "Within a month, could someone test your claims process with missing documents? What would show that speed has not made fair review impossible?",
+  "Pick a date to ask a local care provider how displaced residents would keep receiving help. Record one promise and who can authorize it."
+ ],
+ "79": [
+  "Which repair skill or printed record in your organization remains useful without power or passwords? Who besides its keeper knows how to use it?",
+  "If only a few people could restart your service, who would check their decisions about access? How could residents challenge unfair treatment?",
+  "Which saved instructions might now be unsafe or out of date? Name the qualified person who should review their limits before anyone relies on them.",
+  "What could your staff safely demonstrate within a month using only tools and information available without the usual network? What would a failed attempt reveal?",
+  "Set a date to ask another community which tools or skills you could share during recovery. Identify something each could provide that the other lacks."
+ ],
+ "80": [
+  "Who in your institution already learns by working beside an experienced person? Which difficult obligation have they learned the reasons behind?",
+  "Who could do this work but has no route into your leadership circle? What selection rule keeps them outside?",
+  "If your institution closed, who would receive its records, assets, and unfinished duties? Where are the people who depend on it left unprotected?",
+  "Within a month, could your named successor handle an unusual request without the founder's permission? What would expose missing authority, access, or judgment?",
+  "Choose a date for a future leader to question one inherited rule with the people it affects. Record what must stay and what can change."
+ ],
+ "81": [
+  "Where can someone in your team already report a close call? What response shows them that speaking up leads to action?",
+  "Who risks blame or lost work by reporting a mistake here? How would your review distinguish ordinary error from reckless or deliberate harm?",
+  "Which task still depends on someone noticing trouble at the last second? What workload, missing instruction, or unclear assignment makes that rescue necessary?",
+  "In a month, what evidence would show your fix reduced danger? How will you avoid treating fewer reports as proof of improvement?",
+  "Set a date to share one lesson with another team facing the same risk. Remove private details and explain when the lesson applies."
+ ],
+ "82": [
+  "Where does your project's budget already pay to protect Earth's soil, water, or air? Which cost still falls outside the ledger?",
+  "Who will live with the project's damage without sharing its benefits? What would they ask you to change before spending begins?",
+  "Are you treating a future invention as permission for damage now, or rejecting useful exploration until every Earthbound problem is solved?",
+  "A month from now, what record would show whether a promised benefit to Earth has changed an actual purchase, design, or contract?",
+  "Choose a date to visit a place your project affects with someone who cares for it. Record one obligation their knowledge adds."
+ ],
+ "83": [
+  "Which agreement already protects access to an orbit, observation site, or communication route your project uses? Who checks whether operators honor it?",
+  "When your equipment stops working, who pays for monitoring, cleanup, or continuing risks? Where is that duty written into a contract?",
+  "Whose future access could your plans limit? How could someone without your money or equipment challenge the rules before they become permanent?",
+  "Set a date to ask one operator and one affected outsider which decisions need shared approval. Record where their answers differ.",
+  "Within a month, could someone outside your team verify that one shared duty was met? What records and enforcement would make that possible?"
+ ],
+ "84": [
+  "Where has your team already left a site, sample, or habitat untouched so someone else can study it later?",
+  "Which permission in your plan could quietly expand from observing a place to taking material or permanently changing it? Who could stop that expansion?",
+  "Who gets to question your project's rules for protecting a place? Would those same rules constrain a better financed visitor?",
+  "After a month of limited investigation, what evidence would justify another step, and what finding would require you to wait?",
+  "Choose a date for an independent reviewer to compare two observation methods. Ask which leaves future investigators more to learn."
+ ],
+ "85": [
+  "Which service in your residential project remains secure during a dispute over work or rules? What protects that promise when leaders change?",
+  "If transport became unavailable next month, could a resident reach an independent advocate privately? What money, access, and authority would that advocate have?",
+  "Which emergency rule could become a lasting command? Name who can review it and what would make it expire.",
+  "What voice will children and later arrivals have in rules they never accepted? Which founding agreement could block them from changing those rules?",
+  "By what date will you test a resident's complaint with an outside reviewer, checking whether housing, water, communication, and return travel remain available?"
+ ],
+ "86": [
+  "Where do your team's current rules distinguish permission to listen from permission to transmit? Who controls the equipment at that boundary?",
+  "Who could bear consequences from your message without having any say in sending it? What would let their objections change the decision?",
+  "What evidence would let your group decide despite remaining uncertainty? What would prevent the person controlling the agenda from delaying forever?",
+  "Schedule a practice review this month. Can participants distinguish what a detected signal establishes from guesses about its sender or the effects of replying?",
+  "Choose a date to ask the equipment owner to protect waiting time during a discovery. Agree who will handle public pressure to respond."
+ ],
+ "87": [
+  "Which observation in your work can another team already check using preserved records? Where does checking still depend on trusting one person?",
+  "Who faces pressure to announce a finding before the evidence is ready? What support would let that person say they do not know?",
+  "Where could your review process hide evidence or protect someone's claim to credit? What accurate update could you release while checking continues?",
+  "After a month, could a reader of your updates distinguish what was observed from what it might mean? How would you check?",
+  "Set a date to practice correcting a public claim that proves wrong. Name who will publish the correction and keep the original evidence accessible."
+ ],
+ "88": [
+  "When has your institution clearly stated whom it represents and whom it does not? Where could its proposed contact statement exceed that authority?",
+  "Who lacks translation, travel money, or access to evidence in your proposed forum? Which decision could change if they could participate fully?",
+  "What would make you doubt that one sender speaks for an entire civilization? Apply the same test to your own proposed spokesperson.",
+  "Within a month, could a less powerful participant change the agenda or publish a disagreement? What would demonstrate that their voice carries weight?",
+  "Choose a date to ask your proposed representatives who can challenge or withdraw their authority. Record limits that remain even without unanimous agreement."
+ ],
+ "89": [
+  "Which existing practice keeps a sample or data record traceable to its source? Where could handling destroy evidence before anyone recognizes its value?",
+  "Who or what could your project expose to material carried out or brought back? Whose protection is missing from your present budget?",
+  "Which proposed information restriction rests on a specific risk, and which rests on speculation? Who benefits if the restriction never ends?",
+  "In a month, could an independent team reconstruct how one sample was handled and distinguish observations from your interpretation? What would they need?",
+  "Set a date for qualified outside reviewers to examine one restriction. Ask what evidence would justify keeping, narrowing, or lifting it."
+ ],
+ "90": [
+  "Where has someone already limited your project's access to their home, records, or community? What helped you respect that limit?",
+  "If a leader refuses contact for a whole community, how could you learn whether individual members want help without exposing them to danger?",
+  "Which question in your project serves mainly your curiosity? Could you answer it through public records or a less intrusive visit?",
+  "Over the next month, what would show that declining participation carries no penalty? Check payments, services, relationships, and repeated requests.",
+  "Choose a date to have an outside reviewer examine one claimed need to override refusal. Ask for evidence of harm and the least intrusive response."
+ ],
+ "91": [
+  "Where in your week do you already have time nobody else can claim? What protects it from work, paperwork, or demands for attention?",
+  "When a tool saves you time, who gets the gain? Name anyone whose cleaning, care, or constant availability makes your freedom possible.",
+  "Would more free time leave anyone in your household isolated? What nearby place or relationship could make that time usable without requiring participation?",
+  "After a month, how will you tell whether saved time stayed free, rather than filling with extra work or pressure to improve yourself?",
+  "Choose a date to stop requiring an explanation for one kind of time off. Write down how you will keep necessary work fairly shared."
+ ],
+ "92": [
+  "Which song, recipe, language, or craft do people already share across generations in your community? Where do younger people help change it?",
+  "Who teaches or organizes this practice without pay? Name someone your current hours, prices, or location keep from joining.",
+  "Where do your ideas of authenticity silence a participant? What locally valued work gets overlooked because outsiders would not buy it?",
+  "A month from now, what would show you that someone is using or teaching the practice, rather than merely seeing publicity about it?",
+  "Set a date to ask a practitioner what permission and payment they require before you share their work. Record the terms they choose."
+ ],
+ "93": [
+  "Where does your household or group already mark a change with a meal, story, or shared object? What continuing relationship does it support?",
+  "Who could feel pressured to attend your ceremony, disclose a loss, or express gratitude? Describe a way they could decline without losing support.",
+  "What unresolved disagreement could your planned event hide? Leave room in your notes for someone who does not feel ready to celebrate or reconcile.",
+  "One month after the occasion, what help would participants actually receive? Name the promise you could check without asking anyone to prove their feelings.",
+  "Choose a date to put one promised task on your calendar, with the person's permission. Specify what you will do if you become unavailable."
+ ],
+ "94": [
+  "Where on your usual route can you stop for a tree, a view, music, or silence without buying anything or explaining your interest?",
+  "Who cannot reach the garden, library, or gathering you use because of cost, stairs, distance, or hours? Whose needs are missing from your plans?",
+  "In your group, can someone question a claim made during a moving experience? What happens when a beginner asks for evidence?",
+  "After a month, what would tell you that people feel freer to ask questions, rather than better at repeating the approved explanation?",
+  "At your next gathering, reserve time for questions nobody has to answer or agree on. Write the date and how beginners will be welcomed."
+ ],
+ "95": [
+  "Which game in your household or neighborhood already lets beginners and skilled players enjoy a real challenge together? What keeps winning from deciding who belongs?",
+  "Where do points, rankings, or rewards in your workplace make refusal costly? Describe what someone would risk by choosing not to play.",
+  "Who pays for your group's fun through teasing, exclusion, unexpected charges, or pressure to stay? What have you noticed when that person withdraws?",
+  "During the next month, what would show you that players can stop freely and return without losing money, standing, or friendships?",
+  "Choose a date to lend equipment or offer space for a game someone else wants to play. Let them decline without explaining why."
+ ],
+ "96": [
+  "Who in your group has moved from newcomer to someone with a say? What made that possible beyond the host's personal approval?",
+  "Your invitation may say everyone is welcome. What money, language skills, transport, or free time does a guest still need to join?",
+  "Which boundary in your shared space protects people from intimidation? Would a newcomer and a longtime member face the same response for crossing it?",
+  "After a month, how will you know newcomers can participate without an insider speaking for them? Look beyond how many people attend.",
+  "Choose a date to join an activity where you are the guest. Note what helps you ask questions or decline without embarrassment."
+ ],
+ "97": [
+  "Where can someone in your neighborhood dress, live, or speak differently and still find a home, a job, and care? What keeps that possible?",
+  "Who could lose a job or home for questioning your group's rules? How could you hear them without asking them to speak in public?",
+  "Where do you excuse harm because someone seems bold or new? Where do you punish harmless choices because they seem strange?",
+  "Over the next month, how could you check whether someone can change their dress or way of life without losing work or facing teasing?",
+  "Set a date to drop one needless personal question from a form you use. Check what you really need to know to keep people safe."
+ ],
+ "98": [
+  "Who in your circle already brings food, listens, or returns long after a loss? What allows that support to continue?",
+  "Which losses receive no leave or practical help in your workplace? Who must explain private pain before anyone will adjust a schedule?",
+  "Does your memorial or gathering leave room for silence, mixed feelings, and absence? What would someone risk by declining to take part?",
+  "A month from now, how will you check that help remains available without asking a grieving person to show gratitude or signs of recovery?",
+  "With permission, put a meal delivery, errand, or quiet visit on your calendar after the initial attention fades. Record a date you can keep."
+ ],
+ "99": [
+  "Where along your daily route can you enjoy a garden, building, view, or performance without owning it? Who keeps that encounter possible?",
+  "Whose work, privacy, or habitat could bear the cost of wider access to your chosen place? What limit would you respect even if inconvenient?",
+  "Who decides which art or landscape deserves care in your community? Where could unfamiliar work receive support without having to win everyone's approval?",
+  "After a month, what would show you that people are attending more closely and caring for the place, rather than simply increasing visitor counts?",
+  "Choose a date to propose a payment for care in a budget you influence. Ask the maker or caretaker what work it should cover."
+ ],
+ "100": [
+  "Which doorway, room, stream, or stretch of street do you know well enough to notice changes? Who already helps you understand it?",
+  "Who depends on this place without attending its meetings? What would you miss by listening only to longtime residents or regular users?",
+  "Which local problem keeps returning because of a budget or rule controlled elsewhere? Who could help you reach the people who control it?",
+  "Arrange to join someone doing routine upkeep here, with their permission. Write the date and one question about the place's history you will ask.",
+  "A month from now, what change in your chosen question would show that you learned from people who experience this place differently?"
+ ],
+ "101": [
+  "Where does your proposal already protect someone from noise, extra work, or future repair bills? Whose costs remain outside the budget?",
+  "Which person bears a serious burden while others receive small benefits? How could your totals or averages hide that difference?",
+  "Set a date to ask someone knowledgeable about local wildlife or future maintenance to examine one effect that nobody in your meetings represents.",
+  "Which concern has been recorded repeatedly without changing your proposal? Name the protection, payment, or reason to stop that it calls for.",
+  "Within a month, what would someone with little say need to see to confirm that your process reduced their burden?"
+ ],
+ "102": [
+  "Which part of your project already serves two needs at once, such as welcome and quiet? Name the design choice that makes this possible.",
+  "Where would a longer schedule, stricter rule, or quieter room help one group while burdening another? Who supplies the money or labor?",
+  "Set a date to check your project's pattern labels against its budget and drawings. Remove any label that changes no decision or responsibility.",
+  "After a month of use, what would tell you that your arrangement protects both access and upkeep, rather than sacrificing one for the other?",
+  "State your project's purpose without pattern titles. Which compromise would make that purpose impossible, even if every selected pattern had a checked box?"
+ ],
+ "103": [
+  "What can your team already stop without leaving someone without a needed service? Which promise would still require money after the trial ends?",
+  "Who might feel unable to refuse participation or complain? What would protect their access, job, or standing if they said no?",
+  "If your most enthusiastic volunteer left, what would keep the trial running? Include that person's hours when estimating the cost of ordinary operation.",
+  "Name a date to test the complaint route with someone outside your team. Check whether a concern reaches someone authorized to pause the trial.",
+  "After a month, what comparison with the current service or another option would show whether the trial helped, excluded people, or simply shifted work?"
+ ],
+ "104": [
+  "List the records an outsider can already inspect without your team's permission. Which important claim would those records leave untested?",
+  "Who stopped using your service or never gained access? How will a reviewer hear from them without your team choosing who speaks?",
+  "If your reviewer depends on repeat contracts from you, what could they hesitate to report? What limits on their access will you disclose?",
+  "Within a month of review, what public decision or completed fix would show that the findings carried weight, even if they were unwelcome?",
+  "Choose a date to reserve staff time for a reviewer's visits and follow-up work. Name who can approve repairs the review may require."
+ ],
+ "105": [
+  "Which record of a past disappointment has already helped your team avoid a mistake? What made its explanation useful rather than embarrassing?",
+  "Your budget may omit donated time. Whose unpaid work made the attempt possible, and what would another group need to pay for it?",
+  "Where does your account blame low attendance or poor effort without testing hours, transport, or instructions? Name an explanation that remains uncertain.",
+  "Set a date to check one failure report for details that could expose participants. Keep the decisions and institutional responsibilities clear.",
+  "In a month, could someone outside your team find this account and explain what to change, avoid, or leave unresolved before trying again?"
+ ],
+ "106": [
+  "Where have you already made repair, care, or participation easier? Name the tool, schedule, budget line, or rule that made the difference.",
+  "When you reward speed but ask for quality, who absorbs the extra work? What would need to change in pay or schedules?",
+  "Which choice happens automatically in your service? Can a person see why you chose it and refuse without extra expense or confusing forms?",
+  "Choose a date to lend a tool, share clear instructions, or adjust a meeting time. Name the person whose unnecessary effort this should reduce.",
+  "After a month, what would show that your change reduced total harm, rather than making each use cleaner while encouraging more harmful activity?"
+ ],
+ "107": [
+  "Find a past change to a rule, contract, or service you manage. Can you recover why it changed and whom the change helped?",
+  "Who now lives with harm from your original decision? What repair do they need, and who has the money and authority to provide it?",
+  "Which promises do people need to rely on between reviews? Separate routine checks from changes that could disrupt their housing, work, or care.",
+  "By what date will you put a standing review obligation where your team sees it? Name who must explain any delay.",
+  "Over the next month, what unexpected cost, exclusion, or harm would require an early review? What record would show whether anyone acted?"
+ ],
+ "108": [
+  "Where have you already changed a pattern to fit your place? Record its number, source, and your reasons so another reader can compare versions.",
+  "Who bears the consequences of your local version but cannot easily challenge it? What would give their experience a fair hearing?",
+  "If your editors reject a change, can its author preserve and share an alternative? Where could editorial care become control over disagreement?",
+  "Choose a date to give proposed changes and accepted versions separate, searchable homes. Keep contributors' names and the evidence behind each change attached.",
+  "A month from now, could a new reader trace one disagreement, tell experience from speculation, and find both the original pattern and your revision?"
+ ]
+}
